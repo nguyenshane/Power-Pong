@@ -1,9 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum eBall
+{
+	Left,
+	Right
+}
+
 public class Ball : MonoBehaviour {
 
 	public Vector3 initialImpulse;
+	public eBall ball;
 
 	// Use this for initialization
 	void Start () {
@@ -17,9 +24,20 @@ public class Ball : MonoBehaviour {
 
 	void OnCollisionEnter(Collision Collection)
 	{
-		if(Collection.gameObject.name == "Brick")
-		{
-			Destroy(Collection.gameObject);
+		if (ball == eBall.Left) {
+			if(Collection.gameObject.name == "Brick")
+			{
+				Destroy(Collection.gameObject);
+			} else if (Collection.gameObject.name == "Brick_O") {
+				Destroy(Collection.gameObject);
+			}
+		} else if (ball == eBall.Right) {
+			if(Collection.gameObject.name == "Brick")
+			{
+				Destroy(Collection.gameObject);
+			} else if (Collection.gameObject.name == "Brick_G") {
+				Destroy(Collection.gameObject);
+			}
 		}
 	}
 }
