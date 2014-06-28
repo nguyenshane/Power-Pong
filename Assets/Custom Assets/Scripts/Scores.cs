@@ -5,7 +5,7 @@ public class Scores : MonoBehaviour {
 
 	public GameObject number;
 
-	private int score;
+	public int score;
 
 	// Use this for initialization
 	void Start () {
