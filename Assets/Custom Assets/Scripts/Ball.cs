@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public enum eBall
@@ -8,6 +8,8 @@ public enum eBall
 }
 
 public class Ball : MonoBehaviour {
+
+	public GameObject score;
 
 	public Vector3 initialImpulse;
 
@@ -34,10 +36,10 @@ public class Ball : MonoBehaviour {
 			{
 				Destroy(Collection.gameObject);
 				rigidbody.AddForce(leftImpulse, ForceMode.Impulse);
-
-
+				score.GetComponent<Scores>().AddScore(2);
 			} else if (Collection.gameObject.name == "Brick_O") {
 				Destroy(Collection.gameObject);
+				score.GetComponent<Scores>().AddScore(3);
 			}
 			else if (Collection.gameObject.name == "Player Left") {
 				rigidbody.AddForce(rightImpulse, ForceMode.Impulse);
@@ -47,9 +49,10 @@ public class Ball : MonoBehaviour {
 			{
 				Destroy(Collection.gameObject);
 				rigidbody.AddForce(rightImpulse, ForceMode.Impulse);
-
+				score.GetComponent<Scores>().AddScore(2);
 			} else if (Collection.gameObject.name == "Brick_G") {
 				Destroy(Collection.gameObject);
+				score.GetComponent<Scores>().AddScore(3);
 			}
 			else if (Collection.gameObject.name == "Player Right") {
 				rigidbody.AddForce(leftImpulse, ForceMode.Impulse);
