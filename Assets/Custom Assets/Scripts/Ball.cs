@@ -16,6 +16,7 @@ public class Ball : MonoBehaviour {
 	public eBall ball;
 	Vector3 leftImpulse = new Vector3(-2,0,0);
 	Vector3 rightImpulse = new Vector3(2,0,0);
+	float friction = 0.5f;
 
 	// Use this for initialization
 	void Start () {
@@ -43,6 +44,7 @@ public class Ball : MonoBehaviour {
 			}
 			else if (Collection.gameObject.name == "Player Left") {
 				rigidbody.AddForce(rightImpulse, ForceMode.Impulse);
+				rigidbody.AddForce(new Vector3(0, 0, friction*Collection.gameObject.GetComponent<Player>().inputSpeed*Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
 			}
 		} else if (ball == eBall.Right) {
 			if(Collection.gameObject.name == "Brick")
@@ -56,6 +58,7 @@ public class Ball : MonoBehaviour {
 			}
 			else if (Collection.gameObject.name == "Player Right") {
 				rigidbody.AddForce(leftImpulse, ForceMode.Impulse);
+				rigidbody.AddForce(new Vector3(0, 0, friction*Collection.gameObject.GetComponent<Player>().inputSpeed*Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
 			}
 		}
 	}
