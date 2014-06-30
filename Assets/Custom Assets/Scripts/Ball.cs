@@ -13,7 +13,6 @@ public class Ball : MonoBehaviour {
 	public GameObject otherScore;
 
 	public Vector3 initialImpulse;
-	private int score = 0;
 
 	public eBall ball;
 	Vector3 leftImpulse = new Vector3(-2,0,0);

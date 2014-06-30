@@ -185,6 +185,7 @@ GameObject:
   - 33: {fileID: 39672283}
   - 65: {fileID: 39672282}
   - 23: {fileID: 39672281}
+  - 114: {fileID: 39672285}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -243,6 +244,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 48
+--- !u!114 &39672285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 39672280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &49752407
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +267,7 @@ GameObject:
   - 33: {fileID: 49752410}
   - 65: {fileID: 49752409}
   - 23: {fileID: 49752408}
+  - 114: {fileID: 49752412}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -312,6 +326,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 89
+--- !u!114 &49752412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 49752407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &60023667
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,6 +349,7 @@ GameObject:
   - 33: {fileID: 60023670}
   - 65: {fileID: 60023669}
   - 23: {fileID: 60023668}
+  - 114: {fileID: 60023672}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -381,6 +408,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 64
+--- !u!114 &60023672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 60023667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &127867122
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,6 +482,7 @@ GameObject:
   - 33: {fileID: 140806041}
   - 65: {fileID: 140806040}
   - 23: {fileID: 140806039}
+  - 114: {fileID: 140806043}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -501,6 +541,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 50
+--- !u!114 &140806043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 140806038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &146854390
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,6 +564,7 @@ GameObject:
   - 33: {fileID: 146854393}
   - 65: {fileID: 146854392}
   - 23: {fileID: 146854391}
+  - 114: {fileID: 146854395}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -570,6 +623,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 72
+--- !u!114 &146854395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 146854390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &159860057
 GameObject:
   m_ObjectHideFlags: 0
@@ -650,6 +715,7 @@ GameObject:
   - 33: {fileID: 197444117}
   - 65: {fileID: 197444116}
   - 23: {fileID: 197444115}
+  - 114: {fileID: 197444119}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -708,6 +774,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 82
+--- !u!114 &197444119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 197444114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &198243466
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,6 +848,7 @@ GameObject:
   - 33: {fileID: 201768157}
   - 65: {fileID: 201768156}
   - 23: {fileID: 201768155}
+  - 114: {fileID: 201768159}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -828,6 +907,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 35
+--- !u!114 &201768159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 201768154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &257116438
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,6 +930,7 @@ GameObject:
   - 33: {fileID: 257116441}
   - 65: {fileID: 257116440}
   - 23: {fileID: 257116439}
+  - 54: {fileID: 257116443}
   m_Layer: 0
   m_Name: Brick_O
   m_TagString: Untagged
@@ -898,6 +990,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
+--- !u!54 &257116443
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 257116438}
+  serializedVersion: 2
+  m_Mass: 1000
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!1 &275539243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,6 +1115,7 @@ GameObject:
   - 33: {fileID: 329960708}
   - 65: {fileID: 329960707}
   - 23: {fileID: 329960706}
+  - 114: {fileID: 329960710}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -1066,6 +1174,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 78
+--- !u!114 &329960710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 329960705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &338986503
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,6 +1298,7 @@ GameObject:
   - 33: {fileID: 342794505}
   - 65: {fileID: 342794504}
   - 23: {fileID: 342794503}
+  - 114: {fileID: 342794507}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -1236,6 +1357,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 43
+--- !u!114 &342794507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 342794502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &367757790
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,6 +1449,7 @@ GameObject:
   - 33: {fileID: 371215287}
   - 65: {fileID: 371215286}
   - 23: {fileID: 371215285}
+  - 114: {fileID: 371215289}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -1374,6 +1508,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 98
+--- !u!114 &371215289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 371215284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &390354312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,6 +1531,7 @@ GameObject:
   - 33: {fileID: 390354315}
   - 65: {fileID: 390354314}
   - 23: {fileID: 390354313}
+  - 114: {fileID: 390354317}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -1443,6 +1590,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 26
+--- !u!114 &390354317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 390354312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &395980583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,6 +1613,7 @@ GameObject:
   - 33: {fileID: 395980586}
   - 65: {fileID: 395980585}
   - 23: {fileID: 395980584}
+  - 114: {fileID: 395980588}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -1512,6 +1672,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 77
+--- !u!114 &395980588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 395980583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &410092858
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,6 +1695,7 @@ GameObject:
   - 33: {fileID: 410092861}
   - 65: {fileID: 410092860}
   - 23: {fileID: 410092859}
+  - 114: {fileID: 410092863}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -1581,6 +1754,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 33
+--- !u!114 &410092863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 410092858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &429474264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,6 +1777,7 @@ GameObject:
   - 33: {fileID: 429474267}
   - 65: {fileID: 429474266}
   - 23: {fileID: 429474265}
+  - 114: {fileID: 429474269}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -1650,6 +1836,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 44
+--- !u!114 &429474269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 429474264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &505606069
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,6 +1859,7 @@ GameObject:
   - 33: {fileID: 505606072}
   - 65: {fileID: 505606071}
   - 23: {fileID: 505606070}
+  - 114: {fileID: 505606074}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -1719,6 +1918,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 100
+--- !u!114 &505606074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 505606069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &508148379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,6 +1941,7 @@ GameObject:
   - 33: {fileID: 508148382}
   - 65: {fileID: 508148381}
   - 23: {fileID: 508148380}
+  - 114: {fileID: 508148384}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -1788,6 +2000,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 24
+--- !u!114 &508148384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 508148379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &512696554
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,6 +2023,7 @@ GameObject:
   - 33: {fileID: 512696557}
   - 65: {fileID: 512696556}
   - 23: {fileID: 512696555}
+  - 114: {fileID: 512696559}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -1857,6 +2082,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 75
+--- !u!114 &512696559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 512696554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &514555291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,6 +2105,7 @@ GameObject:
   - 33: {fileID: 514555294}
   - 65: {fileID: 514555293}
   - 23: {fileID: 514555292}
+  - 114: {fileID: 514555296}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -1926,6 +2164,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 65
+--- !u!114 &514555296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 514555291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &545013946
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,6 +2187,7 @@ GameObject:
   - 33: {fileID: 545013949}
   - 65: {fileID: 545013948}
   - 23: {fileID: 545013947}
+  - 114: {fileID: 545013951}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -1995,6 +2246,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 93
+--- !u!114 &545013951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 545013946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &545634405
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,6 +2339,7 @@ GameObject:
   - 33: {fileID: 559482136}
   - 65: {fileID: 559482135}
   - 23: {fileID: 559482134}
+  - 114: {fileID: 559482138}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -2134,6 +2398,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 91
+--- !u!114 &559482138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 559482133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &592329627
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,6 +2421,7 @@ GameObject:
   - 33: {fileID: 592329630}
   - 65: {fileID: 592329629}
   - 23: {fileID: 592329628}
+  - 114: {fileID: 592329632}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -2203,6 +2480,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 56
+--- !u!114 &592329632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 592329627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &595759481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2214,6 +2503,7 @@ GameObject:
   - 33: {fileID: 595759484}
   - 65: {fileID: 595759483}
   - 23: {fileID: 595759482}
+  - 114: {fileID: 595759486}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -2272,6 +2562,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 30
+--- !u!114 &595759486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 595759481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &619632022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2283,6 +2585,7 @@ GameObject:
   - 33: {fileID: 619632025}
   - 65: {fileID: 619632024}
   - 23: {fileID: 619632023}
+  - 114: {fileID: 619632027}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -2341,6 +2644,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 54
+--- !u!114 &619632027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619632022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &624777478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2487,6 +2802,7 @@ GameObject:
   - 33: {fileID: 651083188}
   - 65: {fileID: 651083187}
   - 23: {fileID: 651083186}
+  - 114: {fileID: 651083190}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -2545,6 +2861,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 34
+--- !u!114 &651083190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 651083185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &664436818
 GameObject:
   m_ObjectHideFlags: 0
@@ -2679,8 +3007,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 677352433}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.7907028, y: 3.50849915, z: .0954399109}
-  m_LocalScale: {x: 6, y: 5, z: 9}
+  m_LocalPosition: {x: -36.4535484, y: 3.50849915, z: .0517997742}
+  m_LocalScale: {x: 6, y: 5, z: 10.0125017}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 14
@@ -2695,6 +3023,7 @@ GameObject:
   - 33: {fileID: 697642609}
   - 65: {fileID: 697642608}
   - 23: {fileID: 697642607}
+  - 114: {fileID: 697642611}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -2753,6 +3082,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 74
+--- !u!114 &697642611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 697642606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &699030909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2764,6 +3105,7 @@ GameObject:
   - 33: {fileID: 699030912}
   - 65: {fileID: 699030911}
   - 23: {fileID: 699030910}
+  - 114: {fileID: 699030914}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -2822,6 +3164,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 99
+--- !u!114 &699030914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 699030909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &699547149
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,6 +3257,7 @@ GameObject:
   - 33: {fileID: 716177311}
   - 65: {fileID: 716177310}
   - 23: {fileID: 716177309}
+  - 114: {fileID: 716177313}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -2961,6 +3316,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 23
+--- !u!114 &716177313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 716177308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &746314078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2972,6 +3339,7 @@ GameObject:
   - 33: {fileID: 746314081}
   - 65: {fileID: 746314080}
   - 23: {fileID: 746314079}
+  - 114: {fileID: 746314083}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -3030,6 +3398,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 25
+--- !u!114 &746314083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 746314078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &783861399
 GameObject:
   m_ObjectHideFlags: 0
@@ -3041,6 +3421,7 @@ GameObject:
   - 33: {fileID: 783861402}
   - 65: {fileID: 783861401}
   - 23: {fileID: 783861400}
+  - 114: {fileID: 783861404}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -3099,6 +3480,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 55
+--- !u!114 &783861404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 783861399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &814468508
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,6 +3503,7 @@ GameObject:
   - 33: {fileID: 814468511}
   - 65: {fileID: 814468510}
   - 23: {fileID: 814468509}
+  - 114: {fileID: 814468513}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -3168,6 +3562,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 47
+--- !u!114 &814468513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814468508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &823844066
 GameObject:
   m_ObjectHideFlags: 0
@@ -3179,6 +3585,7 @@ GameObject:
   - 33: {fileID: 823844069}
   - 65: {fileID: 823844068}
   - 23: {fileID: 823844067}
+  - 114: {fileID: 823844071}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -3237,6 +3644,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 97
+--- !u!114 &823844071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 823844066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &827871882
 GameObject:
   m_ObjectHideFlags: 0
@@ -3248,6 +3667,7 @@ GameObject:
   - 33: {fileID: 827871885}
   - 65: {fileID: 827871884}
   - 23: {fileID: 827871883}
+  - 114: {fileID: 827871887}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -3306,6 +3726,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 85
+--- !u!114 &827871887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 827871882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &836335079
 GameObject:
   m_ObjectHideFlags: 0
@@ -3317,6 +3749,7 @@ GameObject:
   - 33: {fileID: 836335082}
   - 65: {fileID: 836335081}
   - 23: {fileID: 836335080}
+  - 114: {fileID: 836335084}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -3375,6 +3808,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 87
+--- !u!114 &836335084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 836335079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &847427214
 GameObject:
   m_ObjectHideFlags: 0
@@ -3386,6 +3831,7 @@ GameObject:
   - 33: {fileID: 847427217}
   - 65: {fileID: 847427216}
   - 23: {fileID: 847427215}
+  - 114: {fileID: 847427219}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -3444,6 +3890,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 71
+--- !u!114 &847427219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 847427214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &867377564
 GameObject:
   m_ObjectHideFlags: 0
@@ -3455,6 +3913,7 @@ GameObject:
   - 33: {fileID: 867377567}
   - 65: {fileID: 867377566}
   - 23: {fileID: 867377565}
+  - 114: {fileID: 867377569}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -3513,6 +3972,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 66
+--- !u!114 &867377569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 867377564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &873051431
 GameObject:
   m_ObjectHideFlags: 0
@@ -3524,6 +3995,7 @@ GameObject:
   - 33: {fileID: 873051434}
   - 65: {fileID: 873051433}
   - 23: {fileID: 873051432}
+  - 114: {fileID: 873051436}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -3582,6 +4054,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 68
+--- !u!114 &873051436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 873051431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &924513346
 GameObject:
   m_ObjectHideFlags: 0
@@ -3652,6 +4136,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!1 &926971854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 926971856}
+  - 114: {fileID: 926971855}
+  m_Layer: 0
+  m_Name: PowerupController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &926971855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 926971854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa96a910f0dd4bada98929cae661677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfPowerups: 6
+  powerupsGenerated: 0
+--- !u!4 &926971856
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 926971854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.31677246, y: 2.16333008, z: 3.7076416}
+  m_LocalScale: {x: 6, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 105
 --- !u!1 &961200443
 GameObject:
   m_ObjectHideFlags: 0
@@ -3663,6 +4188,7 @@ GameObject:
   - 33: {fileID: 961200446}
   - 65: {fileID: 961200445}
   - 23: {fileID: 961200444}
+  - 114: {fileID: 961200448}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -3721,6 +4247,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 37
+--- !u!114 &961200448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 961200443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &996349610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3786,8 +4324,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 996349610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.7907028, y: 3.50849915, z: 9.7233696}
-  m_LocalScale: {x: 6, y: 5, z: 9}
+  m_LocalPosition: {x: -36.4535484, y: 3.50849915, z: 9.97279739}
+  m_LocalScale: {x: 6, y: 5, z: 9.56250191}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -3802,6 +4340,7 @@ GameObject:
   - 33: {fileID: 1063166168}
   - 65: {fileID: 1063166167}
   - 23: {fileID: 1063166166}
+  - 114: {fileID: 1063166170}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -3860,6 +4399,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 62
+--- !u!114 &1063166170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1063166165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1078038968
 GameObject:
   m_ObjectHideFlags: 0
@@ -3871,6 +4422,7 @@ GameObject:
   - 33: {fileID: 1078038971}
   - 65: {fileID: 1078038970}
   - 23: {fileID: 1078038969}
+  - 114: {fileID: 1078038973}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -3929,6 +4481,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 81
+--- !u!114 &1078038973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1078038968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1083377028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3940,6 +4504,7 @@ GameObject:
   - 33: {fileID: 1083377031}
   - 65: {fileID: 1083377030}
   - 23: {fileID: 1083377029}
+  - 114: {fileID: 1083377033}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -3998,6 +4563,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 70
+--- !u!114 &1083377033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1083377028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1104412933
 GameObject:
   m_ObjectHideFlags: 0
@@ -4079,6 +4656,7 @@ GameObject:
   - 33: {fileID: 1122055356}
   - 65: {fileID: 1122055355}
   - 23: {fileID: 1122055354}
+  - 114: {fileID: 1122055358}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -4137,6 +4715,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 86
+--- !u!114 &1122055358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1122055353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1137700776
 GameObject:
   m_ObjectHideFlags: 0
@@ -4233,7 +4823,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1139879670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.2070618, y: 1.61848831, z: 0}
+  m_LocalPosition: {x: -11.2070618, y: 1.61848831, z: 6.91649628}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4318,6 +4908,7 @@ GameObject:
   - 33: {fileID: 1166288411}
   - 65: {fileID: 1166288410}
   - 23: {fileID: 1166288409}
+  - 114: {fileID: 1166288413}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -4376,6 +4967,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 52
+--- !u!114 &1166288413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1166288408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1175774405
 GameObject:
   m_ObjectHideFlags: 0
@@ -4387,6 +4990,7 @@ GameObject:
   - 33: {fileID: 1175774408}
   - 65: {fileID: 1175774407}
   - 23: {fileID: 1175774406}
+  - 114: {fileID: 1175774410}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -4445,6 +5049,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 28
+--- !u!114 &1175774410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1175774405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1178850334
 GameObject:
   m_ObjectHideFlags: 0
@@ -4456,6 +5072,7 @@ GameObject:
   - 33: {fileID: 1178850337}
   - 65: {fileID: 1178850336}
   - 23: {fileID: 1178850335}
+  - 114: {fileID: 1178850339}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -4514,6 +5131,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 60
+--- !u!114 &1178850339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1178850334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1184673960
 GameObject:
   m_ObjectHideFlags: 0
@@ -4525,6 +5154,7 @@ GameObject:
   - 33: {fileID: 1184673963}
   - 65: {fileID: 1184673962}
   - 23: {fileID: 1184673961}
+  - 114: {fileID: 1184673965}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -4583,6 +5213,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 63
+--- !u!114 &1184673965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1184673960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1185462745
 GameObject:
   m_ObjectHideFlags: 0
@@ -4648,8 +5290,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1185462745}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -34.7907028, y: 3.50849915, z: -9.63713455}
-  m_LocalScale: {x: 6, y: 5, z: 9}
+  m_LocalPosition: {x: -36.4535484, y: 3.50849915, z: -9.72027969}
+  m_LocalScale: {x: 6, y: 5, z: 9.33750343}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
@@ -4664,6 +5306,7 @@ GameObject:
   - 33: {fileID: 1202787650}
   - 65: {fileID: 1202787649}
   - 23: {fileID: 1202787648}
+  - 114: {fileID: 1202787652}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -4722,6 +5365,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 94
+--- !u!114 &1202787652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1202787647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1214869176
 GameObject:
   m_ObjectHideFlags: 0
@@ -4733,6 +5388,7 @@ GameObject:
   - 33: {fileID: 1214869179}
   - 65: {fileID: 1214869178}
   - 23: {fileID: 1214869177}
+  - 114: {fileID: 1214869181}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -4791,6 +5447,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 83
+--- !u!114 &1214869181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1214869176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1232874722
 GameObject:
   m_ObjectHideFlags: 0
@@ -4802,6 +5470,7 @@ GameObject:
   - 33: {fileID: 1232874725}
   - 65: {fileID: 1232874724}
   - 23: {fileID: 1232874723}
+  - 114: {fileID: 1232874727}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -4860,6 +5529,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 36
+--- !u!114 &1232874727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1232874722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1267299608
 GameObject:
   m_ObjectHideFlags: 0
@@ -4871,6 +5552,7 @@ GameObject:
   - 33: {fileID: 1267299611}
   - 65: {fileID: 1267299610}
   - 23: {fileID: 1267299609}
+  - 114: {fileID: 1267299613}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -4929,6 +5611,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 45
+--- !u!114 &1267299613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1267299608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1268296115
 GameObject:
   m_ObjectHideFlags: 0
@@ -4940,6 +5634,7 @@ GameObject:
   - 33: {fileID: 1268296118}
   - 65: {fileID: 1268296117}
   - 23: {fileID: 1268296116}
+  - 114: {fileID: 1268296120}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -4998,6 +5693,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 31
+--- !u!114 &1268296120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268296115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1293362337
 GameObject:
   m_ObjectHideFlags: 0
@@ -5009,6 +5716,7 @@ GameObject:
   - 33: {fileID: 1293362340}
   - 65: {fileID: 1293362339}
   - 23: {fileID: 1293362338}
+  - 114: {fileID: 1293362342}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -5067,6 +5775,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 57
+--- !u!114 &1293362342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1293362337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1304519700
 GameObject:
   m_ObjectHideFlags: 0
@@ -5078,6 +5798,7 @@ GameObject:
   - 33: {fileID: 1304519703}
   - 65: {fileID: 1304519702}
   - 23: {fileID: 1304519701}
+  - 54: {fileID: 1304519705}
   m_Layer: 0
   m_Name: Brick_O
   m_TagString: Untagged
@@ -5137,6 +5858,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
+--- !u!54 &1304519705
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1304519700}
+  serializedVersion: 2
+  m_Mass: 1000
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!1 &1319397992
 GameObject:
   m_ObjectHideFlags: 0
@@ -5148,6 +5884,7 @@ GameObject:
   - 33: {fileID: 1319397995}
   - 65: {fileID: 1319397994}
   - 23: {fileID: 1319397993}
+  - 54: {fileID: 1319397997}
   m_Layer: 0
   m_Name: Brick_O
   m_TagString: Untagged
@@ -5207,6 +5944,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
+--- !u!54 &1319397997
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1319397992}
+  serializedVersion: 2
+  m_Mass: 1000
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 2
 --- !u!1 &1333636201
 GameObject:
   m_ObjectHideFlags: 0
@@ -5218,6 +5970,7 @@ GameObject:
   - 33: {fileID: 1333636204}
   - 65: {fileID: 1333636203}
   - 23: {fileID: 1333636202}
+  - 114: {fileID: 1333636206}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -5276,6 +6029,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 49
+--- !u!114 &1333636206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1333636201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1337187963
 GameObject:
   m_ObjectHideFlags: 0
@@ -5287,6 +6052,7 @@ GameObject:
   - 33: {fileID: 1337187966}
   - 65: {fileID: 1337187965}
   - 23: {fileID: 1337187964}
+  - 114: {fileID: 1337187968}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -5345,6 +6111,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 95
+--- !u!114 &1337187968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1337187963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1347159798
 GameObject:
   m_ObjectHideFlags: 0
@@ -5356,6 +6134,7 @@ GameObject:
   - 33: {fileID: 1347159801}
   - 65: {fileID: 1347159800}
   - 23: {fileID: 1347159799}
+  - 114: {fileID: 1347159803}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -5414,6 +6193,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 67
+--- !u!114 &1347159803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1347159798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1358630099
 GameObject:
   m_ObjectHideFlags: 0
@@ -5425,6 +6216,7 @@ GameObject:
   - 33: {fileID: 1358630102}
   - 65: {fileID: 1358630101}
   - 23: {fileID: 1358630100}
+  - 114: {fileID: 1358630104}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -5483,6 +6275,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 69
+--- !u!114 &1358630104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1358630099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1368528000
 GameObject:
   m_ObjectHideFlags: 0
@@ -5564,6 +6368,7 @@ GameObject:
   - 33: {fileID: 1402030960}
   - 65: {fileID: 1402030959}
   - 23: {fileID: 1402030958}
+  - 114: {fileID: 1402030962}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -5622,6 +6427,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 92
+--- !u!114 &1402030962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1402030957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1444323666
 GameObject:
   m_ObjectHideFlags: 0
@@ -5633,6 +6450,7 @@ GameObject:
   - 33: {fileID: 1444323669}
   - 65: {fileID: 1444323668}
   - 23: {fileID: 1444323667}
+  - 114: {fileID: 1444323671}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -5691,6 +6509,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 41
+--- !u!114 &1444323671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1444323666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1481457061
 GameObject:
   m_ObjectHideFlags: 0
@@ -5702,6 +6532,7 @@ GameObject:
   - 33: {fileID: 1481457064}
   - 65: {fileID: 1481457063}
   - 23: {fileID: 1481457062}
+  - 114: {fileID: 1481457066}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -5760,6 +6591,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 58
+--- !u!114 &1481457066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481457061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1499086671
 GameObject:
   m_ObjectHideFlags: 0
@@ -5771,6 +6614,7 @@ GameObject:
   - 33: {fileID: 1499086674}
   - 65: {fileID: 1499086673}
   - 23: {fileID: 1499086672}
+  - 114: {fileID: 1499086676}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -5829,6 +6673,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 80
+--- !u!114 &1499086676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1499086671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1508707930
 GameObject:
   m_ObjectHideFlags: 0
@@ -5840,6 +6696,7 @@ GameObject:
   - 33: {fileID: 1508707933}
   - 65: {fileID: 1508707932}
   - 23: {fileID: 1508707931}
+  - 114: {fileID: 1508707935}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -5898,6 +6755,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 53
+--- !u!114 &1508707935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1508707930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1586439304
 GameObject:
   m_ObjectHideFlags: 0
@@ -5979,6 +6848,7 @@ GameObject:
   - 33: {fileID: 1612980746}
   - 65: {fileID: 1612980745}
   - 23: {fileID: 1612980744}
+  - 114: {fileID: 1612980748}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -6037,6 +6907,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 40
+--- !u!114 &1612980748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1612980743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1658593234
 GameObject:
   m_ObjectHideFlags: 0
@@ -6048,6 +6930,7 @@ GameObject:
   - 33: {fileID: 1658593237}
   - 65: {fileID: 1658593236}
   - 23: {fileID: 1658593235}
+  - 114: {fileID: 1658593239}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -6106,6 +6989,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 88
+--- !u!114 &1658593239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1658593234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1684183154
 GameObject:
   m_ObjectHideFlags: 0
@@ -6117,6 +7012,7 @@ GameObject:
   - 33: {fileID: 1684183157}
   - 65: {fileID: 1684183156}
   - 23: {fileID: 1684183155}
+  - 114: {fileID: 1684183159}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -6175,6 +7071,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 79
+--- !u!114 &1684183159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1684183154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1687701166
 GameObject:
   m_ObjectHideFlags: 0
@@ -6256,6 +7164,7 @@ GameObject:
   - 33: {fileID: 1755332433}
   - 65: {fileID: 1755332432}
   - 23: {fileID: 1755332431}
+  - 114: {fileID: 1755332435}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -6314,6 +7223,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 46
+--- !u!114 &1755332435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755332430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1758072690
 GameObject:
   m_ObjectHideFlags: 0
@@ -6454,6 +7375,7 @@ GameObject:
   - 33: {fileID: 1809503447}
   - 65: {fileID: 1809503446}
   - 23: {fileID: 1809503445}
+  - 114: {fileID: 1809503449}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -6512,6 +7434,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 59
+--- !u!114 &1809503449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1809503444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1812579878
 GameObject:
   m_ObjectHideFlags: 0
@@ -6523,6 +7457,7 @@ GameObject:
   - 33: {fileID: 1812579881}
   - 65: {fileID: 1812579880}
   - 23: {fileID: 1812579879}
+  - 114: {fileID: 1812579883}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -6581,6 +7516,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 27
+--- !u!114 &1812579883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1812579878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1863892762
 GameObject:
   m_ObjectHideFlags: 0
@@ -6592,6 +7539,7 @@ GameObject:
   - 33: {fileID: 1863892765}
   - 65: {fileID: 1863892764}
   - 23: {fileID: 1863892763}
+  - 114: {fileID: 1863892767}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -6650,6 +7598,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 84
+--- !u!114 &1863892767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1863892762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1881912087
 GameObject:
   m_ObjectHideFlags: 0
@@ -6661,6 +7621,7 @@ GameObject:
   - 33: {fileID: 1881912090}
   - 65: {fileID: 1881912089}
   - 23: {fileID: 1881912088}
+  - 114: {fileID: 1881912092}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -6719,6 +7680,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 39
+--- !u!114 &1881912092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881912087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1888102827
 GameObject:
   m_ObjectHideFlags: 0
@@ -6730,6 +7703,7 @@ GameObject:
   - 33: {fileID: 1888102830}
   - 65: {fileID: 1888102829}
   - 23: {fileID: 1888102828}
+  - 114: {fileID: 1888102832}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -6788,6 +7762,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 73
+--- !u!114 &1888102832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1888102827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1908995969
 GameObject:
   m_ObjectHideFlags: 0
@@ -6799,6 +7785,7 @@ GameObject:
   - 33: {fileID: 1908995972}
   - 65: {fileID: 1908995971}
   - 23: {fileID: 1908995970}
+  - 114: {fileID: 1908995974}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -6857,6 +7844,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 90
+--- !u!114 &1908995974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1908995969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1922749607
 GameObject:
   m_ObjectHideFlags: 0
@@ -6923,7 +7922,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1922749607}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.9864216, y: 2.21546483, z: -.161794901}
+  m_LocalPosition: {x: -32.6492653, y: 2.14373851, z: .0351085663}
   m_LocalScale: {x: 1, y: 3, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6968,6 +7967,7 @@ GameObject:
   - 33: {fileID: 1991366103}
   - 65: {fileID: 1991366102}
   - 23: {fileID: 1991366101}
+  - 114: {fileID: 1991366105}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -7026,6 +8026,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 51
+--- !u!114 &1991366105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1991366100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &1993831218
 GameObject:
   m_ObjectHideFlags: 0
@@ -7037,6 +8049,7 @@ GameObject:
   - 33: {fileID: 1993831221}
   - 65: {fileID: 1993831220}
   - 23: {fileID: 1993831219}
+  - 114: {fileID: 1993831223}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -7095,6 +8108,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 38
+--- !u!114 &1993831223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1993831218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &2042151340
 GameObject:
   m_ObjectHideFlags: 0
@@ -7106,6 +8131,7 @@ GameObject:
   - 33: {fileID: 2042151343}
   - 65: {fileID: 2042151342}
   - 23: {fileID: 2042151341}
+  - 114: {fileID: 2042151345}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -7164,6 +8190,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 96
+--- !u!114 &2042151345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2042151340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &2052586559
 GameObject:
   m_ObjectHideFlags: 0
@@ -7175,6 +8213,7 @@ GameObject:
   - 33: {fileID: 2052586562}
   - 65: {fileID: 2052586561}
   - 23: {fileID: 2052586560}
+  - 114: {fileID: 2052586564}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -7233,6 +8272,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 32
+--- !u!114 &2052586564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2052586559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &2089195699
 GameObject:
   m_ObjectHideFlags: 0
@@ -7244,6 +8295,7 @@ GameObject:
   - 33: {fileID: 2089195702}
   - 65: {fileID: 2089195701}
   - 23: {fileID: 2089195700}
+  - 114: {fileID: 2089195704}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -7302,6 +8354,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 61
+--- !u!114 &2089195704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2089195699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &2090977360
 GameObject:
   m_ObjectHideFlags: 0
@@ -7313,6 +8377,7 @@ GameObject:
   - 33: {fileID: 2090977363}
   - 65: {fileID: 2090977362}
   - 23: {fileID: 2090977361}
+  - 114: {fileID: 2090977365}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -7371,6 +8436,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 76
+--- !u!114 &2090977365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2090977360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &2104896697
 GameObject:
   m_ObjectHideFlags: 0
@@ -7382,6 +8459,7 @@ GameObject:
   - 33: {fileID: 2104896700}
   - 65: {fileID: 2104896699}
   - 23: {fileID: 2104896698}
+  - 114: {fileID: 2104896702}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -7440,6 +8518,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 42
+--- !u!114 &2104896702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2104896697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
 --- !u!1 &2109726238
 GameObject:
   m_ObjectHideFlags: 0
@@ -7521,6 +8611,7 @@ GameObject:
   - 33: {fileID: 2140817246}
   - 65: {fileID: 2140817245}
   - 23: {fileID: 2140817244}
+  - 114: {fileID: 2140817248}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -7579,3 +8670,15 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 29
+--- !u!114 &2140817248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2140817243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canDropPowerup: 0
