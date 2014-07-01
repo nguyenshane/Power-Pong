@@ -4163,7 +4163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa96a910f0dd4bada98929cae661677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfPowerups: 6
+  numberOfPowerups: 8
   powerupsGenerated: 0
 --- !u!4 &926971856
 Transform:

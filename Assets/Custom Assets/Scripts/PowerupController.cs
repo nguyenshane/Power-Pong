@@ -6,7 +6,6 @@ public class PowerupController : MonoBehaviour {
 
 	public int numberOfPowerups;
 	public int powerupsGenerated;
-
 	// Use this for initialization
 	void Start () {
 	
