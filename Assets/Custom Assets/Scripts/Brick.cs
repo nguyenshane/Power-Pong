@@ -15,7 +15,7 @@ public class Brick : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		GameObject PowerupCtrl = GameObject.Find ("PowerupController");
+		PowerupCtrl = GameObject.Find("PowerupController");
 		PowerupController pwrCtrl = PowerupCtrl.GetComponent <PowerupController> ();
 
 		gen = Random.Range(1,24);
@@ -47,10 +47,7 @@ public class Brick : MonoBehaviour {
 				vel = vel / vel.magnitude * powerUpSpeed;
 				newPowerUp.rigidbody.AddForce(vel, ForceMode.Impulse);
 			} 
-			//DONT DROP POWERUP
-			
-		}
-		
+		}	
 	}
 	
 	

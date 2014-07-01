@@ -87,6 +87,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 0}
   otherScore: {fileID: 0}
+  paddle: {fileID: 0}
   initialImpulse: {x: -60, y: 0, z: 0}
   ball: 0
 --- !u!135 &13500000
