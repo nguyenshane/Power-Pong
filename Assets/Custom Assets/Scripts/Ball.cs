@@ -11,6 +11,7 @@ public class Ball : MonoBehaviour {
 
 	public GameObject score;
 	public GameObject otherScore;
+	public GameObject paddle;
 
 	public Vector3 initialImpulse;
 	public eBall ball;

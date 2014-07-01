@@ -255,6 +255,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &49752407
 GameObject:
@@ -337,6 +339,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &54168568
 GameObject:
@@ -470,6 +474,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &127867122
 GameObject:
@@ -603,6 +609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &146854390
 GameObject:
@@ -685,6 +693,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &159860057
 GameObject:
@@ -836,6 +846,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &198243466
 GameObject:
@@ -969,6 +981,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &257116438
 GameObject:
@@ -1236,6 +1250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &338986503
 GameObject:
@@ -1336,6 +1352,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 1775360107}
   otherScore: {fileID: 638515120}
+  paddle: {fileID: 19701274}
   initialImpulse: {x: 12, y: 0, z: 11}
   ball: 1
 --- !u!1 &342794502
@@ -1419,6 +1436,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &367757790
 GameObject:
@@ -1570,6 +1589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &390354312
 GameObject:
@@ -1652,6 +1673,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &395980583
 GameObject:
@@ -1734,6 +1757,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &410092858
 GameObject:
@@ -1816,6 +1841,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &429474264
 GameObject:
@@ -1898,6 +1925,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &505606069
 GameObject:
@@ -1980,6 +2009,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &508148379
 GameObject:
@@ -2062,6 +2093,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &512696554
 GameObject:
@@ -2144,6 +2177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &514555291
 GameObject:
@@ -2226,6 +2261,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &545013946
 GameObject:
@@ -2308,6 +2345,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &545634405
 GameObject:
@@ -2460,6 +2499,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &592329627
 GameObject:
@@ -2542,6 +2583,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &595759481
 GameObject:
@@ -2624,6 +2667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &619632022
 GameObject:
@@ -2706,6 +2751,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &624777478
 GameObject:
@@ -2927,6 +2974,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &664436818
 GameObject:
@@ -3148,6 +3197,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &699030909
 GameObject:
@@ -3230,6 +3281,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &699471875
 GameObject:
@@ -3433,6 +3486,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &746314078
 GameObject:
@@ -3515,6 +3570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &783861399
 GameObject:
@@ -3597,6 +3654,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &814468508
 GameObject:
@@ -3679,6 +3738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &823844066
 GameObject:
@@ -3761,6 +3822,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &827871882
 GameObject:
@@ -3843,6 +3906,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &836335079
 GameObject:
@@ -3925,6 +3990,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &847427214
 GameObject:
@@ -4007,6 +4074,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &867377564
 GameObject:
@@ -4089,6 +4158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &873051431
 GameObject:
@@ -4171,6 +4242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &924513346
 GameObject:
@@ -4364,6 +4437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &996349610
 GameObject:
@@ -4567,6 +4642,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1078038968
 GameObject:
@@ -4649,6 +4726,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1083377028
 GameObject:
@@ -4731,6 +4810,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1104412933
 GameObject:
@@ -4883,6 +4964,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1136086036
 GameObject:
@@ -5049,6 +5132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 638515120}
   otherScore: {fileID: 1775360107}
+  paddle: {fileID: 1922749607}
   initialImpulse: {x: -12, y: 0, z: -11}
   ball: 0
 --- !u!54 &1139879673
@@ -5186,6 +5270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1175774405
 GameObject:
@@ -5268,6 +5354,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1178850334
 GameObject:
@@ -5350,6 +5438,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1184673960
 GameObject:
@@ -5432,6 +5522,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1185462745
 GameObject:
@@ -5584,6 +5676,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1214869176
 GameObject:
@@ -5666,6 +5760,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1232874722
 GameObject:
@@ -5748,6 +5844,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1267299608
 GameObject:
@@ -5830,6 +5928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1268296115
 GameObject:
@@ -5912,6 +6012,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1293362337
 GameObject:
@@ -5994,6 +6096,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1304519700
 GameObject:
@@ -6248,6 +6352,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1337187963
 GameObject:
@@ -6330,6 +6436,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1347159798
 GameObject:
@@ -6412,6 +6520,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1358630099
 GameObject:
@@ -6494,6 +6604,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1368528000
 GameObject:
@@ -6646,6 +6758,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1444323666
 GameObject:
@@ -6728,6 +6842,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1481457061
 GameObject:
@@ -6810,6 +6926,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1499086671
 GameObject:
@@ -6892,6 +7010,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1508707930
 GameObject:
@@ -6974,6 +7094,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1586439304
 GameObject:
@@ -7126,6 +7248,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1658593234
 GameObject:
@@ -7208,6 +7332,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1684183154
 GameObject:
@@ -7290,6 +7416,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1687701166
 GameObject:
@@ -7442,6 +7570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1758072690
 GameObject:
@@ -7657,6 +7787,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1812579878
 GameObject:
@@ -7739,6 +7871,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1863892762
 GameObject:
@@ -7821,6 +7955,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1881912087
 GameObject:
@@ -7903,6 +8039,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1888102827
 GameObject:
@@ -7985,6 +8123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1908995969
 GameObject:
@@ -8067,6 +8207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1922749607
 GameObject:
@@ -8249,6 +8391,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &1993831218
 GameObject:
@@ -8331,6 +8475,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &2042151340
 GameObject:
@@ -8413,6 +8559,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &2052586559
 GameObject:
@@ -8495,6 +8643,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &2089195699
 GameObject:
@@ -8577,6 +8727,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &2090977360
 GameObject:
@@ -8659,6 +8811,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &2104896697
 GameObject:
@@ -8741,6 +8895,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
 --- !u!1 &2109726238
 GameObject:
@@ -8893,4 +9049,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
+  PowerupCtrl: {fileID: 926971854}
   canDropPowerup: 0
