@@ -20,7 +20,7 @@ public class Ball : MonoBehaviour {
 	int normalBrickScore = 1;
 	int goalBrickScore = 3;
 	float goalPointPercentage = 0.20f;
-	float maxSpeed = 20f;
+	float maxSpeed = 75f;
 	float minSpeed = 6f;
 	float friction = 0.5f;
 
