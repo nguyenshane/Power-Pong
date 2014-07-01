@@ -1,14 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PowerupController : MonoBehaviour {
+public class PowerUp : MonoBehaviour {
 
-	public int numberOfPowerups;
-	public int powerupsGenerated;
+	public int type;
 
 	// Use this for initialization
 	void Start () {
-	
+		type = 0;
 	}
 	
 	// Update is called once per frame
