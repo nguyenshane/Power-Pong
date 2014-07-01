@@ -14,4 +14,11 @@ public class PowerUp : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	void OnCollisionEnter(Collision Collection) {
+		if (Collection.gameObject.name == "Player Left" || Collection.gameObject.name == "Player Right") {
+			//add powerup effects here
+			Destroy(gameObject);
+		}
+	}
 }
