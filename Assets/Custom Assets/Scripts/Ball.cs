@@ -11,6 +11,7 @@ public class Ball : MonoBehaviour {
 
 	public GameObject score;
 	public GameObject otherScore;
+
 	public GameObject paddle;
 
 	public Vector3 initialImpulse;
@@ -25,6 +26,7 @@ public class Ball : MonoBehaviour {
 	float maxSpeed = 30f;
 	float minSpeed = 12f;
 	float friction = 0.6f;
+
 
 	// Use this for initialization
 	void Start () {
