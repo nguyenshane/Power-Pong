@@ -20,9 +20,9 @@ public class Ball : MonoBehaviour {
 	int normalBrickScore = 1;
 	int goalBrickScore = 3;
 	float goalPointPercentage = 0.20f;
-	float maxSpeed = 20f;
-	float minSpeed = 6f;
-	float friction = 0.5f;
+	float maxSpeed = 30f;
+	float minSpeed = 10f;
+	float friction = 0.75f;
 
 	// Use this for initialization
 	void Start () {
@@ -42,50 +42,54 @@ public class Ball : MonoBehaviour {
 	void OnCollisionEnter(Collision Collection)
 	{
 		if (ball == eBall.Left) {
-			if(Collection.gameObject.name == "Brick")
-			{
+			if(Collection.gameObject.name == "Brick") {
 				Destroy(Collection.gameObject);
 				rigidbody.AddForce(leftImpulse, ForceMode.Impulse);
 				score.GetComponent<Scores>().AddScore(normalBrickScore);
 			} else if (Collection.gameObject.name == "Brick_O") {
 				Destroy(Collection.gameObject);
 				score.GetComponent<Scores>().AddScore(goalBrickScore);
-			}
-			else if (Collection.gameObject.name == "Player Left") {
+			} else if (Collection.gameObject.name == "Player Left") {
 				rigidbody.AddForce(rightImpulse, ForceMode.Impulse);
 				rigidbody.AddForce(new Vector3(0, 0, friction*Collection.gameObject.GetComponent<Player>().inputSpeed * 
 				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
 			} else if (Collection.gameObject.name == "Player Right") {
 				rigidbody.AddForce(new Vector3(0, 0, friction*Collection.gameObject.GetComponent<Player>().inputSpeed * 
 				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
-			}
-			else if (Collection.gameObject.name == "Orange_Goal") {
+			} else if (Collection.gameObject.name == "Orange_Goal") {
 				int points = (int)(otherScore.GetComponent<Scores>().score * goalPointPercentage);
 				score.GetComponent<Scores>().AddScore(points);
 				otherScore.GetComponent<Scores>().AddScore(-1*points);
+				otherScore.GetComponent<Scores>().RemoveLife();
+			} else if (Collection.gameObject.name == "Green_Goal") {
+				int points = (int)(score.GetComponent<Scores>().score * goalPointPercentage);
+				score.GetComponent<Scores>().AddScore(-1*points);
+				score.GetComponent<Scores>().RemoveLife();
 			}
 		} else if (ball == eBall.Right) {
-			if(Collection.gameObject.name == "Brick")
-			{
+			if(Collection.gameObject.name == "Brick") {
 				Destroy(Collection.gameObject);
 				rigidbody.AddForce(rightImpulse, ForceMode.Impulse);
 				score.GetComponent<Scores>().AddScore(normalBrickScore);
 			} else if (Collection.gameObject.name == "Brick_G") {
 				Destroy(Collection.gameObject);
 				score.GetComponent<Scores>().AddScore(goalBrickScore);
-			}
-			else if (Collection.gameObject.name == "Player Right") {
+			} else if (Collection.gameObject.name == "Player Right") {
 				rigidbody.AddForce(leftImpulse, ForceMode.Impulse);
 				rigidbody.AddForce(new Vector3(0, 0, friction*Collection.gameObject.GetComponent<Player>().inputSpeed * 
 				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
 			} else if (Collection.gameObject.name == "Player Left") {
 				rigidbody.AddForce(new Vector3(0, 0, friction*Collection.gameObject.GetComponent<Player>().inputSpeed * 
 				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
-			}
-			else if (Collection.gameObject.name == "Green_Goal") {
+			} else if (Collection.gameObject.name == "Green_Goal") {
 				int points = (int)(otherScore.GetComponent<Scores>().score * goalPointPercentage);
 				score.GetComponent<Scores>().AddScore(points);
 				otherScore.GetComponent<Scores>().AddScore(-1*points);
+				otherScore.GetComponent<Scores>().RemoveLife();
+			} else if (Collection.gameObject.name == "Orange_Goal") {
+				int points = (int)(score.GetComponent<Scores>().score * goalPointPercentage);
+				score.GetComponent<Scores>().AddScore(-1*points);
+				score.GetComponent<Scores>().RemoveLife();
 			}
 		}
 

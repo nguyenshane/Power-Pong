@@ -3,13 +3,16 @@ using System.Collections;
 
 public class Scores : MonoBehaviour {
 
-	public GameObject number;
+	public GameObject scoreNumber;
+	public GameObject livesNumber;
 
 	public int score;
+	public int lives;
 
 	// Use this for initialization
 	void Start () {
 		score = 0;
+		lives = 5;
 	}
 	
 	// Update is called once per frame
@@ -19,11 +22,20 @@ public class Scores : MonoBehaviour {
 
 	public void SetScore (int newScore) {
 		score = newScore;
-		number.guiText.text = score.ToString();
+		scoreNumber.guiText.text = score.ToString();
 	}
 
 	public void AddScore (int newScore) {
 		score += newScore;
-		number.guiText.text = score.ToString();
+		scoreNumber.guiText.text = score.ToString();
+	}
+
+	public void RemoveLife() {
+		lives--;
+		livesNumber.guiText.text = lives.ToString();
+		
+		if (lives <= 0) {
+			//Continue to the next level
+		}
 	}
 }
