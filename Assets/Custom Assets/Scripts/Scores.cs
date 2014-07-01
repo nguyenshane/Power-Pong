@@ -35,7 +35,7 @@ public class Scores : MonoBehaviour {
 		livesNumber.guiText.text = lives.ToString();
 		
 		if (lives <= 0) {
-			//Continue to the next level
+			Application.LoadLevel("lEVEL2");
 		}
 	}
 }
