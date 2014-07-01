@@ -82,7 +82,7 @@ public class Ball : MonoBehaviour {
 				rigidbody.AddForce(new Vector3(0, 0, friction*Collection.gameObject.GetComponent<Player>().inputSpeed * 
 				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
 			}
-			else if (Collection.gameObject.name == "Gtreen_Goal") {
+			else if (Collection.gameObject.name == "Green_Goal") {
 				int points = (int)(otherScore.GetComponent<Scores>().score * goalPointPercentage);
 				score.GetComponent<Scores>().AddScore(points);
 				otherScore.GetComponent<Scores>().AddScore(-1*points);
