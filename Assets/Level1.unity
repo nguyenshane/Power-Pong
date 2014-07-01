@@ -1336,7 +1336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 1775360107}
   otherScore: {fileID: 638515120}
-  initialImpulse: {x: 15, y: 0, z: 8}
+  initialImpulse: {x: 12, y: 0, z: 11}
   ball: 1
 --- !u!1 &342794502
 GameObject:
@@ -5049,7 +5049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: {fileID: 638515120}
   otherScore: {fileID: 1775360107}
-  initialImpulse: {x: -15, y: 0, z: -8}
+  initialImpulse: {x: -12, y: 0, z: -11}
   ball: 0
 --- !u!54 &1139879673
 Rigidbody:
