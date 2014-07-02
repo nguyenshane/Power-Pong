@@ -1572,6 +1572,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 32
   inputSpeed: 0
+  maxSize: 10
+  minSize: 4
   player: 1
 --- !u!23 &348422362
 Renderer:
@@ -1620,7 +1622,7 @@ Transform:
   m_GameObject: {fileID: 348422360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 108.156456, y: 5.05418205, z: 2.20838547}
-  m_LocalScale: {x: 3.10505819, y: 6.5461154, z: 14}
+  m_LocalScale: {x: 3, y: 6.5, z: 14}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
@@ -1688,7 +1690,11 @@ MonoBehaviour:
   score: {fileID: 602022754}
   otherScore: {fileID: 2020808582}
   paddle: {fileID: 348422360}
-  initialImpulse: {x: 20, y: 0, z: 0}
+  initialImpulse: {x: 24, y: 0, z: 0}
+  dropLocation: {x: 20, y: 80, z: 0}
+  dropSpeed: -16
+  maxSpeed: 60
+  minSpeed: 24
   ball: 0
 --- !u!23 &349129718
 Renderer:
@@ -2858,6 +2864,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 35
   inputSpeed: 0
+  maxSize: 10
+  minSize: 4
   player: 0
 --- !u!23 &575737536
 Renderer:
@@ -2906,7 +2914,7 @@ Transform:
   m_GameObject: {fileID: 575737533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -106.45401, y: 4.71555901, z: 2.20838547}
-  m_LocalScale: {x: 3.10505819, y: 6.5461154, z: 14}
+  m_LocalScale: {x: 3, y: 6.5, z: 14}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
@@ -6753,7 +6761,11 @@ MonoBehaviour:
   score: {fileID: 2020808582}
   otherScore: {fileID: 602022754}
   paddle: {fileID: 575737533}
-  initialImpulse: {x: -20, y: 0, z: 0}
+  initialImpulse: {x: -24, y: 0, z: 0}
+  dropLocation: {x: -20, y: 80, z: 0}
+  dropSpeed: -16
+  maxSpeed: 60
+  minSpeed: 24
   ball: 0
 --- !u!23 &1597888709
 Renderer:
@@ -6801,7 +6813,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1597888707}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.1333504, y: 3, z: 0}
+  m_LocalPosition: {x: -20, y: 3, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}

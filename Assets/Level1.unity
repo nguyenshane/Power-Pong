@@ -107,6 +107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 32
   inputSpeed: 0
+  maxSize: 5
+  minSize: 1
   player: 1
 --- !u!23 &19701276
 Renderer:
@@ -1357,6 +1359,10 @@ MonoBehaviour:
   otherScore: {fileID: 638515120}
   paddle: {fileID: 19701274}
   initialImpulse: {x: 12, y: 0, z: 11}
+  dropLocation: {x: 12, y: 60, z: 0}
+  dropSpeed: -16
+  maxSpeed: 60
+  minSpeed: 12
   ball: 1
 --- !u!1 &342794502
 GameObject:
@@ -5144,6 +5150,10 @@ MonoBehaviour:
   otherScore: {fileID: 1775360107}
   paddle: {fileID: 1922749607}
   initialImpulse: {x: -12, y: 0, z: -11}
+  dropLocation: {x: -12, y: 60, z: 0}
+  dropSpeed: -16
+  maxSpeed: 60
+  minSpeed: 12
   ball: 0
 --- !u!54 &1139879673
 Rigidbody:
@@ -8393,6 +8403,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 32
   inputSpeed: 0
+  maxSize: 5
+  minSize: 1
   player: 0
 --- !u!54 &1922749613
 Rigidbody:

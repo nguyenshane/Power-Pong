@@ -12,11 +12,12 @@ public class PowerUp : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		type = 0;
+		target = null;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (rigidbody.velocity.magnitude < minSpeed) {
+		if (rigidbody.velocity.magnitude < minSpeed && target != null) {
 			Vector3 vel = target.transform.position - transform.position;
 			vel = vel / vel.magnitude * accelSpeed * Time.deltaTime;
 			rigidbody.AddForce (vel, ForceMode.Impulse);
@@ -27,16 +28,20 @@ public class PowerUp : MonoBehaviour {
 		if (Collection.gameObject.name == "Player Left" || Collection.gameObject.name == "Player Right") {
 			switch (type) {
 			case 0:
-				break; //add powerup effects here
+				Collection.gameObject.GetComponent<Player>().increaseSize(0.5f);
+				break;
 				
 			case 1:
-				break; //add powerup effects here
+				Collection.gameObject.GetComponent<Player>().increaseSize(1.0f);
+				break;
 				
 			case 2:
-				break; //add powerup effects here
+				Collection.gameObject.GetComponent<Player>().increaseSize(-0.5f);
+				break;
 				
 			case 3:
-				break; //add powerup effects here
+				Collection.gameObject.GetComponent<Player>().increaseSize(-1.0f);
+				break;
 			}
 			
 			Destroy(gameObject);
