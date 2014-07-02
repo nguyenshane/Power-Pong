@@ -20,11 +20,7 @@ public class Ball : MonoBehaviour {
 	public float maxSpeed;
 	public float minSpeed;
 	public eBall ball;
-<<<<<<< HEAD
-	public float ballheight;
-=======
-
->>>>>>> FETCH_HEAD
+	
 	Vector3 leftImpulse = new Vector3(-2,0,0);
 	Vector3 rightImpulse = new Vector3(2,0,0);
 	int normalBrickScore = 1;
@@ -40,13 +36,8 @@ public class Ball : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-<<<<<<< HEAD
-		if (rigidbody.position.y < ballheight) {
-			rigidbody.MovePosition(new Vector3(rigidbody.position.x, ballheight, rigidbody.position.z));
-=======
 		if (rigidbody.position.y < height) {
 			rigidbody.MovePosition(new Vector3(rigidbody.position.x, height, rigidbody.position.z));
->>>>>>> FETCH_HEAD
 			//rigidbody.AddForce(new Vector3(0, -rigidbody.velocity.y, 0), ForceMode.Impulse);
 			rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
 			collider.isTrigger = false;
