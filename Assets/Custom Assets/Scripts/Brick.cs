@@ -20,13 +20,10 @@ public class Brick : MonoBehaviour {
 
 		gen = Random.Range(1,24);
 		gen2 = (gen/6)%1;
-	
-		//Debug.Log(gen2);
 
 		if (gen2 == 0 && pwrCtrl.powerupsGenerated < pwrCtrl.numberOfPowerups) {
 			canDropPowerup = true;
 			pwrCtrl.powerupsGenerated +=1;
-			Debug.Log(pwrCtrl.powerupsGenerated);
 		} else {
 			canDropPowerup = false;
 		}
@@ -40,10 +37,10 @@ public class Brick : MonoBehaviour {
 	void OnCollisionEnter(Collision Collection) {
 		if(Collection.gameObject.name == "BallG" || Collection.gameObject.name == "BallO") {
 			if (canDropPowerup) {
-				//DROP POWERUP HERE
 				PowerUp newPowerUp = ((Transform)Instantiate(PowerUpPrefab, transform.position, Quaternion.identity)).gameObject.GetComponent<PowerUp>();
 				newPowerUp.type = Random.Range(0, 3);
-				Vector3 vel = Collection.gameObject.GetComponent<Ball>().paddle.GetComponent<Player>().transform.position - transform.position;
+				newPowerUp.target = Collection.gameObject.GetComponent<Ball>().paddle.GetComponent<Player>();
+				Vector3 vel = newPowerUp.target.transform.position - transform.position;
 				vel = vel / vel.magnitude * powerUpSpeed;
 				newPowerUp.rigidbody.AddForce(vel, ForceMode.Impulse);
 			} 
