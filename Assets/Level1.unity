@@ -107,8 +107,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 32
   inputSpeed: 0
-  maxSize: 5
-  minSize: 1
+  maxSize: 16
+  minSize: 4
   player: 1
 --- !u!23 &19701276
 Renderer:
@@ -8403,8 +8403,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 32
   inputSpeed: 0
-  maxSize: 5
-  minSize: 1
+  maxSize: 16
+  minSize: 4
   player: 0
 --- !u!54 &1922749613
 Rigidbody:

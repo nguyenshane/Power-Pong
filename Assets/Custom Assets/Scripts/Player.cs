@@ -14,12 +14,10 @@ public class Player : MonoBehaviour {
 	public float maxSize;
 	public float minSize;
 	public ePlayer player;
-
-	float currentSize;
 	
 
 	void Start() {
-		currentSize = 3.0f;
+
 	}
 
 	// Update is called once per frame
@@ -34,8 +32,8 @@ public class Player : MonoBehaviour {
 	}
 
 	public void increaseSize(float size) {
-		if (currentSize + size > maxSize) transform.localScale = new Vector3(transform.localScale.x, maxSize, transform.localScale.z);
-		else if (currentSize + size < minSize) transform.localScale = new Vector3(transform.localScale.x, minSize, transform.localScale.z);
-		else transform.localScale += new Vector3(0, size, 0);
+		if (transform.localScale.z + size > maxSize) transform.localScale = new Vector3(transform.localScale.x, transform.localScale.z, maxSize);
+		else if (transform.localScale.z + size < minSize) transform.localScale = new Vector3(transform.localScale.x, transform.localScale.z, minSize);
+		else transform.localScale += new Vector3(0, 0, size);
 	}
 }

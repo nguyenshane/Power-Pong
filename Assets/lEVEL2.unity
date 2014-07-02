@@ -1572,8 +1572,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 32
   inputSpeed: 0
-  maxSize: 10
-  minSize: 4
+  maxSize: 28
+  minSize: 8
   player: 1
 --- !u!23 &348422362
 Renderer:
@@ -2862,10 +2862,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72445e3f31ea04ce3b07ad1f2f925fb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 35
+  speed: 32
   inputSpeed: 0
-  maxSize: 10
-  minSize: 4
+  maxSize: 28
+  minSize: 8
   player: 0
 --- !u!23 &575737536
 Renderer:
