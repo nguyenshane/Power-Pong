@@ -9,8 +9,9 @@ var speed : float = 1.0; //how fast the object should rotate
 
  function Update(){
  if (activate){
+ 	  collider.isTrigger = true;
       transform.Rotate(Vector3(-Input.GetAxis("Mouse Y"),Input.GetAxis("Mouse X"), 0)  * speed);
-      Debug.Log("x= " + transform.localRotation.y + " y= "+ transform.localRotation.x);
+      //Debug.Log("x= " + transform.localRotation.y + " y= "+ transform.localRotation.x);
       var y = transform.localRotation.x;
       var x = transform.localRotation.y;
       transform.localRotation.z = 0;
@@ -25,9 +26,7 @@ var speed : float = 1.0; //how fast the object should rotate
 			Debug.Log("Pressed Audio Low");
 			
 	 	}else if(x<0.045 && x>-0.065 && y>0.716){
-	 		// Audio Medium
-	 		//var linkToScript = GameObject.Find("Camera").GetComponent(Menu_Camera);
-	 		//linkToScript.ToOptions();
+			// Audio Medium
 			Debug.Log("Pressed Audio Medium");
 		}else if(x<-0.013 && y>0.716){
       		// Audio High
@@ -38,9 +37,20 @@ var speed : float = 1.0; //how fast the object should rotate
 		}else if(x<0.05 && x>-0.055 && y<0.716 && y>0.698){
       		// Brightness Medium
 			Debug.Log("Pressed Brightness Medium");
-		}else if(y>0.19 && y<0.3){
-			Debug.Log("Pressed Credits");
+		}else if(x<-0.11 && y>0.675 && y<0.7){
+      		// Brightness High
+			Debug.Log("Pressed Brightness Bright");
+		}else if(x<0.08 && x>-0.09 && y<0.675){
+			// Back
+			Debug.Log("Pressed Back");
+	 		var linkToScript = GameObject.Find("Camera").GetComponent(Menu_Camera);
+	 		linkToScript.ToMain();
+	 		var linkToScript2 = GameObject.Find("Main Menu Light").GetComponent(Menu_Light);
+	 		linkToScript2.activate = true;
+	 		activate = false;
+			
 		} else Debug.Log("Outside options");
 	}
   }
+  else collider.isTrigger = false;
 }
