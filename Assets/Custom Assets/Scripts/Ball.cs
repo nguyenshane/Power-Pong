@@ -41,7 +41,8 @@ public class Ball : MonoBehaviour {
 			//rigidbody.AddForce(new Vector3(0, -rigidbody.velocity.y, 0), ForceMode.Impulse);
 			rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
 			collider.isTrigger = false;
-			rigidbody.AddForce(initialImpulse, ForceMode.Impulse);
+			score.GetComponent<Scores>().increaseMultiplier();
+			rigidbody.AddForce(initialImpulse * score.GetComponent<Scores>().getMultiplier(), ForceMode.Impulse);
 		}
 
 		if (rigidbody.velocity.magnitude < minSpeed) {
@@ -75,13 +76,13 @@ public class Ball : MonoBehaviour {
 				rigidbody.AddForce(new Vector3(0, 0, friction * Collection.gameObject.GetComponent<Player>().inputSpeed * 
 				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
 			} else if (Collection.gameObject.name == "Orange_Goal") {
-				int points = (int)(otherScore.GetComponent<Scores>().score * goalPointPercentage);
+				int points = (int)(otherScore.GetComponent<Scores>().getScore () * goalPointPercentage);
 				score.GetComponent<Scores>().AddScore(points);
 				otherScore.GetComponent<Scores>().AddScore(-1*points);
 				otherScore.GetComponent<Scores>().RemoveLife();
 				dropBall(dropLocation);
 			} else if (Collection.gameObject.name == "Green_Goal") {
-				int points = (int)(score.GetComponent<Scores>().score * goalPointPercentage);
+				int points = (int)(score.GetComponent<Scores>().getScore () * goalPointPercentage);
 				score.GetComponent<Scores>().AddScore(-1*points);
 				score.GetComponent<Scores>().RemoveLife();
 				dropBall(dropLocation);
@@ -104,13 +105,13 @@ public class Ball : MonoBehaviour {
 				rigidbody.AddForce(new Vector3(0, 0, friction*Collection.gameObject.GetComponent<Player>().inputSpeed * 
 				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
 			} else if (Collection.gameObject.name == "Green_Goal") {
-				int points = (int)(otherScore.GetComponent<Scores>().score * goalPointPercentage);
+				int points = (int)(otherScore.GetComponent<Scores>().getScore() * goalPointPercentage);
 				score.GetComponent<Scores>().AddScore(points);
 				otherScore.GetComponent<Scores>().AddScore(-1*points);
 				otherScore.GetComponent<Scores>().RemoveLife();
 				dropBall(dropLocation);
 			} else if (Collection.gameObject.name == "Orange_Goal") {
-				int points = (int)(score.GetComponent<Scores>().score * goalPointPercentage);
+				int points = (int)(score.GetComponent<Scores>().getScore() * goalPointPercentage);
 				score.GetComponent<Scores>().AddScore(-1*points);
 				score.GetComponent<Scores>().RemoveLife();
 				dropBall(dropLocation);

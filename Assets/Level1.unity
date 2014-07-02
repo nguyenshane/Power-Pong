@@ -1362,7 +1362,7 @@ MonoBehaviour:
   dropLocation: {x: 12, y: 60, z: 0}
   height: 1.64999998
   dropSpeed: -16
-  maxSpeed: 60
+  maxSpeed: 48
   minSpeed: 12
   ball: 1
 --- !u!1 &342794502
@@ -2903,8 +2903,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreNumber: {fileID: 127867122}
   livesNumber: {fileID: 699471875}
-  score: 0
-  lives: 0
+  goalSpeedMultiplier: .100000001
+  maxLives: 5
 --- !u!1 &651083185
 GameObject:
   m_ObjectHideFlags: 0
@@ -5154,7 +5154,7 @@ MonoBehaviour:
   dropLocation: {x: -12, y: 60, z: 0}
   height: 1.64999998
   dropSpeed: -16
-  maxSpeed: 60
+  maxSpeed: 48
   minSpeed: 12
   ball: 0
 --- !u!54 &1139879673
@@ -6504,6 +6504,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: goalSpeedMultiplier
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: maxLives
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
   m_RootGameObject: {fileID: 638515120}
@@ -7815,8 +7823,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreNumber: {fileID: 198243466}
   livesNumber: {fileID: 54168568}
-  score: 0
-  lives: 0
+  goalSpeedMultiplier: .100000001
+  maxLives: 5
 --- !u!1 &1809503444
 GameObject:
   m_ObjectHideFlags: 0
