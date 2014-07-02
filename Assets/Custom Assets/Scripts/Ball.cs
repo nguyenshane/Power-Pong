@@ -23,7 +23,7 @@ public class Ball : MonoBehaviour {
 	float goalPointPercentage = 0.20f;
 	float dropSpeed = -16f;
 	float dropDistance = 48f;
-	float maxSpeed = 30f;
+	float maxSpeed = 75f;
 	float minSpeed = 12f;
 	float friction = 0.6f;
 
