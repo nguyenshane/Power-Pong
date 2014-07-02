@@ -5,8 +5,10 @@ function Start () {
 }
 
 var speed : float = 4.0; //how fast the object should rotate
+var activate = true;
 
  function Update(){
+ if (activate){
       transform.Rotate(
       Vector3(0, Input.GetAxis("Mouse X"), 0)  * speed);
       //Debug.Log(transform.localRotation.y);
@@ -20,9 +22,13 @@ var speed : float = 4.0; //how fast the object should rotate
 	 	}else if(y>-0.09 && y<0.09){
 	 		var linkToScript = GameObject.Find("Camera").GetComponent(Menu_Camera);
 	 		linkToScript.ToOptions();
+	 		var linkToScript2 = GameObject.Find("Options Menu Light").GetComponent(Options_Light);
+	 		linkToScript2.activate = true;
+	 		activate = false;
 			Debug.Log("Pressed Options");
 		} else if(y>0.19 && y<0.3){
 			Debug.Log("Pressed Credits");
 		} else Debug.Log("Outside");
+	}
  }
  }
