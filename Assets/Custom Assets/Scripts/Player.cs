@@ -31,9 +31,11 @@ public class Player : MonoBehaviour {
 		transform.position += new Vector3(0f, 0f, inputSpeed * speed * Time.deltaTime);
 	}
 
+	//Size should be > -1.0
 	public void increaseSize(float size) {
-		if (transform.localScale.z + size > maxSize) transform.localScale = new Vector3(transform.localScale.x, transform.localScale.z, maxSize);
-		else if (transform.localScale.z + size < minSize) transform.localScale = new Vector3(transform.localScale.x, transform.localScale.z, minSize);
-		else transform.localScale += new Vector3(0, 0, size);
+		float newZScale = transform.localScale.z * (1.0f + size);
+		if (newZScale > maxSize) transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, maxSize);
+		else if (newZScale < minSize) transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, minSize);
+		else transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, newZScale);
 	}
 }
