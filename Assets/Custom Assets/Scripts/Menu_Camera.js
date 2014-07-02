@@ -13,11 +13,18 @@ function Update () {
 	var angle : float = Mathf.MoveTowardsAngle
 			(transform.eulerAngles.x, target, speed * Time.deltaTime);
 		transform.eulerAngles = Vector3(angle, 0, 0);
-	if (angle == target) doneAnimation = true;
+	if (angle == target) {
+		doneAnimation = true;
+	}
 
 }
 
 function ToOptions(){
 	target = 270;
+	doneAnimation = false;
+}
+
+function ToMain(){
+	target = 0.0;
 	doneAnimation = false;
 }

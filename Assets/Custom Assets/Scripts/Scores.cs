@@ -6,13 +6,18 @@ public class Scores : MonoBehaviour {
 	public GameObject scoreNumber;
 	public GameObject livesNumber;
 
-	public int score;
-	public int lives;
+	public float goalSpeedMultiplier;
+	public int maxLives;
+	private float currentMultiplier;
+	private int score;
+	private int lives;
+
 
 	// Use this for initialization
 	void Start () {
 		score = 0;
-		lives = 5;
+		lives = maxLives;
+		currentMultiplier = 1;
 	}
 	
 	// Update is called once per frame
@@ -37,5 +42,21 @@ public class Scores : MonoBehaviour {
 		if (lives <= 0) {
 			Application.LoadLevel("lEVEL2");
 		}
+	}
+
+	public int getLives() {
+		return lives;
+	}
+
+	public int getScore() {
+		return score;
+	}
+
+	public float getMultiplier() {
+		return currentMultiplier;
+	}
+
+	public void increaseMultiplier() {
+		currentMultiplier += goalSpeedMultiplier;
 	}
 }
