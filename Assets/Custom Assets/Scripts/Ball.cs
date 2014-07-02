@@ -15,6 +15,7 @@ public class Ball : MonoBehaviour {
 
 	public Vector3 initialImpulse;
 	public Vector3 dropLocation;
+	public float height;
 	public float dropSpeed;
 	public float maxSpeed;
 	public float minSpeed;
@@ -35,8 +36,8 @@ public class Ball : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (rigidbody.position.y < 1.65f) {
-			rigidbody.MovePosition(new Vector3(rigidbody.position.x, 1.65f, rigidbody.position.z));
+		if (rigidbody.position.y < height) {
+			rigidbody.MovePosition(new Vector3(rigidbody.position.x, height, rigidbody.position.z));
 			//rigidbody.AddForce(new Vector3(0, -rigidbody.velocity.y, 0), ForceMode.Impulse);
 			rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
 			collider.isTrigger = false;

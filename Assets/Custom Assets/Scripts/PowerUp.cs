@@ -11,8 +11,8 @@ public class PowerUp : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		type = 0;
-		target = null;
+		//type = 0;
+		//target = null;
 	}
 	
 	// Update is called once per frame

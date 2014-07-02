@@ -1692,6 +1692,7 @@ MonoBehaviour:
   paddle: {fileID: 348422360}
   initialImpulse: {x: 24, y: 0, z: 0}
   dropLocation: {x: 20, y: 80, z: 0}
+  height: 3
   dropSpeed: -16
   maxSpeed: 60
   minSpeed: 24
@@ -6763,6 +6764,7 @@ MonoBehaviour:
   paddle: {fileID: 575737533}
   initialImpulse: {x: -24, y: 0, z: 0}
   dropLocation: {x: -20, y: 80, z: 0}
+  height: 3
   dropSpeed: -16
   maxSpeed: 60
   minSpeed: 24
