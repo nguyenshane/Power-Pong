@@ -9,6 +9,7 @@ var activate = true;
 
  function Update(){
  if (activate){
+ 	  collider.isTrigger = true;
       transform.Rotate(
       Vector3(0, Input.GetAxis("Mouse X"), 0)  * speed);
       //Debug.Log(transform.localRotation.y);
@@ -20,15 +21,21 @@ var activate = true;
 			Debug.Log("Pressed Play");
 			Application.LoadLevel("Level1");
 	 	}else if(y>-0.09 && y<0.09){
-	 		var linkToScript = GameObject.Find("Camera").GetComponent(Menu_Camera);
+	 		/*var linkToScript = GameObject.Find("Camera").GetComponent(Menu_Camera);
 	 		linkToScript.ToOptions();
 	 		var linkToScript2 = GameObject.Find("Options Menu Light").GetComponent(Options_Light);
 	 		linkToScript2.activate = true;
-	 		activate = false;
+	 		activate = false;*/
 			Debug.Log("Pressed Options");
 		} else if(y>0.19 && y<0.3){
 			Debug.Log("Pressed Credits");
 		} else Debug.Log("Outside");
 	}
+	
+	else {
+		collider.isTrigger = false;
+		var linkToScript3 = GameObject.Find("Camera").GetComponent(Menu_Camera);
+		if (linkToScript3.doneAnimation) active = true;
+		}
  }
  }
