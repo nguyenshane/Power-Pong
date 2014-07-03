@@ -85,7 +85,6 @@ GameObject:
   - 33: {fileID: 170405}
   - 65: {fileID: 170404}
   - 23: {fileID: 170403}
-  - 114: {fileID: 170407}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -144,20 +143,129 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 16
---- !u!114 &170407
+--- !u!1 &30360772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: bb8a3c23e46fd4e3aa120659af9a3c18, type: 2}
+  m_PrefabInternal: {fileID: 1117199030}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 30360775}
+  - 132: {fileID: 30360774}
+  - 114: {fileID: 30360773}
+  m_Layer: 0
+  m_Name: Score_O
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &30360773
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 170402}
+  m_PrefabParentObject: {fileID: 11400000, guid: bb8a3c23e46fd4e3aa120659af9a3c18,
+    type: 2}
+  m_PrefabInternal: {fileID: 1117199030}
+  m_GameObject: {fileID: 30360772}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Script: {fileID: 11500000, guid: 48e23654d5a6a41fcb977e82f2f5add5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
+  scoreNumber: {fileID: 1026848850}
+  livesNumber: {fileID: 1495605871}
+  goalSpeedMultiplier: 0
+  maxLives: 0
+--- !u!132 &30360774
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200006, guid: bb8a3c23e46fd4e3aa120659af9a3c18,
+    type: 2}
+  m_PrefabInternal: {fileID: 1117199030}
+  m_GameObject: {fileID: 30360772}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 'S C O R E :'
+  m_Anchor: 0
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 30
+  m_FontStyle: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278240255
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &30360775
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: bb8a3c23e46fd4e3aa120659af9a3c18, type: 2}
+  m_PrefabInternal: {fileID: 1117199030}
+  m_GameObject: {fileID: 30360772}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .670000017, y: .0799999982, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 523601892}
+  - {fileID: 1495605872}
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+--- !u!1 &31295842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100006, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+  m_PrefabInternal: {fileID: 235471259}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 31295843}
+  - 132: {fileID: 31295844}
+  m_Layer: 0
+  m_Name: Lives_G
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &31295843
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400006, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+  m_PrefabInternal: {fileID: 235471259}
+  m_GameObject: {fileID: 31295842}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .0400000028, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1701847206}
+  m_RootOrder: 1
+--- !u!132 &31295844
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200006, guid: 4d58b3d9b5ed04ea097ee507862a133c,
+    type: 2}
+  m_PrefabInternal: {fileID: 235471259}
+  m_GameObject: {fileID: 31295842}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: ' LI V E S :'
+  m_Anchor: 0
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 30
+  m_FontStyle: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278255369
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &62039838
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,7 +277,6 @@ GameObject:
   - 33: {fileID: 62039841}
   - 65: {fileID: 62039840}
   - 23: {fileID: 62039839}
-  - 114: {fileID: 62039843}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -228,20 +335,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 6
---- !u!114 &62039843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 62039838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &69113661
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,7 +479,7 @@ Transform:
   - {fileID: 419124007}
   - {fileID: 748279354}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
 --- !u!1 &115166187
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,7 +491,6 @@ GameObject:
   - 33: {fileID: 115166190}
   - 65: {fileID: 115166189}
   - 23: {fileID: 115166188}
-  - 114: {fileID: 115166192}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -457,71 +549,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 15
---- !u!114 &115166192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 115166187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
---- !u!1 &117436332
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 117436333}
-  - 132: {fileID: 117436334}
-  m_Layer: 0
-  m_Name: Lives_G
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &117436333
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 117436332}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .0400000028, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2020808583}
-  m_RootOrder: 1
---- !u!132 &117436334
-GUIText:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 117436332}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Text: ' LI V E S :'
-  m_Anchor: 0
-  m_Alignment: 1
-  m_PixelOffset: {x: 0, y: 0}
-  m_LineSpacing: 1
-  m_TabSize: 4
-  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
-  m_Material: {fileID: 0}
-  m_FontSize: 30
-  m_FontStyle: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278255369
-  m_PixelCorrect: 1
-  m_RichText: 1
 --- !u!1 &121277227
 GameObject:
   m_ObjectHideFlags: 0
@@ -533,7 +560,6 @@ GameObject:
   - 33: {fileID: 121277230}
   - 65: {fileID: 121277229}
   - 23: {fileID: 121277228}
-  - 114: {fileID: 121277232}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -592,20 +618,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 33
---- !u!114 &121277232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 121277227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &122784084
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +629,6 @@ GameObject:
   - 33: {fileID: 122784087}
   - 65: {fileID: 122784086}
   - 23: {fileID: 122784085}
-  - 114: {fileID: 122784089}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -676,20 +687,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 2
---- !u!114 &122784089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 122784084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &171156325
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,7 +698,6 @@ GameObject:
   - 33: {fileID: 171156328}
   - 65: {fileID: 171156327}
   - 23: {fileID: 171156326}
-  - 114: {fileID: 171156330}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -760,20 +756,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 1
---- !u!114 &171156330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 171156325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &202832411
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,7 +836,6 @@ GameObject:
   - 33: {fileID: 209849708}
   - 65: {fileID: 209849707}
   - 23: {fileID: 209849706}
-  - 114: {fileID: 209849710}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -913,20 +894,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 25
---- !u!114 &209849710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 209849705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &219310833
 GameObject:
   m_ObjectHideFlags: 0
@@ -938,7 +905,6 @@ GameObject:
   - 33: {fileID: 219310836}
   - 65: {fileID: 219310835}
   - 23: {fileID: 219310834}
-  - 114: {fileID: 219310838}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -997,20 +963,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 53
---- !u!114 &219310838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 219310833}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &231348362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,7 +974,6 @@ GameObject:
   - 33: {fileID: 231348365}
   - 65: {fileID: 231348364}
   - 23: {fileID: 231348363}
-  - 114: {fileID: 231348367}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -1081,20 +1032,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 46
---- !u!114 &231348367
-MonoBehaviour:
+--- !u!1001 &235471259
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 231348362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400002, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .109999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .0799999982
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: m_RootMapOrder
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+  m_RootGameObject: {fileID: 1701847203}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &243706057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,7 +1217,7 @@ Transform:
   m_LocalScale: {x: 16.179203, y: 17.8251801, z: 17.7500038}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &279680993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,7 +1298,6 @@ GameObject:
   - 33: {fileID: 280786292}
   - 65: {fileID: 280786291}
   - 23: {fileID: 280786290}
-  - 114: {fileID: 280786294}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -1372,20 +1356,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 8
---- !u!114 &280786294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 280786289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &296113797
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,7 +1436,6 @@ GameObject:
   - 33: {fileID: 328318499}
   - 65: {fileID: 328318498}
   - 23: {fileID: 328318497}
-  - 114: {fileID: 328318501}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -1525,20 +1494,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 52
---- !u!114 &328318501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 328318496}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &348422360
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,8 +1527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 32
   inputSpeed: 0
-  maxSize: 28
-  minSize: 8
+  maxSize: 0
+  minSize: 0
   player: 1
 --- !u!23 &348422362
 Renderer:
@@ -1621,11 +1576,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 348422360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 108.156456, y: 5.05418205, z: 2.20838547}
-  m_LocalScale: {x: 3, y: 6.5, z: 14}
+  m_LocalPosition: {x: 108.156456, y: 4.569067, z: 2.20838547}
+  m_LocalScale: {x: 3.10505819, y: 6.5461154, z: 14}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
 --- !u!54 &348422366
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1641,113 +1596,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 2
---- !u!1 &349129715
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 349129721}
-  - 33: {fileID: 349129720}
-  - 135: {fileID: 349129719}
-  - 23: {fileID: 349129718}
-  - 114: {fileID: 349129717}
-  - 54: {fileID: 349129716}
-  m_Layer: 0
-  m_Name: BallO
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &349129716
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 349129715}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 116
-  m_CollisionDetection: 2
---- !u!114 &349129717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 349129715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24465e7bd39f743bb8364b9e98122817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: {fileID: 602022754}
-  otherScore: {fileID: 2020808582}
-  paddle: {fileID: 348422360}
-  initialImpulse: {x: 24, y: 0, z: 0}
-  dropLocation: {x: 20, y: 200, z: 0}
-  height: 2.0999999
-  dropSpeed: -40
-  maxSpeed: 80
-  minSpeed: 24
-  ball: 1
---- !u!23 &349129718
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 349129715}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 8c5716113047d40b0b402e3fb574ce32, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!135 &349129719
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 349129715}
-  m_Material: {fileID: 13400000, guid: fcd4a4ece482f445498c23b18e86f506, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: .5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &349129720
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 349129715}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &349129721
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 349129715}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: 2.0999999, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
 --- !u!1 &363288039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1830,48 +1678,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
---- !u!1 &367989405
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100000, guid: d05e63ade06de724095296ca09471c7f, type: 2}
-  m_PrefabInternal: {fileID: 644390751}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 367989407}
-  - 114: {fileID: 367989406}
-  m_Layer: 0
-  m_Name: PowerupController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &367989406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: d05e63ade06de724095296ca09471c7f,
-    type: 2}
-  m_PrefabInternal: {fileID: 644390751}
-  m_GameObject: {fileID: 367989405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6fa96a910f0dd4bada98929cae661677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberOfPowerups: 6
-  powerupsGenerated: 0
---- !u!4 &367989407
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400000, guid: d05e63ade06de724095296ca09471c7f, type: 2}
-  m_PrefabInternal: {fileID: 644390751}
-  m_GameObject: {fileID: 367989405}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.31677246, y: 2.16333008, z: 3.7076416}
-  m_LocalScale: {x: 6, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
 --- !u!1 &382404388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1883,7 +1689,6 @@ GameObject:
   - 33: {fileID: 382404391}
   - 65: {fileID: 382404390}
   - 23: {fileID: 382404389}
-  - 114: {fileID: 382404393}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -1942,20 +1747,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 10
---- !u!114 &382404393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 382404388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &398502666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1967,7 +1758,6 @@ GameObject:
   - 33: {fileID: 398502669}
   - 65: {fileID: 398502668}
   - 23: {fileID: 398502667}
-  - 114: {fileID: 398502671}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -2026,20 +1816,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 24
---- !u!114 &398502671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 398502666}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &399109878
 GameObject:
   m_ObjectHideFlags: 0
@@ -2051,7 +1827,6 @@ GameObject:
   - 33: {fileID: 399109881}
   - 65: {fileID: 399109880}
   - 23: {fileID: 399109879}
-  - 114: {fileID: 399109883}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -2110,20 +1885,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 11
---- !u!114 &399109883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 399109878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &399301600
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,7 +1896,6 @@ GameObject:
   - 33: {fileID: 399301603}
   - 65: {fileID: 399301602}
   - 23: {fileID: 399301601}
-  - 114: {fileID: 399301605}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -2194,20 +1954,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 51
---- !u!114 &399301605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 399301600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &419124006
 GameObject:
   m_ObjectHideFlags: 0
@@ -2360,7 +2106,7 @@ Transform:
   - {fileID: 814786782}
   - {fileID: 1454692000}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
 --- !u!1 &452262107
 GameObject:
   m_ObjectHideFlags: 0
@@ -2372,7 +2118,6 @@ GameObject:
   - 33: {fileID: 452262110}
   - 65: {fileID: 452262109}
   - 23: {fileID: 452262108}
-  - 114: {fileID: 452262112}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -2431,71 +2176,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 39
---- !u!114 &452262112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 452262107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
---- !u!1 &491648573
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 491648575}
-  - 132: {fileID: 491648574}
-  m_Layer: 0
-  m_Name: Number_Lives_G
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!132 &491648574
-GUIText:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 491648573}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Text: 5
-  m_Anchor: 0
-  m_Alignment: 1
-  m_PixelOffset: {x: 0, y: 0}
-  m_LineSpacing: 1
-  m_TabSize: 4
-  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
-  m_Material: {fileID: 0}
-  m_FontSize: 30
-  m_FontStyle: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278255369
-  m_PixelCorrect: 1
-  m_RichText: 1
---- !u!4 &491648575
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 491648573}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .140000001, y: .0399999991, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2020808583}
-  m_RootOrder: 2
 --- !u!1 &497426441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,7 +2187,6 @@ GameObject:
   - 33: {fileID: 497426444}
   - 65: {fileID: 497426443}
   - 23: {fileID: 497426442}
-  - 114: {fileID: 497426446}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -2566,20 +2245,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 12
---- !u!114 &497426446
-MonoBehaviour:
+--- !u!1 &523601891
+GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 497426441}
+  m_PrefabParentObject: {fileID: 100004, guid: bb8a3c23e46fd4e3aa120659af9a3c18, type: 2}
+  m_PrefabInternal: {fileID: 1117199030}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 523601892}
+  - 132: {fileID: 523601893}
+  m_Layer: 0
+  m_Name: Lives_O
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &523601892
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: bb8a3c23e46fd4e3aa120659af9a3c18, type: 2}
+  m_PrefabInternal: {fileID: 1117199030}
+  m_GameObject: {fileID: 523601891}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: .0399999991, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1026848851}
+  m_Father: {fileID: 30360775}
+  m_RootOrder: 0
+--- !u!132 &523601893
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200004, guid: bb8a3c23e46fd4e3aa120659af9a3c18,
+    type: 2}
+  m_PrefabInternal: {fileID: 1117199030}
+  m_GameObject: {fileID: 523601891}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
+  serializedVersion: 3
+  m_Text: ' LI V E S :'
+  m_Anchor: 0
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 30
+  m_FontStyle: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278240255
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &535099744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2591,7 +2309,6 @@ GameObject:
   - 33: {fileID: 535099747}
   - 65: {fileID: 535099746}
   - 23: {fileID: 535099745}
-  - 114: {fileID: 535099749}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -2650,10 +2367,9 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 3
---- !u!114 &535099749
-MonoBehaviour:
+--- !u!1001 &559734297
+Prefab:
   m_ObjectHideFlags: 0
-<<<<<<< HEAD
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
@@ -2726,24 +2442,27 @@ MonoBehaviour:
       propertyPath: ballheight
       value: 3.6500001
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
+      propertyPath: height
+      value: 3.6500001
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
+      propertyPath: dropSpeed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
+      propertyPath: maxSpeed
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
+      propertyPath: minSpeed
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
   m_RootGameObject: {fileID: 1100448182}
   m_IsPrefabParent: 0
   m_IsExploded: 1
-=======
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 535099744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
->>>>>>> FETCH_HEAD
 --- !u!1 &565528292
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,7 +2474,6 @@ GameObject:
   - 33: {fileID: 565528295}
   - 65: {fileID: 565528294}
   - 23: {fileID: 565528293}
-  - 114: {fileID: 565528297}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -2814,20 +2532,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 20
---- !u!114 &565528297
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 565528292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &572689258
 GameObject:
   m_ObjectHideFlags: 0
@@ -2896,7 +2600,7 @@ Transform:
   m_LocalScale: {x: 16.179203, y: 17.8251801, z: 17.7500038}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!1 &575737533
 GameObject:
   m_ObjectHideFlags: 0
@@ -2943,10 +2647,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72445e3f31ea04ce3b07ad1f2f925fb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 32
+  speed: 35
   inputSpeed: 0
-  maxSize: 28
-  minSize: 8
+  maxSize: 0
+  minSize: 0
   player: 0
 --- !u!23 &575737536
 Renderer:
@@ -2994,11 +2698,63 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 575737533}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -106.45401, y: 4.71555901, z: 2.20838547}
-  m_LocalScale: {x: 3, y: 6.5, z: 14}
+  m_LocalPosition: {x: -106.45401, y: 4.569067, z: 2.20838547}
+  m_LocalScale: {x: 3.10505819, y: 6.5461154, z: 14}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
+--- !u!1 &582464747
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+  m_PrefabInternal: {fileID: 235471259}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 582464748}
+  - 132: {fileID: 582464749}
+  m_Layer: 0
+  m_Name: Number_Score_G
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &582464748
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+  m_PrefabInternal: {fileID: 235471259}
+  m_GameObject: {fileID: 582464747}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .140000001, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1701847206}
+  m_RootOrder: 0
+--- !u!132 &582464749
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200000, guid: 4d58b3d9b5ed04ea097ee507862a133c,
+    type: 2}
+  m_PrefabInternal: {fileID: 235471259}
+  m_GameObject: {fileID: 582464747}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 0
+  m_Anchor: 0
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 30
+  m_FontStyle: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278255369
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &585889895
 GameObject:
   m_ObjectHideFlags: 0
@@ -3010,7 +2766,6 @@ GameObject:
   - 33: {fileID: 585889898}
   - 65: {fileID: 585889897}
   - 23: {fileID: 585889896}
-  - 114: {fileID: 585889900}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -3069,20 +2824,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 37
---- !u!114 &585889900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 585889895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &601489307
 GameObject:
   m_ObjectHideFlags: 0
@@ -3094,7 +2835,6 @@ GameObject:
   - 33: {fileID: 601489310}
   - 65: {fileID: 601489309}
   - 23: {fileID: 601489308}
-  - 114: {fileID: 601489312}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -3153,134 +2893,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 49
---- !u!114 &601489312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 601489307}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
---- !u!1 &602022754
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 602022755}
-  - 132: {fileID: 602022757}
-  - 114: {fileID: 602022756}
-  m_Layer: 0
-  m_Name: Score_O
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &602022755
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 602022754}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .75, y: .0500000007, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1441096432}
-  - {fileID: 1326513682}
-  - {fileID: 1325196701}
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
---- !u!114 &602022756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 602022754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48e23654d5a6a41fcb977e82f2f5add5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreNumber: {fileID: 1441096431}
-  livesNumber: {fileID: 1325196700}
-  score: 0
-  lives: 5
---- !u!132 &602022757
-GUIText:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 602022754}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Text: 'S C O R E :'
-  m_Anchor: 0
-  m_Alignment: 1
-  m_PixelOffset: {x: 0, y: 0}
-  m_LineSpacing: 1
-  m_TabSize: 4
-  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
-  m_Material: {fileID: 0}
-  m_FontSize: 30
-  m_FontStyle: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278240255
-  m_PixelCorrect: 1
-  m_RichText: 1
---- !u!1001 &644390751
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 400000, guid: d05e63ade06de724095296ca09471c7f, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 3.31677246
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: d05e63ade06de724095296ca09471c7f, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 2.16333008
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: d05e63ade06de724095296ca09471c7f, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 3.7076416
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: d05e63ade06de724095296ca09471c7f, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: d05e63ade06de724095296ca09471c7f, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: d05e63ade06de724095296ca09471c7f, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: d05e63ade06de724095296ca09471c7f, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11400000, guid: d05e63ade06de724095296ca09471c7f, type: 2}
-      propertyPath: numberOfPowerups
-      value: 6
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: d05e63ade06de724095296ca09471c7f, type: 2}
-  m_RootGameObject: {fileID: 367989405}
-  m_IsPrefabParent: 0
-  m_IsExploded: 1
 --- !u!1 &671491474
 GameObject:
   m_ObjectHideFlags: 0
@@ -3361,7 +2973,6 @@ GameObject:
   - 33: {fileID: 695281426}
   - 65: {fileID: 695281425}
   - 23: {fileID: 695281424}
-  - 114: {fileID: 695281428}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -3420,20 +3031,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 45
---- !u!114 &695281428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 695281423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &731116170
 GameObject:
   m_ObjectHideFlags: 0
@@ -3445,7 +3042,6 @@ GameObject:
   - 33: {fileID: 731116173}
   - 65: {fileID: 731116172}
   - 23: {fileID: 731116171}
-  - 114: {fileID: 731116175}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -3504,20 +3100,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 38
---- !u!114 &731116175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 731116170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &748279353
 GameObject:
   m_ObjectHideFlags: 0
@@ -3656,57 +3238,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2026478867}
   m_RootOrder: 4
---- !u!1 &797327301
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 797327302}
-  - 132: {fileID: 797327303}
-  m_Layer: 0
-  m_Name: Number_Score_G
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &797327302
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 797327301}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .140000001, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 2020808583}
-  m_RootOrder: 0
---- !u!132 &797327303
-GUIText:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 797327301}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Text: 0
-  m_Anchor: 0
-  m_Alignment: 1
-  m_PixelOffset: {x: 0, y: 0}
-  m_LineSpacing: 1
-  m_TabSize: 4
-  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
-  m_Material: {fileID: 0}
-  m_FontSize: 30
-  m_FontStyle: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278255369
-  m_PixelCorrect: 1
-  m_RichText: 1
 --- !u!1 &814786778
 GameObject:
   m_ObjectHideFlags: 0
@@ -3718,7 +3249,6 @@ GameObject:
   - 33: {fileID: 814786781}
   - 65: {fileID: 814786780}
   - 23: {fileID: 814786779}
-  - 114: {fileID: 814786783}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -3777,20 +3307,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 55
---- !u!114 &814786783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 814786778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &844637124
 GameObject:
   m_ObjectHideFlags: 0
@@ -3871,7 +3387,6 @@ GameObject:
   - 33: {fileID: 847759547}
   - 65: {fileID: 847759546}
   - 23: {fileID: 847759545}
-  - 114: {fileID: 847759549}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -3930,20 +3445,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 34
---- !u!114 &847759549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 847759544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &855318783
 GameObject:
   m_ObjectHideFlags: 0
@@ -3955,7 +3456,6 @@ GameObject:
   - 33: {fileID: 855318786}
   - 65: {fileID: 855318785}
   - 23: {fileID: 855318784}
-  - 114: {fileID: 855318788}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -4014,20 +3514,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 9
---- !u!114 &855318788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 855318783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &913067274
 GameObject:
   m_ObjectHideFlags: 0
@@ -4040,7 +3526,7 @@ GameObject:
   - 65: {fileID: 913067276}
   - 23: {fileID: 913067275}
   m_Layer: 0
-  m_Name: Orange Goal_Top
+  m_Name: Orange_Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4091,8 +3577,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 913067274}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 145.395462, y: 24.0187988, z: .0430822372}
+  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
+  m_LocalPosition: {x: 135.547791, y: 24.0187988, z: .0430822372}
   m_LocalScale: {x: 42.0595131, y: 1, z: 59.5141029}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4177,7 +3663,6 @@ GameObject:
   - 33: {fileID: 990515965}
   - 65: {fileID: 990515964}
   - 23: {fileID: 990515963}
-  - 114: {fileID: 990515967}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -4236,20 +3721,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 48
---- !u!114 &990515967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 990515962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &999333069
 GameObject:
   m_ObjectHideFlags: 0
@@ -4330,7 +3801,6 @@ GameObject:
   - 33: {fileID: 1012819428}
   - 65: {fileID: 1012819427}
   - 23: {fileID: 1012819426}
-  - 114: {fileID: 1012819430}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -4389,20 +3859,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 0
---- !u!114 &1012819430
-MonoBehaviour:
+--- !u!1 &1026848850
+GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1012819425}
+  m_PrefabParentObject: {fileID: 100002, guid: bb8a3c23e46fd4e3aa120659af9a3c18, type: 2}
+  m_PrefabInternal: {fileID: 1117199030}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1026848851}
+  - 132: {fileID: 1026848852}
+  m_Layer: 0
+  m_Name: Number_Score_O
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1026848851
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: bb8a3c23e46fd4e3aa120659af9a3c18, type: 2}
+  m_PrefabInternal: {fileID: 1117199030}
+  m_GameObject: {fileID: 1026848850}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .139999986, y: -.0399999991, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 523601892}
+  m_RootOrder: 0
+--- !u!132 &1026848852
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200002, guid: bb8a3c23e46fd4e3aa120659af9a3c18,
+    type: 2}
+  m_PrefabInternal: {fileID: 1117199030}
+  m_GameObject: {fileID: 1026848850}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
+  serializedVersion: 3
+  m_Text: 0
+  m_Anchor: 0
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 30
+  m_FontStyle: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278240255
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &1027831322
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,7 +3973,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
 --- !u!1 &1030732371
 GameObject:
   m_ObjectHideFlags: 0
@@ -4477,7 +3985,6 @@ GameObject:
   - 33: {fileID: 1030732374}
   - 65: {fileID: 1030732373}
   - 23: {fileID: 1030732372}
-  - 114: {fileID: 1030732376}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -4536,20 +4043,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 18
---- !u!114 &1030732376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1030732371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1078407370
 GameObject:
   m_ObjectHideFlags: 0
@@ -4622,7 +4115,7 @@ Transform:
   - {fileID: 1980020697}
   - {fileID: 1084586413}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
 --- !u!1 &1084586409
 GameObject:
   m_ObjectHideFlags: 0
@@ -4772,7 +4265,6 @@ GameObject:
   - 33: {fileID: 1085971095}
   - 65: {fileID: 1085971094}
   - 23: {fileID: 1085971093}
-  - 114: {fileID: 1085971097}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -4831,20 +4323,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 41
---- !u!114 &1085971097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1085971092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1099852842
 GameObject:
   m_ObjectHideFlags: 0
@@ -4856,7 +4334,6 @@ GameObject:
   - 33: {fileID: 1099852845}
   - 65: {fileID: 1099852844}
   - 23: {fileID: 1099852843}
-  - 114: {fileID: 1099852847}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -4915,24 +4392,48 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 42
---- !u!114 &1099852847
+--- !u!1 &1100448182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
+  m_PrefabInternal: {fileID: 559734297}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1100448188}
+  - 33: {fileID: 1100448187}
+  - 135: {fileID: 1100448186}
+  - 23: {fileID: 1100448185}
+  - 54: {fileID: 1100448184}
+  - 114: {fileID: 1100448183}
+  m_Layer: 0
+  m_Name: BallG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1100448183
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1099852842}
+  m_PrefabParentObject: {fileID: 11400000, guid: 18ad16012f811a640adc8bd6ce3e34d1,
+    type: 2}
+  m_PrefabInternal: {fileID: 559734297}
+  m_GameObject: {fileID: 1100448182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Script: {fileID: 11500000, guid: 24465e7bd39f743bb8364b9e98122817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   score: {fileID: 1701847203}
   otherScore: {fileID: 30360772}
   paddle: {fileID: 575737533}
   initialImpulse: {x: -40, y: 0, z: -1}
+  dropLocation: {x: 0, y: 0, z: 0}
+  height: 3.6500001
+  dropSpeed: 12
+  maxSpeed: 70
+  minSpeed: 15
   ball: 0
-  ballheight: 3.6500001
 --- !u!54 &1100448184
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5051,11 +4552,6 @@ Prefab:
   m_RootGameObject: {fileID: 30360772}
   m_IsPrefabParent: 0
   m_IsExploded: 1
-=======
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
->>>>>>> FETCH_HEAD
 --- !u!1 &1120185420
 GameObject:
   m_ObjectHideFlags: 0
@@ -5068,7 +4564,7 @@ GameObject:
   - 65: {fileID: 1120185422}
   - 23: {fileID: 1120185421}
   m_Layer: 0
-  m_Name: Green_Goal
+  m_Name: Green_Goal_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5080,7 +4576,7 @@ Renderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1120185420}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -5120,11 +4616,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1120185420}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -142.283554, y: 10.2518768, z: .0430822372}
-  m_LocalScale: {x: 11.9939356, y: 26.6397667, z: 59.5141029}
+  m_LocalPosition: {x: -143.418884, y: 14.5289764, z: .0430822372}
+  m_LocalScale: {x: 42.0595131, y: 17.1406765, z: 59.5141029}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 12
 --- !u!1 &1150825475
 GameObject:
   m_ObjectHideFlags: 0
@@ -5136,7 +4632,6 @@ GameObject:
   - 33: {fileID: 1150825478}
   - 65: {fileID: 1150825477}
   - 23: {fileID: 1150825476}
-  - 114: {fileID: 1150825480}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -5195,20 +4690,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 4
---- !u!114 &1150825480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1150825475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1152417510
 GameObject:
   m_ObjectHideFlags: 0
@@ -5440,7 +4921,6 @@ GameObject:
   - 33: {fileID: 1194705743}
   - 65: {fileID: 1194705742}
   - 23: {fileID: 1194705741}
-  - 114: {fileID: 1194705745}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -5499,20 +4979,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 21
---- !u!114 &1194705745
-MonoBehaviour:
+--- !u!1 &1200396479
+GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1194705740}
+  m_PrefabParentObject: {fileID: 100004, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+  m_PrefabInternal: {fileID: 235471259}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1200396480}
+  - 132: {fileID: 1200396481}
+  m_Layer: 0
+  m_Name: Number_Lives_G
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1200396480
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400004, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+  m_PrefabInternal: {fileID: 235471259}
+  m_GameObject: {fileID: 1200396479}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .140000001, y: .0399999991, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1701847206}
+  m_RootOrder: 2
+--- !u!132 &1200396481
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200004, guid: 4d58b3d9b5ed04ea097ee507862a133c,
+    type: 2}
+  m_PrefabInternal: {fileID: 235471259}
+  m_GameObject: {fileID: 1200396479}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
+  serializedVersion: 3
+  m_Text: 5
+  m_Anchor: 0
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 30
+  m_FontStyle: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278255369
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &1207336581
 GameObject:
   m_ObjectHideFlags: 0
@@ -5524,7 +5042,6 @@ GameObject:
   - 33: {fileID: 1207336584}
   - 65: {fileID: 1207336583}
   - 23: {fileID: 1207336582}
-  - 114: {fileID: 1207336586}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -5583,20 +5100,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 31
---- !u!114 &1207336586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1207336581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1219487455
 GameObject:
   m_ObjectHideFlags: 0
@@ -5665,7 +5168,7 @@ Transform:
   m_LocalScale: {x: 16.179203, y: 17.8251801, z: 17.7500038}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!1 &1219863757
 GameObject:
   m_ObjectHideFlags: 0
@@ -5747,7 +5250,7 @@ GameObject:
   - 65: {fileID: 1255796061}
   - 23: {fileID: 1255796060}
   m_Layer: 0
-  m_Name: Orange_Goal
+  m_Name: Orange_Goal_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5759,7 +5262,7 @@ Renderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1255796059}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -5799,11 +5302,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1255796059}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 146.858368, y: 10.773777, z: .0430822372}
-  m_LocalScale: {x: 31.5672035, y: 23.7536964, z: 59.5141029}
+  m_LocalPosition: {x: 146.858368, y: 14.5289764, z: .0430822372}
+  m_LocalScale: {x: 42.0595131, y: 17.1406765, z: 59.5141029}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 15
 --- !u!1 &1283425160
 GameObject:
   m_ObjectHideFlags: 0
@@ -5815,7 +5318,6 @@ GameObject:
   - 33: {fileID: 1283425163}
   - 65: {fileID: 1283425162}
   - 23: {fileID: 1283425161}
-  - 114: {fileID: 1283425165}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -5874,20 +5376,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 54
---- !u!114 &1283425165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1283425160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1311385281
 GameObject:
   m_ObjectHideFlags: 0
@@ -5956,7 +5444,7 @@ Transform:
   m_LocalScale: {x: 16.179203, y: 17.8251801, z: 17.7500038}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
 --- !u!1 &1320021593
 GameObject:
   m_ObjectHideFlags: 0
@@ -5968,7 +5456,6 @@ GameObject:
   - 33: {fileID: 1320021596}
   - 65: {fileID: 1320021595}
   - 23: {fileID: 1320021594}
-  - 114: {fileID: 1320021598}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -6027,122 +5514,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 35
---- !u!114 &1320021598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1320021593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
---- !u!1 &1325196700
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1325196701}
-  - 132: {fileID: 1325196702}
-  m_Layer: 0
-  m_Name: Number_Lives_O
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1325196701
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1325196700}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .139999986, y: .0399999991, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 602022755}
-  m_RootOrder: 2
---- !u!132 &1325196702
-GUIText:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1325196700}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Text: 5
-  m_Anchor: 0
-  m_Alignment: 1
-  m_PixelOffset: {x: 0, y: 0}
-  m_LineSpacing: 1
-  m_TabSize: 4
-  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
-  m_Material: {fileID: 0}
-  m_FontSize: 30
-  m_FontStyle: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278240255
-  m_PixelCorrect: 1
-  m_RichText: 1
---- !u!1 &1326513680
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1326513682}
-  - 132: {fileID: 1326513681}
-  m_Layer: 0
-  m_Name: Lives_O
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!132 &1326513681
-GUIText:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1326513680}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Text: ' LI V E S :'
-  m_Anchor: 0
-  m_Alignment: 1
-  m_PixelOffset: {x: 0, y: 0}
-  m_LineSpacing: 1
-  m_TabSize: 4
-  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
-  m_Material: {fileID: 0}
-  m_FontSize: 30
-  m_FontStyle: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278240255
-  m_PixelCorrect: 1
-  m_RichText: 1
---- !u!4 &1326513682
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1326513680}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .0399999991, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 602022755}
-  m_RootOrder: 1
 --- !u!1 &1341065258
 GameObject:
   m_ObjectHideFlags: 0
@@ -6154,7 +5525,6 @@ GameObject:
   - 33: {fileID: 1341065261}
   - 65: {fileID: 1341065260}
   - 23: {fileID: 1341065259}
-  - 114: {fileID: 1341065263}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -6213,20 +5583,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 40
---- !u!114 &1341065263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1341065258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1359626509
 GameObject:
   m_ObjectHideFlags: 0
@@ -6238,7 +5594,6 @@ GameObject:
   - 33: {fileID: 1359626512}
   - 65: {fileID: 1359626511}
   - 23: {fileID: 1359626510}
-  - 114: {fileID: 1359626514}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -6297,20 +5652,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 17
---- !u!114 &1359626514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1359626509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1393018842
 GameObject:
   m_ObjectHideFlags: 0
@@ -6322,7 +5663,6 @@ GameObject:
   - 33: {fileID: 1393018845}
   - 65: {fileID: 1393018844}
   - 23: {fileID: 1393018843}
-  - 114: {fileID: 1393018847}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -6381,20 +5721,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 27
---- !u!114 &1393018847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1393018842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1406551071
 GameObject:
   m_ObjectHideFlags: 0
@@ -6464,57 +5790,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2026478867}
   m_RootOrder: 11
---- !u!1 &1441096431
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1441096432}
-  - 132: {fileID: 1441096433}
-  m_Layer: 0
-  m_Name: Number_Score_O
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1441096432
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1441096431}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .140000001, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 602022755}
-  m_RootOrder: 0
---- !u!132 &1441096433
-GUIText:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1441096431}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Text: 0
-  m_Anchor: 0
-  m_Alignment: 1
-  m_PixelOffset: {x: 0, y: 0}
-  m_LineSpacing: 1
-  m_TabSize: 4
-  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
-  m_Material: {fileID: 0}
-  m_FontSize: 30
-  m_FontStyle: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278240255
-  m_PixelCorrect: 1
-  m_RichText: 1
 --- !u!1 &1454691996
 GameObject:
   m_ObjectHideFlags: 0
@@ -6526,7 +5801,6 @@ GameObject:
   - 33: {fileID: 1454691999}
   - 65: {fileID: 1454691998}
   - 23: {fileID: 1454691997}
-  - 114: {fileID: 1454692001}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -6585,20 +5859,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 56
---- !u!114 &1454692001
-MonoBehaviour:
+--- !u!1 &1495605871
+GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1454691996}
+  m_PrefabParentObject: {fileID: 100000, guid: bb8a3c23e46fd4e3aa120659af9a3c18, type: 2}
+  m_PrefabInternal: {fileID: 1117199030}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1495605872}
+  - 132: {fileID: 1495605873}
+  m_Layer: 0
+  m_Name: Number_Lives_O
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1495605872
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: bb8a3c23e46fd4e3aa120659af9a3c18, type: 2}
+  m_PrefabInternal: {fileID: 1117199030}
+  m_GameObject: {fileID: 1495605871}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .139999986, y: .0399999991, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 30360775}
+  m_RootOrder: 1
+--- !u!132 &1495605873
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200000, guid: bb8a3c23e46fd4e3aa120659af9a3c18,
+    type: 2}
+  m_PrefabInternal: {fileID: 1117199030}
+  m_GameObject: {fileID: 1495605871}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
+  serializedVersion: 3
+  m_Text: 5
+  m_Anchor: 0
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 30
+  m_FontStyle: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278240255
+  m_PixelCorrect: 1
+  m_RichText: 1
 --- !u!1 &1512968391
 GameObject:
   m_ObjectHideFlags: 0
@@ -6679,8 +5991,6 @@ GameObject:
   - 33: {fileID: 1524625716}
   - 65: {fileID: 1524625715}
   - 23: {fileID: 1524625714}
-  - 114: {fileID: 1524625718}
-  - 114: {fileID: 1524625719}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -6739,34 +6049,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 36
---- !u!114 &1524625718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1524625713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
---- !u!114 &1524625719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1524625713}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 0}
-  PowerupCtrl: {fileID: 0}
-  canDropPowerup: 0
 --- !u!1 &1533062331
 GameObject:
   m_ObjectHideFlags: 0
@@ -6778,7 +6060,6 @@ GameObject:
   - 33: {fileID: 1533062334}
   - 65: {fileID: 1533062333}
   - 23: {fileID: 1533062332}
-  - 114: {fileID: 1533062336}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -6837,20 +6118,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 32
---- !u!114 &1533062336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1533062331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1546094124
 GameObject:
   m_ObjectHideFlags: 0
@@ -6862,7 +6129,6 @@ GameObject:
   - 33: {fileID: 1546094127}
   - 65: {fileID: 1546094126}
   - 23: {fileID: 1546094125}
-  - 114: {fileID: 1546094129}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -6921,127 +6187,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 47
---- !u!114 &1546094129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1546094124}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
---- !u!1 &1597888707
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1597888712}
-  - 33: {fileID: 1597888711}
-  - 135: {fileID: 1597888710}
-  - 23: {fileID: 1597888709}
-  - 114: {fileID: 1597888708}
-  - 54: {fileID: 1597888713}
-  m_Layer: 0
-  m_Name: BallG
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1597888708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1597888707}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24465e7bd39f743bb8364b9e98122817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: {fileID: 2020808582}
-  otherScore: {fileID: 602022754}
-  paddle: {fileID: 575737533}
-  initialImpulse: {x: -24, y: 0, z: 0}
-  dropLocation: {x: -20, y: 200, z: 0}
-  height: 2.0999999
-  dropSpeed: -40
-  maxSpeed: 80
-  minSpeed: 24
-  ball: 0
---- !u!23 &1597888709
-Renderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1597888707}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 2100000, guid: 38e180a48ff7c436ba1d33abcde69f44, type: 2}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
---- !u!135 &1597888710
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1597888707}
-  m_Material: {fileID: 13400000, guid: fcd4a4ece482f445498c23b18e86f506, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: .5
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!33 &1597888711
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1597888707}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1597888712
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1597888707}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: 2.0999999, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 3}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
---- !u!54 &1597888713
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1597888707}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 116
-  m_CollisionDetection: 2
 --- !u!1 &1680814981
 GameObject:
   m_ObjectHideFlags: 0
@@ -7054,7 +6199,7 @@ GameObject:
   - 65: {fileID: 1680814983}
   - 23: {fileID: 1680814982}
   m_Layer: 0
-  m_Name: Green Goal_Top
+  m_Name: Green_Goal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7105,12 +6250,84 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1680814981}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -143.418884, y: 24.0187988, z: .0430822372}
+  m_LocalRotation: {x: 0, y: 0, z: .707106829, w: .707106709}
+  m_LocalPosition: {x: -134.941605, y: 12.0470591, z: .0430822372}
   m_LocalScale: {x: 42.0595131, y: 1, z: 59.5141029}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
+--- !u!1 &1701847203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100002, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+  m_PrefabInternal: {fileID: 235471259}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1701847206}
+  - 132: {fileID: 1701847205}
+  - 114: {fileID: 1701847204}
+  m_Layer: 0
+  m_Name: Score_G
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1701847204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 4d58b3d9b5ed04ea097ee507862a133c,
+    type: 2}
+  m_PrefabInternal: {fileID: 235471259}
+  m_GameObject: {fileID: 1701847203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e23654d5a6a41fcb977e82f2f5add5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreNumber: {fileID: 582464747}
+  livesNumber: {fileID: 1200396479}
+  goalSpeedMultiplier: 0
+  maxLives: 0
+--- !u!132 &1701847205
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13200002, guid: 4d58b3d9b5ed04ea097ee507862a133c,
+    type: 2}
+  m_PrefabInternal: {fileID: 235471259}
+  m_GameObject: {fileID: 1701847203}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: 'S C O R E :'
+  m_Anchor: 0
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 30
+  m_FontStyle: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278255369
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &1701847206
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400002, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+  m_PrefabInternal: {fileID: 235471259}
+  m_GameObject: {fileID: 1701847203}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .109999999, y: .0799999982, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 582464748}
+  - {fileID: 31295843}
+  - {fileID: 1200396480}
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
 --- !u!1 &1710378774
 GameObject:
   m_ObjectHideFlags: 0
@@ -7191,7 +6408,6 @@ GameObject:
   - 33: {fileID: 1730113582}
   - 65: {fileID: 1730113581}
   - 23: {fileID: 1730113580}
-  - 114: {fileID: 1730113584}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -7250,29 +6466,118 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 28
---- !u!114 &1730113584
+--- !u!1 &1740482999
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
+  m_PrefabInternal: {fileID: 2107294997}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1740483004}
+  - 33: {fileID: 1740483003}
+  - 135: {fileID: 1740483002}
+  - 23: {fileID: 1740483001}
+  - 54: {fileID: 1740483000}
+  - 114: {fileID: 1740483005}
+  m_Layer: 0
+  m_Name: BallO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!54 &1740483000
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 5400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9,
+    type: 2}
+  m_PrefabInternal: {fileID: 2107294997}
+  m_GameObject: {fileID: 1740482999}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 1
+  m_Constraints: 4
+  m_CollisionDetection: 2
+--- !u!23 &1740483001
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 1e3ce4bb331f1ea438596c1a082a98d9,
+    type: 2}
+  m_PrefabInternal: {fileID: 2107294997}
+  m_GameObject: {fileID: 1740482999}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 8c5716113047d40b0b402e3fb574ce32, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!135 &1740483002
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13500000, guid: 1e3ce4bb331f1ea438596c1a082a98d9,
+    type: 2}
+  m_PrefabInternal: {fileID: 2107294997}
+  m_GameObject: {fileID: 1740482999}
+  m_Material: {fileID: 13400000, guid: fcd4a4ece482f445498c23b18e86f506, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: .5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1740483003
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 1e3ce4bb331f1ea438596c1a082a98d9,
+    type: 2}
+  m_PrefabInternal: {fileID: 2107294997}
+  m_GameObject: {fileID: 1740482999}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1740483004
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
+  m_PrefabInternal: {fileID: 2107294997}
+  m_GameObject: {fileID: 1740482999}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20, y: 4, z: 0}
+  m_LocalScale: {x: 4, y: 4, z: 4}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &1740483005
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1730113579}
+  m_PrefabParentObject: {fileID: 11400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9,
+    type: 2}
+  m_PrefabInternal: {fileID: 2107294997}
+  m_GameObject: {fileID: 1740482999}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
+  m_Script: {fileID: 11500000, guid: 24465e7bd39f743bb8364b9e98122817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
   score: {fileID: 30360772}
   otherScore: {fileID: 1701847203}
   paddle: {fileID: 348422360}
   initialImpulse: {x: 40, y: 0, z: 1}
+  dropLocation: {x: 0, y: 0, z: 0}
+  height: 3.6500001
+  dropSpeed: 12
+  maxSpeed: 70
+  minSpeed: 15
   ball: 1
-  ballheight: 3.6500001
-=======
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
->>>>>>> FETCH_HEAD
 --- !u!1 &1778590921
 GameObject:
   m_ObjectHideFlags: 0
@@ -7284,7 +6589,6 @@ GameObject:
   - 33: {fileID: 1778590924}
   - 65: {fileID: 1778590923}
   - 23: {fileID: 1778590922}
-  - 114: {fileID: 1778590926}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -7343,20 +6647,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 23
---- !u!114 &1778590926
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1778590921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1799292363
 GameObject:
   m_ObjectHideFlags: 0
@@ -7368,7 +6658,6 @@ GameObject:
   - 33: {fileID: 1799292366}
   - 65: {fileID: 1799292365}
   - 23: {fileID: 1799292364}
-  - 114: {fileID: 1799292368}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -7427,20 +6716,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 43
---- !u!114 &1799292368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1799292363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1841266485
 GameObject:
   m_ObjectHideFlags: 0
@@ -7509,7 +6784,7 @@ Transform:
   m_LocalScale: {x: 342.506226, y: 1, z: 303.840454}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
 --- !u!1 &1842018810
 GameObject:
   m_ObjectHideFlags: 0
@@ -7521,7 +6796,6 @@ GameObject:
   - 33: {fileID: 1842018813}
   - 65: {fileID: 1842018812}
   - 23: {fileID: 1842018811}
-  - 114: {fileID: 1842018815}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -7580,20 +6854,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 50
---- !u!114 &1842018815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1842018810}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1850801499
 GameObject:
   m_ObjectHideFlags: 0
@@ -7605,7 +6865,6 @@ GameObject:
   - 33: {fileID: 1850801502}
   - 65: {fileID: 1850801501}
   - 23: {fileID: 1850801500}
-  - 114: {fileID: 1850801504}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -7664,20 +6923,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 19
---- !u!114 &1850801504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1850801499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1852814467
 GameObject:
   m_ObjectHideFlags: 0
@@ -7689,7 +6934,6 @@ GameObject:
   - 33: {fileID: 1852814470}
   - 65: {fileID: 1852814469}
   - 23: {fileID: 1852814468}
-  - 114: {fileID: 1852814472}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -7748,20 +6992,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 29
---- !u!114 &1852814472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1852814467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1858854663
 GameObject:
   m_ObjectHideFlags: 0
@@ -7773,7 +7003,6 @@ GameObject:
   - 33: {fileID: 1858854666}
   - 65: {fileID: 1858854665}
   - 23: {fileID: 1858854664}
-  - 114: {fileID: 1858854668}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -7832,20 +7061,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 30
---- !u!114 &1858854668
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1858854663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1873466568
 GameObject:
   m_ObjectHideFlags: 0
@@ -7995,7 +7210,6 @@ GameObject:
   - 33: {fileID: 1911926837}
   - 65: {fileID: 1911926836}
   - 23: {fileID: 1911926835}
-  - 114: {fileID: 1911926839}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -8054,20 +7268,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 26
---- !u!114 &1911926839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1911926834}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1929962693
 GameObject:
   m_ObjectHideFlags: 0
@@ -8230,7 +7430,6 @@ GameObject:
   - 33: {fileID: 1951402931}
   - 65: {fileID: 1951402930}
   - 23: {fileID: 1951402929}
-  - 114: {fileID: 1951402933}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -8289,20 +7488,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 5
---- !u!114 &1951402933
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1951402928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1966526616
 GameObject:
   m_ObjectHideFlags: 0
@@ -8314,7 +7499,6 @@ GameObject:
   - 33: {fileID: 1966526619}
   - 65: {fileID: 1966526618}
   - 23: {fileID: 1966526617}
-  - 114: {fileID: 1966526621}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -8373,20 +7557,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 13
---- !u!114 &1966526621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1966526616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1969753847
 GameObject:
   m_ObjectHideFlags: 0
@@ -8398,7 +7568,6 @@ GameObject:
   - 33: {fileID: 1969753850}
   - 65: {fileID: 1969753849}
   - 23: {fileID: 1969753848}
-  - 114: {fileID: 1969753852}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -8457,20 +7626,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 14
---- !u!114 &1969753852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1969753847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &1980020693
 GameObject:
   m_ObjectHideFlags: 0
@@ -8540,76 +7695,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1078407374}
   m_RootOrder: 2
---- !u!1 &2020808582
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 2020808583}
-  - 132: {fileID: 2020808585}
-  - 114: {fileID: 2020808584}
-  m_Layer: 0
-  m_Name: Score_G
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2020808583
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2020808582}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0699999928, y: .0500000007, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 797327302}
-  - {fileID: 117436333}
-  - {fileID: 491648575}
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
---- !u!114 &2020808584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2020808582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48e23654d5a6a41fcb977e82f2f5add5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreNumber: {fileID: 797327301}
-  livesNumber: {fileID: 491648573}
-  score: 0
-  lives: 5
---- !u!132 &2020808585
-GUIText:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2020808582}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Text: 'S C O R E :'
-  m_Anchor: 0
-  m_Alignment: 1
-  m_PixelOffset: {x: 0, y: 0}
-  m_LineSpacing: 1
-  m_TabSize: 4
-  m_Font: {fileID: 12800000, guid: f308ca92aef264662a18847c09d4c552, type: 3}
-  m_Material: {fileID: 0}
-  m_FontSize: 30
-  m_FontStyle: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278255369
-  m_PixelCorrect: 1
-  m_RichText: 1
 --- !u!1 &2026478863
 GameObject:
   m_ObjectHideFlags: 0
@@ -8694,7 +7779,7 @@ Transform:
   - {fileID: 2124647826}
   - {fileID: 1949303238}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
 --- !u!1 &2030348485
 GameObject:
   m_ObjectHideFlags: 0
@@ -8775,7 +7860,6 @@ GameObject:
   - 33: {fileID: 2055345988}
   - 65: {fileID: 2055345987}
   - 23: {fileID: 2055345986}
-  - 114: {fileID: 2055345990}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -8834,20 +7918,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 44
---- !u!114 &2055345990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2055345985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &2096149352
 GameObject:
   m_ObjectHideFlags: 0
@@ -8859,7 +7929,6 @@ GameObject:
   - 33: {fileID: 2096149355}
   - 65: {fileID: 2096149354}
   - 23: {fileID: 2096149353}
-  - 114: {fileID: 2096149357}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -8918,10 +7987,9 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 22
---- !u!114 &2096149357
-MonoBehaviour:
+--- !u!1001 &2107294997
+Prefab:
   m_ObjectHideFlags: 0
-<<<<<<< HEAD
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
@@ -8990,24 +8058,27 @@ MonoBehaviour:
       propertyPath: ballheight
       value: 3.6500001
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
+      propertyPath: height
+      value: 3.6500001
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
+      propertyPath: dropSpeed
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
+      propertyPath: maxSpeed
+      value: 70
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
+      propertyPath: minSpeed
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
   m_RootGameObject: {fileID: 1740482999}
   m_IsPrefabParent: 0
   m_IsExploded: 1
-=======
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2096149352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
->>>>>>> FETCH_HEAD
 --- !u!1 &2121703347
 GameObject:
   m_ObjectHideFlags: 0
@@ -9019,7 +8090,6 @@ GameObject:
   - 33: {fileID: 2121703350}
   - 65: {fileID: 2121703349}
   - 23: {fileID: 2121703348}
-  - 114: {fileID: 2121703352}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Untagged
@@ -9078,20 +8148,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 434100978}
   m_RootOrder: 7
---- !u!114 &2121703352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2121703347}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebf5c356d5cce4420a5433ff2390d4db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PowerUpPrefab: {fileID: 400000, guid: 5e543d66774eef546b9fa847adf5c394, type: 2}
-  PowerupCtrl: {fileID: 367989405}
-  canDropPowerup: 0
 --- !u!1 &2123074304
 GameObject:
   m_ObjectHideFlags: 0
