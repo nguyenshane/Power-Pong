@@ -1,4 +1,4 @@
-﻿#pragma strict
+#pragma strict
 
 function Start () {
 
@@ -18,16 +18,19 @@ var activate = true;
       if(y>0.3) transform.localRotation.y = 0.3;
       if(Input.GetMouseButtonDown(0)){
       	if(y>-0.3 && y<-0.18){
+			audio.Play();
 			Debug.Log("Pressed Play");
 			Application.LoadLevel("Level1");
 	 	}else if(y>-0.09 && y<0.09){
-	 		/*var linkToScript = GameObject.Find("Camera").GetComponent(Menu_Camera);
+			audio.Play();
+	 		var linkToScript = GameObject.Find("Camera").GetComponent(Menu_Camera);
 	 		linkToScript.ToOptions();
 	 		var linkToScript2 = GameObject.Find("Options Menu Light").GetComponent(Options_Light);
 	 		linkToScript2.activate = true;
-	 		activate = false;*/
+	 		activate = false;
 			Debug.Log("Pressed Options");
 		} else if(y>0.19 && y<0.3){
+			audio.Play();
 			Debug.Log("Pressed Credits");
 		} else Debug.Log("Outside");
 	}

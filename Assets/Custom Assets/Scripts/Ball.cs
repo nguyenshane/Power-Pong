@@ -60,6 +60,7 @@ public class Ball : MonoBehaviour {
 	void OnCollisionEnter(Collision Collection) {
 		if (ball == eBall.Left) {
 			if(Collection.gameObject.name == "Brick") {
+				audio.Play();
 				Destroy(Collection.gameObject);
 				rigidbody.AddForce(leftImpulse, ForceMode.Impulse);
 				score.GetComponent<Scores>().AddScore(normalBrickScore);
@@ -89,6 +90,7 @@ public class Ball : MonoBehaviour {
 			}
 		} else if (ball == eBall.Right) {
 			if(Collection.gameObject.name == "Brick") {
+				audio.Play();
 				Destroy(Collection.gameObject);
 				rigidbody.AddForce(rightImpulse, ForceMode.Impulse);
 				score.GetComponent<Scores>().AddScore(normalBrickScore);
