@@ -24,7 +24,6 @@ var speed : float = 1.0; //how fast the object should rotate
       	if(x>0.11 && y>0.716){
       		// Audio Low
 			Debug.Log("Pressed Audio Low");
-			
 	 	}else if(x<0.045 && x>-0.065 && y>0.716){
 			// Audio Medium
 			Debug.Log("Pressed Audio Medium");
@@ -45,8 +44,6 @@ var speed : float = 1.0; //how fast the object should rotate
 			Debug.Log("Pressed Back");
 	 		var linkToScript = GameObject.Find("Camera").GetComponent(Menu_Camera);
 	 		linkToScript.ToMain();
-	 		var linkToScript2 = GameObject.Find("Main Menu Light").GetComponent(Menu_Light);
-	 		linkToScript2.activate = true;
 	 		activate = false;
 			
 		} else Debug.Log("Outside options");
