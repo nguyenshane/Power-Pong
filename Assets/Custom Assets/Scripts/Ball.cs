@@ -26,19 +26,17 @@ public class Ball : MonoBehaviour {
 	int normalBrickScore = 1;
 	int goalBrickScore = 3;
 	float goalPointPercentage = 0.20f;
-	float friction = 0.6f;
 
 
 	// Use this for initialization
 	void Start () {
-		rigidbody.AddForce(initialImpulse, ForceMode.Impulse);
+		dropBall(dropLocation);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (rigidbody.position.y < height) {
 			rigidbody.MovePosition(new Vector3(rigidbody.position.x, height, rigidbody.position.z));
-			//rigidbody.AddForce(new Vector3(0, -rigidbody.velocity.y, 0), ForceMode.Impulse);
 			rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
 			collider.isTrigger = false;
 			score.GetComponent<Scores>().increaseMultiplier();
@@ -71,10 +69,10 @@ public class Ball : MonoBehaviour {
 				Destroy(Collection.gameObject);
 			} else if (Collection.gameObject.name == "Player Left") {
 				rigidbody.AddForce(rightImpulse, ForceMode.Impulse);
-				rigidbody.AddForce(new Vector3(0, 0, friction * Collection.gameObject.GetComponent<Player>().inputSpeed * 
+				rigidbody.AddForce(new Vector3(0, 0, Collection.gameObject.GetComponent<Player>().friction * Collection.gameObject.GetComponent<Player>().inputSpeed * 
 				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
 			} else if (Collection.gameObject.name == "Player Right") {
-				rigidbody.AddForce(new Vector3(0, 0, friction * Collection.gameObject.GetComponent<Player>().inputSpeed * 
+				rigidbody.AddForce(new Vector3(0, 0, Collection.gameObject.GetComponent<Player>().friction * Collection.gameObject.GetComponent<Player>().inputSpeed * 
 				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
 			} else if (Collection.gameObject.name == "Orange_Goal") {
 				int points = (int)(otherScore.GetComponent<Scores>().getScore () * goalPointPercentage);
@@ -101,10 +99,10 @@ public class Ball : MonoBehaviour {
 				Destroy(Collection.gameObject);
 			} else if (Collection.gameObject.name == "Player Right") {
 				rigidbody.AddForce(leftImpulse, ForceMode.Impulse);
-				rigidbody.AddForce(new Vector3(0, 0, friction*Collection.gameObject.GetComponent<Player>().inputSpeed * 
+				rigidbody.AddForce(new Vector3(0, 0, Collection.gameObject.GetComponent<Player>().friction * Collection.gameObject.GetComponent<Player>().inputSpeed * 
 				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
 			} else if (Collection.gameObject.name == "Player Left") {
-				rigidbody.AddForce(new Vector3(0, 0, friction*Collection.gameObject.GetComponent<Player>().inputSpeed * 
+				rigidbody.AddForce(new Vector3(0, 0, Collection.gameObject.GetComponent<Player>().friction * Collection.gameObject.GetComponent<Player>().inputSpeed * 
 				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
 			} else if (Collection.gameObject.name == "Green_Goal") {
 				int points = (int)(otherScore.GetComponent<Scores>().getScore() * goalPointPercentage);

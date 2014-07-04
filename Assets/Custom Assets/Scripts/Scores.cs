@@ -5,6 +5,7 @@ public class Scores : MonoBehaviour {
 
 	public GameObject scoreNumber;
 	public GameObject livesNumber;
+	public string nextLevel;
 
 	public float goalSpeedMultiplier;
 	public int maxLives;
@@ -40,7 +41,7 @@ public class Scores : MonoBehaviour {
 		livesNumber.guiText.text = lives.ToString();
 		
 		if (lives <= 0) {
-			Application.LoadLevel("lEVEL2");
+			Application.LoadLevel(nextLevel);
 		}
 	}
 

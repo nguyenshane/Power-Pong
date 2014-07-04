@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
 	public float inputSpeed = 0f;
 	public float maxSize;
 	public float minSize;
+	public float friction;
 	public ePlayer player;
 	
 

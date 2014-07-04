@@ -109,6 +109,7 @@ MonoBehaviour:
   inputSpeed: 0
   maxSize: 16
   minSize: 4
+  friction: .600000024
   player: 1
 --- !u!23 &19701276
 Renderer:
@@ -1155,7 +1156,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 275539243}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+  m_LocalRotation: {x: .707106888, y: 0, z: 0, w: .707106769}
   m_LocalPosition: {x: -.0919866562, y: 41.6777573, z: -1.53880882}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1403,7 +1404,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!114 &338986509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3006,7 +3007,7 @@ Transform:
   - {fileID: 1039651910}
   - {fileID: 699471876}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 23
 --- !u!114 &638515123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3021,7 +3022,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreNumber: {fileID: 127867122}
   livesNumber: {fileID: 699471875}
-  goalSpeedMultiplier: .100000001
+  nextLevel: lEVEL2
+  goalSpeedMultiplier: .200000003
   maxLives: 5
 --- !u!1 &651083185
 GameObject:
@@ -3535,7 +3537,7 @@ Transform:
   m_LocalScale: {x: 10, y: 41, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
 --- !u!1 &716177308
 GameObject:
   m_ObjectHideFlags: 0
@@ -4445,7 +4447,7 @@ Transform:
   m_LocalScale: {x: 10, y: 41, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
 --- !u!1 &926971854
 GameObject:
   m_ObjectHideFlags: 0
@@ -4487,7 +4489,7 @@ Transform:
   m_LocalScale: {x: 6, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!1 &961200443
 GameObject:
   m_ObjectHideFlags: 0
@@ -6150,7 +6152,7 @@ Transform:
   - {fileID: 873051435}
   - {fileID: 961200447}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
 --- !u!1 &1267299608
 GameObject:
   m_ObjectHideFlags: 0
@@ -6784,15 +6786,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
       propertyPath: m_RootOrder
-      value: 100
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
       propertyPath: goalSpeedMultiplier
-      value: .100000001
+      value: .200000003
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
       propertyPath: maxLives
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: nextLevel
+      value: lEVEL2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
@@ -7036,7 +7042,7 @@ Transform:
   m_LocalScale: {x: 10, y: 41, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
 --- !u!1 &1402030957
 GameObject:
   m_ObjectHideFlags: 0
@@ -7492,6 +7498,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d05e63ade06de724095296ca09471c7f, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d05e63ade06de724095296ca09471c7f, type: 2}
   m_RootGameObject: {fileID: 926971854}
@@ -7566,7 +7576,7 @@ Transform:
   m_LocalScale: {x: 10, y: 41, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
 --- !u!1 &1612980743
 GameObject:
   m_ObjectHideFlags: 0
@@ -8105,7 +8115,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreNumber: {fileID: 198243466}
   livesNumber: {fileID: 54168568}
-  goalSpeedMultiplier: .100000001
+  nextLevel: lEVEL2
+  goalSpeedMultiplier: .200000003
   maxLives: 5
 --- !u!1 &1809503444
 GameObject:
@@ -8697,6 +8708,7 @@ MonoBehaviour:
   inputSpeed: 0
   maxSize: 16
   minSize: 4
+  friction: .600000024
   player: 0
 --- !u!54 &1922749613
 Rigidbody:

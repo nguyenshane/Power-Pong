@@ -129,8 +129,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreNumber: {fileID: 100000}
   livesNumber: {fileID: 100004}
-  score: 0
-  lives: 0
+  goalSpeedMultiplier: .200000003
+  maxLives: 5
 --- !u!132 &13200000
 GUIText:
   m_ObjectHideFlags: 1

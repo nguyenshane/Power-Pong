@@ -19,6 +19,7 @@ public class PowerUp : MonoBehaviour {
 	void Update () {
 		if (rigidbody.velocity.magnitude < minSpeed && target != null) {
 			Vector3 vel = target.transform.position - transform.position;
+			vel.z += Random.Range(-2.0f, 2.0f);
 			vel = vel / vel.magnitude * accelSpeed * Time.deltaTime;
 			rigidbody.AddForce (vel, ForceMode.Impulse);
 		}

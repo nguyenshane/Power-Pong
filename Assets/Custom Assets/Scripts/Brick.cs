@@ -41,6 +41,7 @@ public class Brick : MonoBehaviour {
 				newPowerUp.type = Random.Range(0, 3);
 				newPowerUp.target = Collection.gameObject.GetComponent<Ball>().paddle.GetComponent<Player>();
 				Vector3 vel = newPowerUp.target.transform.position - transform.position;
+				vel.z += Random.Range(-2.0f, 2.0f);
 				vel = vel / vel.magnitude * powerUpSpeed;
 				newPowerUp.rigidbody.AddForce(vel, ForceMode.Impulse);
 			} 

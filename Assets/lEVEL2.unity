@@ -174,8 +174,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreNumber: {fileID: 1026848850}
   livesNumber: {fileID: 1495605871}
-  goalSpeedMultiplier: 0
-  maxLives: 0
+  nextLevel: level1
+  goalSpeedMultiplier: .200000003
+  maxLives: 5
 --- !u!132 &30360774
 GUIText:
   m_ObjectHideFlags: 0
@@ -1075,6 +1076,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: nextLevel
+      value: level1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
   m_RootGameObject: {fileID: 1701847203}
@@ -1527,8 +1532,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 32
   inputSpeed: 0
-  maxSize: 0
-  minSize: 0
+  maxSize: 28
+  minSize: 8
+  friction: .600000024
   player: 1
 --- !u!23 &348422362
 Renderer:
@@ -2380,7 +2386,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 2.70000005
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2444,11 +2450,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
       propertyPath: height
-      value: 3.6500001
+      value: 2.70000005
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
       propertyPath: dropSpeed
-      value: 12
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
       propertyPath: maxSpeed
@@ -2457,6 +2463,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
       propertyPath: minSpeed
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
+      propertyPath: dropLocation.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
+      propertyPath: dropLocation.x
+      value: -20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 18ad16012f811a640adc8bd6ce3e34d1, type: 2}
@@ -2647,10 +2661,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72445e3f31ea04ce3b07ad1f2f925fb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 35
+  speed: 32
   inputSpeed: 0
-  maxSize: 0
-  minSize: 0
+  maxSize: 28
+  minSize: 8
+  friction: .600000024
   player: 0
 --- !u!23 &575737536
 Renderer:
@@ -4429,9 +4444,9 @@ MonoBehaviour:
   otherScore: {fileID: 30360772}
   paddle: {fileID: 575737533}
   initialImpulse: {x: -40, y: 0, z: -1}
-  dropLocation: {x: 0, y: 0, z: 0}
-  height: 3.6500001
-  dropSpeed: 12
+  dropLocation: {x: -20, y: 200, z: 0}
+  height: 2.70000005
+  dropSpeed: -24
   maxSpeed: 70
   minSpeed: 20
   ball: 0
@@ -4500,7 +4515,7 @@ Transform:
   m_PrefabInternal: {fileID: 559734297}
   m_GameObject: {fileID: 1100448182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20, y: 4, z: 0}
+  m_LocalPosition: {x: -20, y: 2.70000005, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4605,6 +4620,10 @@ Prefab:
     - target: {fileID: 400006, guid: bb8a3c23e46fd4e3aa120659af9a3c18, type: 2}
       propertyPath: m_RootOrder
       value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: bb8a3c23e46fd4e3aa120659af9a3c18, type: 2}
+      propertyPath: nextLevel
+      value: level1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb8a3c23e46fd4e3aa120659af9a3c18, type: 2}
@@ -6346,8 +6365,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreNumber: {fileID: 582464747}
   livesNumber: {fileID: 1200396479}
-  goalSpeedMultiplier: 0
-  maxLives: 0
+  nextLevel: level1
+  goalSpeedMultiplier: .200000003
+  maxLives: 5
 --- !u!132 &1701847205
 GUIText:
   m_ObjectHideFlags: 0
@@ -6611,7 +6631,7 @@ Transform:
   m_PrefabInternal: {fileID: 2107294997}
   m_GameObject: {fileID: 1740482999}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20, y: 4, z: 0}
+  m_LocalPosition: {x: 20, y: 2.70000005, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6632,9 +6652,9 @@ MonoBehaviour:
   otherScore: {fileID: 1701847203}
   paddle: {fileID: 348422360}
   initialImpulse: {x: 40, y: 0, z: 1}
-  dropLocation: {x: 0, y: 0, z: 0}
-  height: 3.6500001
-  dropSpeed: 12
+  dropLocation: {x: 20, y: 200, z: 0}
+  height: 2.70000005
+  dropSpeed: -24
   maxSpeed: 70
   minSpeed: 20
   ball: 1
@@ -8119,7 +8139,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4
+      value: 2.70000005
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
       propertyPath: m_LocalPosition.z
@@ -8179,11 +8199,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
       propertyPath: height
-      value: 3.6500001
+      value: 2.70000005
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
       propertyPath: dropSpeed
-      value: 12
+      value: -24
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
       propertyPath: maxSpeed
@@ -8192,6 +8212,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
       propertyPath: minSpeed
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
+      propertyPath: dropLocation.x
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
+      propertyPath: dropLocation.y
+      value: 200
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
