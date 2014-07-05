@@ -32,7 +32,7 @@ public class Ball : MonoBehaviour {
 	void Start () {
 		dropBall(dropLocation);
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		if (rigidbody.position.y < height) {

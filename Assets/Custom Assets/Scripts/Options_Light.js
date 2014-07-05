@@ -2,6 +2,7 @@
 
 static var audiovolume:float = 0.5;
 static var brightness:float = 1.0;
+
 var activate = false;
 var speed : float = 1.0; //how fast the object should rotate
 var mainlight: float;

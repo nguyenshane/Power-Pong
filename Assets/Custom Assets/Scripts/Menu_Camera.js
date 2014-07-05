@@ -1,7 +1,6 @@
 ﻿#pragma strict
 
 function Start () {
-
 }
 var target : float;
 var speed = 200.0; 
