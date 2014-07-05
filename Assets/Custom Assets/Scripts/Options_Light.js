@@ -6,15 +6,18 @@ var activate = false;
 var speed : float = 1.0; //how fast the object should rotate
 var mainlight: float;
 var optionslight: float;
+var creditslight:float;
 function Start () {
 	mainlight = GameObject.Find("Main Light").light.intensity;
 	optionslight = GameObject.Find("Options Light").light.intensity;
+	creditslight = GameObject.Find("Credits Light").light.intensity;
 }
 
 function Update(){
       AudioListener.volume = audiovolume;
       GameObject.Find("Main Light").light.intensity = brightness * mainlight;
       GameObject.Find("Options Light").light.intensity = brightness * optionslight;
+      GameObject.Find("Credits Light").light.intensity = brightness * creditslight;
       
  if (activate){
  	  collider.isTrigger = true;
