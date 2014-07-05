@@ -4,9 +4,7 @@ function Start () {
 
 }
 var target : float;
-var speed = 200.0;
-var doneAnimation = true;
- 
+var speed = 200.0; 
 	
 function Update () {
 	
@@ -31,18 +29,14 @@ function Update () {
 	 		linkToScript2.activate = true;
 	 		//Debug.Log("angle=" + angle);
 		}
-	if (angle == target) {
-		doneAnimation = true;
-	}
-
 }
 
 function ToOptions(){
 	target = 270.0;
-	doneAnimation = false;
+	//doneAnimation = false;
 }
 
 function ToMain(){
 	target = 0.0;
-	doneAnimation = false;
+	//doneAnimation = false;
 }

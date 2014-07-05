@@ -1,13 +1,21 @@
 ﻿#pragma strict
 
-function Start () {
-
-}
-
+static var audiovolume:float = 0.5;
+static var brightness:float = 1.0;
 var activate = false;
 var speed : float = 1.0; //how fast the object should rotate
+var mainlight: float;
+var optionslight: float;
+function Start () {
+	mainlight = GameObject.Find("Main Light").light.intensity;
+	optionslight = GameObject.Find("Options Light").light.intensity;
+}
 
- function Update(){
+function Update(){
+      AudioListener.volume = audiovolume;
+      GameObject.Find("Main Light").light.intensity = brightness * mainlight;
+      GameObject.Find("Options Light").light.intensity = brightness * optionslight;
+      
  if (activate){
  	  collider.isTrigger = true;
       transform.Rotate(Vector3(-Input.GetAxis("Mouse Y"),Input.GetAxis("Mouse X"), 0)  * speed);
@@ -23,25 +31,38 @@ var speed : float = 1.0; //how fast the object should rotate
       if(Input.GetMouseButtonDown(0)){
       	if(x>0.11 && y>0.716){
       		// Audio Low
+      		audiovolume = 0.2;
+      		GameObject.Find("Main Menu Light").audio.Play();      		
 			Debug.Log("Pressed Audio Low");
 	 	}else if(x<0.045 && x>-0.065 && y>0.716){
 			// Audio Medium
+			audiovolume = 0.5;
+      		GameObject.Find("Main Menu Light").audio.Play();   
 			Debug.Log("Pressed Audio Medium");
 		}else if(x<-0.013 && y>0.716){
       		// Audio High
+      		audiovolume = 1;
+      		GameObject.Find("Main Menu Light").audio.Play();   
 			Debug.Log("Pressed Audio High");
 		}else if(x>0.103 && y>0.67 && y<0.7){
       		// Brightness Low
+      		brightness = 0.5;
+      		GameObject.Find("Main Menu Light").audio.Play();    
 			Debug.Log("Pressed Brightness Dark");
 		}else if(x<0.05 && x>-0.055 && y<0.716 && y>0.698){
       		// Brightness Medium
+      		brightness = 1.0;
+      		GameObject.Find("Main Menu Light").audio.Play();    
 			Debug.Log("Pressed Brightness Medium");
 		}else if(x<-0.11 && y>0.675 && y<0.7){
       		// Brightness High
+      		brightness = 1.5;
+      		GameObject.Find("Main Menu Light").audio.Play();    
 			Debug.Log("Pressed Brightness Bright");
 		}else if(x<0.08 && x>-0.09 && y<0.675){
 			// Back
 			Debug.Log("Pressed Back");
+			GameObject.Find("Main Menu Light").audio.Play(); 
 	 		var linkToScript = GameObject.Find("Camera").GetComponent(Menu_Camera);
 	 		linkToScript.ToMain();
 	 		activate = false;
