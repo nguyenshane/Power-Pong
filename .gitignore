@@ -3,6 +3,7 @@
 # =============== #
 Temp/
 Library/
+Assets/Elementals/
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
@@ -38,3 +39,5 @@ Library/ScriptAssemblies/Assembly-CSharp.dll
 
 Library/ScriptAssemblies/Assembly-CSharp.dll.mdb
 Assets/Materials/unnamed.mat.meta
+
+Assets/Elementals.meta
