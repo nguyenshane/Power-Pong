@@ -166,7 +166,7 @@ Transform:
   m_LocalScale: {x: 1, y: 3, z: 8}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
 --- !u!54 &19701280
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -512,7 +512,7 @@ GUIText:
   m_GameObject: {fileID: 127867122}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: 0
+  m_Text: 108
   m_Anchor: 0
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
@@ -3041,7 +3041,7 @@ Transform:
   - {fileID: 1039651910}
   - {fileID: 699471876}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
 --- !u!114 &638515123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5357,7 +5357,7 @@ Transform:
   m_LocalScale: {x: 1, y: 20, z: 75}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
 --- !u!1 &1139879670
 GameObject:
   m_ObjectHideFlags: 0
@@ -8180,7 +8180,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
 --- !u!1 &1775360107
 GameObject:
   m_ObjectHideFlags: 0
