@@ -30,23 +30,20 @@ public class Ball : MonoBehaviour {
 	Vector3 rightImpulse_F;
 	int normalBrickScore = 1;
 	int goalBrickScore = 3;
-	float z;
 	float goalPointPercentage = 0.20f;
 	float currentDropDelay;
 
 
 	// Use this for initialization
 	void Start () {
-
 		if (ball == eBall.F_Left || ball == eBall.F_Right) {
 			Destroy(gameObject, 5.0f);
 		}
-		//z = Random.Range(-5.0f,5.0f);
-		leftImpulse_F = new Vector3(-2,0,0);
-		rightImpulse_F = new Vector3(2,0,0);
+
+		leftImpulse_F = new Vector3(-2, 0, Random.Range (-1.0f, 1.0f));
+    	rightImpulse_F = new Vector3(2, 0, Random.Range (-1.0f, 1.0f));
 
 		currentDropDelay = initialDropDelay;
-		//dropBall(dropLocation);
 	}
 
 	// Update is called once per frame
@@ -79,16 +76,6 @@ public class Ball : MonoBehaviour {
 				}
 			}
 		}
-
-		/*if (ball == eBall.F_Left) {
-			if (rigidbody.transform.position.x > 11) {
-				Destroy(gameObject);
-			}
-		} else if (ball == eBall.F_Right) {
-			if(rigidbody.transform.position.x < -11) {
-				Destroy(gameObject);
-			}
-		}*/
 	}
 
 
@@ -159,7 +146,7 @@ public class Ball : MonoBehaviour {
 			if (Collection.gameObject.name == "Brick") {
 				audio.Play();
 				Destroy(Collection.gameObject);
-				rigidbody.AddForce(rightImpulse_F, ForceMode.Impulse);
+				rigidbody.AddForce(-rigidbody.velocity + rightImpulse_F, ForceMode.Impulse);
 				score.GetComponent<Scores>().AddScore(normalBrickScore);
 			}
 		}
@@ -168,7 +155,7 @@ public class Ball : MonoBehaviour {
 			if (Collection.gameObject.name == "Brick") {
 				audio.Play();
 				Destroy(Collection.gameObject);
-				rigidbody.AddForce(leftImpulse_F, ForceMode.Impulse);
+				rigidbody.AddForce(-rigidbody.velocity + leftImpulse_F, ForceMode.Impulse);
 				score.GetComponent<Scores>().AddScore(normalBrickScore);
 			}
 		}
