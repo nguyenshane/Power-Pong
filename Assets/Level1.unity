@@ -512,7 +512,7 @@ GUIText:
   m_GameObject: {fileID: 127867122}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: 144
+  m_Text: 0
   m_Anchor: 0
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
@@ -1508,7 +1508,7 @@ MonoBehaviour:
   paddle: {fileID: 19701274}
   initialImpulse: {x: 12, y: 0, z: 4}
   dropLocation: {x: 12, y: 80, z: 0}
-  dropSpeed: -16
+  dropSpeed: -24
   height: 1.64999998
   maxSpeed: 48
   minSpeed: 12
