@@ -111,7 +111,6 @@ MonoBehaviour:
   maxSize: 16
   minSize: 4
   friction: .600000024
-  ball: {fileID: 100000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
   player: 1
 --- !u!23 &19701276
 Renderer:
@@ -4051,7 +4050,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 108
+  m_RootOrder: 111
 --- !u!4 &664436822
 Transform:
   m_ObjectHideFlags: 0
@@ -5899,7 +5898,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 109
+  m_RootOrder: 108
 --- !u!1 &877439502
 GameObject:
   m_ObjectHideFlags: 0
@@ -6075,7 +6074,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 110
+  m_RootOrder: 109
 --- !u!1001 &913626265
 Prefab:
   m_ObjectHideFlags: 0
@@ -6747,7 +6746,7 @@ Transform:
   m_LocalScale: {x: 1, y: 2, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 111
+  m_RootOrder: 110
 --- !u!1 &1009934161
 GameObject:
   m_ObjectHideFlags: 0
@@ -7856,11 +7855,10 @@ MonoBehaviour:
   paddle: {fileID: 1922749607}
   initialImpulse: {x: -20, y: 0, z: -1}
   dropLocation: {x: -12, y: 160, z: 0}
-  dropSpeed: -20
   height: 1.64999998
+  dropSpeed: -20
   maxSpeed: 50
   minSpeed: 20
-  initialDropDelay: 4
   ball: 0
 --- !u!54 &1139879673
 Rigidbody:
@@ -8247,11 +8245,10 @@ MonoBehaviour:
   paddle: {fileID: 19701274}
   initialImpulse: {x: 20, y: 0, z: 1}
   dropLocation: {x: 12, y: 160, z: 0}
-  dropSpeed: -20
   height: 1.64999998
+  dropSpeed: -20
   maxSpeed: 50
   minSpeed: 20
-  initialDropDelay: 4
   ball: 1
 --- !u!54 &1166789256
 Rigidbody:
@@ -12701,7 +12698,6 @@ MonoBehaviour:
   maxSize: 16
   minSize: 4
   friction: .600000024
-  ball: {fileID: 1139879670}
   player: 0
 --- !u!54 &1922749613
 Rigidbody:

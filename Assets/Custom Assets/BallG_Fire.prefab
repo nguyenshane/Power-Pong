@@ -30,8 +30,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: -15.9263954, y: 1.50000012, z: -.0179763138}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 10.2090569, y: 2, z: -16.0444069}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -149,13 +149,12 @@ MonoBehaviour:
   score: {fileID: 100002, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
   otherScore: {fileID: 100006, guid: 1c0b907e292be4fa1937be21b2408cc1, type: 2}
   paddle: {fileID: 100000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
-  initialImpulse: {x: -15, y: 0, z: 0}
-  dropLocation: {x: -20, y: 1.5, z: -.460000008}
+  initialImpulse: {x: 15, y: 0, z: 0}
+  dropLocation: {x: -26, y: 2.6500001, z: -.460000008}
+  height: 3.6500001
   dropSpeed: -12
-  height: 1.64999998
-  maxSpeed: 50
+  maxSpeed: 70
   minSpeed: 30
-  initialDropDelay: 0
   ball: 2
 --- !u!135 &13500000
 SphereCollider:
@@ -175,7 +174,7 @@ ParticleSystem:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  lengthInSec: .100000001
+  lengthInSec: 5
   startDelay: 0
   speed: 1
   randomSeed: 0
@@ -186,7 +185,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: 2.25999999
+      scalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -219,7 +218,7 @@ ParticleSystem:
         m_PostInfinity: 2
       minMaxState: 0
     startSpeed:
-      scalar: 3.1400001
+      scalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -343,7 +342,7 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4278219301
+        rgba: 4294967295
       minMaxState: 0
     startSize:
       scalar: 1
@@ -418,8 +417,8 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     type: 4
-    radius: .810000002
-    angle: 2.1500001
+    radius: 1
+    angle: 13.8999996
     length: 5
     boxX: 1
     boxY: 1
@@ -431,7 +430,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 6.17999983
+      scalar: 10
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -475,12 +474,12 @@ ParticleSystem:
   SizeModule:
     enabled: 1
     curve:
-      scalar: 4
+      scalar: 10
       maxCurve:
         serializedVersion: 2
         m_Curve:
         - time: 0
-          value: .75
+          value: .300000012
           inSlope: 0
           outSlope: 0
           tangentMode: 0

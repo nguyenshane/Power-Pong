@@ -30,7 +30,7 @@ public class PowerUp : MonoBehaviour {
 		if (Collection.gameObject.name == "Player Left"){
 			switch (type) {
 			case 0:
-				Collection.gameObject.GetComponent<Player>().increaseSize(0.5f);
+				Collection.gameObject.GetComponent<Player>().increaseSize(0.25f);
 				break;
 				
 			case 1:
@@ -38,13 +38,13 @@ public class PowerUp : MonoBehaviour {
 				break;
 				
 			case 2:
-				Instantiate(fireballG, new Vector3(-20,2,0), Quaternion.identity);
+				Instantiate(fireballG, new Vector3(-26,3,0), Quaternion.identity);
 				//Collection.gameObject.GetComponent<Player>().increaseSize(-0.15f);
 
 				break;
 				
 			case 3:
-				Instantiate(fireballG, new Vector3(-20,2,0), Quaternion.identity);
+				Instantiate(fireballG, new Vector3(-26,3,0), Quaternion.identity);
 				break;
 			}
 			
@@ -52,7 +52,7 @@ public class PowerUp : MonoBehaviour {
 		}if (Collection.gameObject.name == "Player Right"){
 			switch (type) {
 			case 0:
-				Collection.gameObject.GetComponent<Player>().increaseSize(0.5f);
+				Collection.gameObject.GetComponent<Player>().increaseSize(0.25f);
 				break;
 				
 			case 1:
@@ -60,12 +60,12 @@ public class PowerUp : MonoBehaviour {
 				break;
 				
 			case 2:
-				Instantiate(fireballO, new Vector3(20,2,0), Quaternion.identity);
+				Instantiate(fireballO, new Vector3(26,3,0), Quaternion.identity);
 				//Collection.gameObject.GetComponent<Player>().increaseSize(-0.15f);
 				break;
 				
 			case 3:
-				Instantiate(fireballO, new Vector3(20,2,0), Quaternion.identity);
+				Instantiate(fireballO, new Vector3(26,3,0), Quaternion.identity);
 				break;
 			}
 			Destroy(gameObject);
