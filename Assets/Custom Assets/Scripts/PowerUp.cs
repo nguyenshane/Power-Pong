@@ -5,8 +5,7 @@ public class PowerUp : MonoBehaviour {
 
 	public int type;
 	public Player target;
-	public Transform fireballG;
-	public Transform fireballO;
+	
 	private float minSpeed = 12.0f;
 	private float accelSpeed = 10.0f;
 
@@ -27,49 +26,27 @@ public class PowerUp : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision Collection) {
-		if (Collection.gameObject.name == "Player Left"){
+		if (Collection.gameObject.name == "Player Left" || Collection.gameObject.name == "Player Right") {
 			switch (type) {
 			case 0:
 				Collection.gameObject.GetComponent<Player>().increaseSize(0.25f);
 				break;
 				
 			case 1:
-				Collection.gameObject.GetComponent<Player>().increaseSize(-0.15f);
+				Collection.gameObject.GetComponent<Player>().increaseSize(0.5f);
 				break;
 				
 			case 2:
-				Instantiate(fireballG, new Vector3(-26,3,0), Quaternion.identity);
-				//Collection.gameObject.GetComponent<Player>().increaseSize(-0.15f);
-
+				Collection.gameObject.GetComponent<Player>().increaseSize(-0.15f);
 				break;
 				
 			case 3:
-				Instantiate(fireballG, new Vector3(-26,3,0), Quaternion.identity);
+				Collection.gameObject.GetComponent<Player>().increaseSize(-0.35f);
 				break;
 			}
 			
 			Destroy(gameObject);
-		}if (Collection.gameObject.name == "Player Right"){
-			switch (type) {
-			case 0:
-				Collection.gameObject.GetComponent<Player>().increaseSize(0.25f);
-				break;
-				
-			case 1:
-				Collection.gameObject.GetComponent<Player>().increaseSize(-0.15f);
-				break;
-				
-			case 2:
-				Instantiate(fireballO, new Vector3(26,3,0), Quaternion.identity);
-				//Collection.gameObject.GetComponent<Player>().increaseSize(-0.15f);
-				break;
-				
-			case 3:
-				Instantiate(fireballO, new Vector3(26,3,0), Quaternion.identity);
-				break;
-			}
-			Destroy(gameObject);
-		}  else if (Collection.gameObject.name == "Green_Goal" || Collection.gameObject.name == "Orange_Goal") {
+		} else if (Collection.gameObject.name == "Green_Goal" || Collection.gameObject.name == "Orange_Goal") {
 			Destroy(gameObject);
 		}
 	}

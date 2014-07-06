@@ -4,9 +4,7 @@ using System.Collections;
 public enum eBall
 {
 	Left,
-	Right,
-	F_Left,
-	F_Right
+	Right
 }
 
 public class Ball : MonoBehaviour {
@@ -17,75 +15,42 @@ public class Ball : MonoBehaviour {
 
 	public Vector3 initialImpulse;
 	public Vector3 dropLocation;
-	public float dropSpeed;
 	public float height;
+	public float dropSpeed;
 	public float maxSpeed;
 	public float minSpeed;
-	public float initialDropDelay;
 	public eBall ball;
 	
 	Vector3 leftImpulse = new Vector3(-2,0,0);
 	Vector3 rightImpulse = new Vector3(2,0,0);
-	Vector3 leftImpulse_F;
-	Vector3 rightImpulse_F;
 	int normalBrickScore = 1;
 	int goalBrickScore = 3;
-	int z;
 	float goalPointPercentage = 0.20f;
-	float currentDropDelay;
 
 
 	// Use this for initialization
 	void Start () {
-
-		z = Random.Range(-8,8);
-		leftImpulse_F = new Vector3(-2,0,z);
-		rightImpulse_F = new Vector3(2,0,z);
 		dropBall(dropLocation);
-
-		currentDropDelay = initialDropDelay;
-		//dropBall(dropLocation);
 	}
 
 	// Update is called once per frame
 	void Update () {
-		if (currentDropDelay > 0) {
-			currentDropDelay -= Time.deltaTime;
-		} else if (currentDropDelay == -1000) {
-			dropBall (dropLocation);
-			currentDropDelay = -2000;
-		} else if (currentDropDelay != -2000) {
-			currentDropDelay = -1000;
+		if (rigidbody.position.y < height) {
+			rigidbody.MovePosition(new Vector3(rigidbody.position.x, height, rigidbody.position.z));
+			rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
+			collider.isTrigger = false;
+			score.GetComponent<Scores>().increaseMultiplier();
+			rigidbody.AddForce(initialImpulse * score.GetComponent<Scores>().getMultiplier(), ForceMode.Impulse);
 		}
 
-		if (currentDropDelay == -2000) {
-			if (rigidbody.position.y < height) {
-				rigidbody.MovePosition (new Vector3 (rigidbody.position.x, height, rigidbody.position.z));
-				rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
-				collider.isTrigger = false;
-				score.GetComponent<Scores> ().increaseMultiplier ();
-				rigidbody.AddForce (initialImpulse * score.GetComponent<Scores> ().getMultiplier (), ForceMode.Impulse);
-			} else if (rigidbody.position.y == height) {
-				if (rigidbody.velocity.magnitude < minSpeed) {
-					if (rigidbody.velocity.magnitude != 0) {
-						rigidbody.AddForce (rigidbody.velocity * (1 - minSpeed / rigidbody.velocity.magnitude), ForceMode.Impulse);
-					} else {
-						rigidbody.AddForce (initialImpulse, ForceMode.Impulse);
-					}
-				} else if (rigidbody.velocity.magnitude > maxSpeed) {
-					rigidbody.AddForce (rigidbody.velocity * -1 * (1 - maxSpeed / rigidbody.velocity.magnitude), ForceMode.Impulse);
-				}
+		if (rigidbody.velocity.magnitude < minSpeed) {
+			if (rigidbody.velocity.magnitude != 0) {
+				rigidbody.AddForce(rigidbody.velocity * (1 - minSpeed / rigidbody.velocity.magnitude), ForceMode.Impulse);
+			} else {
+				rigidbody.AddForce(initialImpulse, ForceMode.Impulse);
 			}
-		}
-
-		if (ball == eBall.F_Left) {
-			if (rigidbody.transform.position.x > 11) {
-				Destroy(gameObject);
-			}
-		} else if (ball == eBall.F_Right) {
-			if(rigidbody.transform.position.x < -11) {
-				Destroy(gameObject);
-			}
+		} else if (rigidbody.velocity.magnitude > maxSpeed) {
+			rigidbody.AddForce(rigidbody.velocity * -1 * (1 - maxSpeed / rigidbody.velocity.magnitude), ForceMode.Impulse);
 		}
 	}
 
@@ -150,24 +115,6 @@ public class Ball : MonoBehaviour {
 				score.GetComponent<Scores>().AddScore(-1*points);
 				score.GetComponent<Scores>().RemoveLife();
 				dropBall(dropLocation);
-			}
-		} 
-		//FIREBALLS
-		else if (ball == eBall.F_Left){
-			if (Collection.gameObject.name == "Brick") {
-				audio.Play();
-				rigidbody.AddForce(rightImpulse_F*3, ForceMode.Impulse);
-				score.GetComponent<Scores>().AddScore(normalBrickScore);
-				Destroy(Collection.gameObject);
-			}
-		}
-		//FIREBALLS
-		else if (ball == eBall.F_Right){
-			if (Collection.gameObject.name == "Brick") {
-				audio.Play();
-				rigidbody.AddForce(leftImpulse_F*3, ForceMode.Impulse);
-				score.GetComponent<Scores>().AddScore(normalBrickScore);
-				Destroy(Collection.gameObject);
 			}
 		}
 	}
