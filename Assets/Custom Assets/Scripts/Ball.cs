@@ -15,10 +15,11 @@ public class Ball : MonoBehaviour {
 
 	public Vector3 initialImpulse;
 	public Vector3 dropLocation;
-	public float height;
 	public float dropSpeed;
+	public float height;
 	public float maxSpeed;
 	public float minSpeed;
+	public float initialDropDelay;
 	public eBall ball;
 	
 	Vector3 leftImpulse = new Vector3(-2,0,0);
@@ -26,31 +27,44 @@ public class Ball : MonoBehaviour {
 	int normalBrickScore = 1;
 	int goalBrickScore = 3;
 	float goalPointPercentage = 0.20f;
+	float currentDropDelay;
 
 
 	// Use this for initialization
 	void Start () {
-		dropBall(dropLocation);
+		currentDropDelay = initialDropDelay;
+		//dropBall(dropLocation);
 	}
 
 	// Update is called once per frame
 	void Update () {
-		if (rigidbody.position.y < height) {
-			rigidbody.MovePosition(new Vector3(rigidbody.position.x, height, rigidbody.position.z));
-			rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
-			collider.isTrigger = false;
-			score.GetComponent<Scores>().increaseMultiplier();
-			rigidbody.AddForce(initialImpulse * score.GetComponent<Scores>().getMultiplier(), ForceMode.Impulse);
+		if (currentDropDelay > 0) {
+			currentDropDelay -= Time.deltaTime;
+		} else if (currentDropDelay == -1000) {
+			dropBall (dropLocation);
+			currentDropDelay = -2000;
+		} else if (currentDropDelay != -2000) {
+			currentDropDelay = -1000;
 		}
 
-		if (rigidbody.velocity.magnitude < minSpeed) {
-			if (rigidbody.velocity.magnitude != 0) {
-				rigidbody.AddForce(rigidbody.velocity * (1 - minSpeed / rigidbody.velocity.magnitude), ForceMode.Impulse);
-			} else {
-				rigidbody.AddForce(initialImpulse, ForceMode.Impulse);
+		if (currentDropDelay == -2000) {
+			if (rigidbody.position.y < height) {
+				rigidbody.MovePosition (new Vector3 (rigidbody.position.x, height, rigidbody.position.z));
+				rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
+				collider.isTrigger = false;
+				score.GetComponent<Scores> ().increaseMultiplier ();
+				rigidbody.AddForce (initialImpulse * score.GetComponent<Scores> ().getMultiplier (), ForceMode.Impulse);
+			} else if (rigidbody.position.y == height) {
+				if (rigidbody.velocity.magnitude < minSpeed) {
+					if (rigidbody.velocity.magnitude != 0) {
+						rigidbody.AddForce (rigidbody.velocity * (1 - minSpeed / rigidbody.velocity.magnitude), ForceMode.Impulse);
+					} else {
+						rigidbody.AddForce (initialImpulse, ForceMode.Impulse);
+					}
+				} else if (rigidbody.velocity.magnitude > maxSpeed) {
+					rigidbody.AddForce (rigidbody.velocity * -1 * (1 - maxSpeed / rigidbody.velocity.magnitude), ForceMode.Impulse);
+				}
 			}
-		} else if (rigidbody.velocity.magnitude > maxSpeed) {
-			rigidbody.AddForce(rigidbody.velocity * -1 * (1 - maxSpeed / rigidbody.velocity.magnitude), ForceMode.Impulse);
 		}
 	}
 
