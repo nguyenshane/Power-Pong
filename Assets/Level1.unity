@@ -1091,11 +1091,13 @@ GameObject:
   m_Component:
   - 4: {fileID: 275539248}
   - 20: {fileID: 275539247}
+  - 114: {fileID: 275539251}
   - 92: {fileID: 275539246}
   - 124: {fileID: 275539245}
   - 81: {fileID: 275539244}
   - 114: {fileID: 275539249}
   - 82: {fileID: 275539250}
+  - 95: {fileID: 275539252}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1163,7 +1165,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 275539243}
   m_LocalRotation: {x: .707106888, y: 0, z: 0, w: .707106769}
-  m_LocalPosition: {x: -.0919866562, y: 41.6777573, z: -1.53880882}
+  m_LocalPosition: {x: 0, y: 41, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1240,6 +1242,31 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!114 &275539251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275539243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6418cd0c5d40497fa912fc8833fe8b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &275539252
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 275539243}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a461df565a8b4e20933062d60cdd67a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
 --- !u!1 &329960705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,7 +1433,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 338986503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12, y: 1.64999998, z: 0}
+  m_LocalPosition: {x: 12, y: 401.649994, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1425,12 +1452,13 @@ MonoBehaviour:
   score: {fileID: 1775360107}
   otherScore: {fileID: 638515120}
   paddle: {fileID: 19701274}
-  initialImpulse: {x: 15, y: 0, z: 4}
-  dropLocation: {x: 12, y: 60, z: 0}
-  height: 1.64999998
+  initialImpulse: {x: 12, y: 0, z: 4}
+  dropLocation: {x: 12, y: 80, z: 0}
   dropSpeed: -16
-  maxSpeed: 50
-  minSpeed: 15
+  height: 1.64999998
+  maxSpeed: 48
+  minSpeed: 12
+  initialDropDelay: 3
   ball: 1
 --- !u!82 &338986510
 AudioSource:
@@ -5354,7 +5382,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1139879670}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12, y: 1.64999998, z: -.0632131398}
+  m_LocalPosition: {x: -12, y: 401.649994, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5373,12 +5401,13 @@ MonoBehaviour:
   score: {fileID: 638515120}
   otherScore: {fileID: 1775360107}
   paddle: {fileID: 1922749607}
-  initialImpulse: {x: -20, y: 0, z: -4}
-  dropLocation: {x: -12, y: 60, z: 0}
-  height: 1.64999998
+  initialImpulse: {x: -12, y: 0, z: -4}
+  dropLocation: {x: -12, y: 80, z: 0}
   dropSpeed: -16
-  maxSpeed: 50
-  minSpeed: 15
+  height: 1.64999998
+  maxSpeed: 48
+  minSpeed: 12
+  initialDropDelay: 3
   ball: 0
 --- !u!54 &1139879673
 Rigidbody:

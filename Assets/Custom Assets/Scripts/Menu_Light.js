@@ -53,12 +53,13 @@ var activate = true;
 			Debug.Log("Pressed Options");
 		} else if(y>0.19 && y<0.3){
 			audio.Play();
+			GameObject.Find("Camera").GetComponent(Menu_Camera).ToCredits();
+	 		GameObject.Find("Credits Menu Light").GetComponent(Credits_Light).activate = true;
+	 		activate = false;
 			Debug.Log("Pressed Credits");
 		} else Debug.Log("Outside");
 	}
 } else {
 		collider.isTrigger = false;
-		//var linkToScript3 = GameObject.Find("Camera").GetComponent(Menu_Camera);
-		//if (linkToScript3.doneAnimation) active = true;
 		}
  }
