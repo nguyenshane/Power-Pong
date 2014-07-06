@@ -512,7 +512,7 @@ GUIText:
   m_GameObject: {fileID: 127867122}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: 108
+  m_Text: 0
   m_Anchor: 0
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
@@ -1295,7 +1295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLevel: 1
-  maxLevels: 3
+  maxLevels: 2
   greenLives: 0
   orangeLives: 0
   greenScore: 0
