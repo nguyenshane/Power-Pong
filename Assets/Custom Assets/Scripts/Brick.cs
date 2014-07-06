@@ -38,7 +38,7 @@ public class Brick : MonoBehaviour {
 		if(Collection.gameObject.name == "BallG" || Collection.gameObject.name == "BallO") {
 			if (canDropPowerup) {
 				PowerUp newPowerUp = ((Transform)Instantiate(PowerUpPrefab, transform.position, Quaternion.identity)).gameObject.GetComponent<PowerUp>();
-				newPowerUp.type = Random.Range(0, 3);
+				newPowerUp.type = Random.Range(2, 3);
 				newPowerUp.target = Collection.gameObject.GetComponent<Ball>().paddle.GetComponent<Player>();
 				Vector3 vel = newPowerUp.target.transform.position - transform.position;
 				vel.z += Random.Range(-2.0f, 2.0f);
