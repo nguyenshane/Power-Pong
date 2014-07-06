@@ -161,7 +161,6 @@ public class Ball : MonoBehaviour {
 				Destroy(Collection.gameObject);
 				rigidbody.AddForce(rightImpulse_F, ForceMode.Impulse);
 				score.GetComponent<Scores>().AddScore(normalBrickScore);
-
 			}
 		}
 		//FIREBALLS

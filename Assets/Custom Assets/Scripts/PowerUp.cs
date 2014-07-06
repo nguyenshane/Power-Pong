@@ -12,8 +12,7 @@ public class PowerUp : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//type = 0;
-		//target = null;
+
 	}
 	
 	// Update is called once per frame
@@ -38,18 +37,18 @@ public class PowerUp : MonoBehaviour {
 				break;
 				
 			case 2:
-				Instantiate(fireballG, new Vector3(-20,2,0), Quaternion.identity);
-				//Collection.gameObject.GetComponent<Player>().increaseSize(-0.15f);
-
+				Ball newFireball = ((Transform)Instantiate(fireballG, new Vector3(20,2,0), Quaternion.identity)).gameObject.GetComponent<Ball>();
+				newFireball.paddle = Collection.gameObject;
 				break;
 				
 			case 3:
-				Instantiate(fireballG, new Vector3(-20,2,0), Quaternion.identity);
+				Ball newFireball2 = ((Transform)Instantiate(fireballG, new Vector3(20,2,0), Quaternion.identity)).gameObject.GetComponent<Ball>();
+				newFireball2.paddle = Collection.gameObject;
 				break;
 			}
 			
 			Destroy(gameObject);
-		}if (Collection.gameObject.name == "Player Right"){
+		} if (Collection.gameObject.name == "Player Right"){
 			switch (type) {
 			case 0:
 				Collection.gameObject.GetComponent<Player>().increaseSize(0.5f);
@@ -60,14 +59,16 @@ public class PowerUp : MonoBehaviour {
 				break;
 				
 			case 2:
-				Instantiate(fireballO, new Vector3(20,2,0), Quaternion.identity);
-				//Collection.gameObject.GetComponent<Player>().increaseSize(-0.15f);
+				Ball newFireball = ((Transform)Instantiate(fireballO, new Vector3(-20,2,0), Quaternion.identity)).gameObject.GetComponent<Ball>();
+				newFireball.paddle = Collection.gameObject;
 				break;
 				
 			case 3:
-				Instantiate(fireballO, new Vector3(20,2,0), Quaternion.identity);
+				Ball newFireball2 = ((Transform)Instantiate(fireballO, new Vector3(-20,2,0), Quaternion.identity)).gameObject.GetComponent<Ball>();
+				newFireball2.paddle = Collection.gameObject;
 				break;
 			}
+
 			Destroy(gameObject);
 		}  else if (Collection.gameObject.name == "Green_Goal" || Collection.gameObject.name == "Orange_Goal") {
 			Destroy(gameObject);
