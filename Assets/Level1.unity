@@ -6827,6 +6827,10 @@ Prefab:
       propertyPath: nextLevel
       value: lEVEL2
       objectReference: {fileID: 0}
+    - target: {fileID: 13200000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
   m_RootGameObject: {fileID: 638515120}

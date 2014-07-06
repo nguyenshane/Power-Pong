@@ -116,6 +116,23 @@ public class Ball : MonoBehaviour {
 				score.GetComponent<Scores>().RemoveLife();
 				dropBall(dropLocation);
 			}
+		//FIREBALLS
+		else if (ball == eBall.F_Left){
+			if (Collection.gameObject.name == "Brick") {
+				audio.Play();
+				Destroy(Collection.gameObject);
+				rigidbody.AddForce(rightImpulse_F, ForceMode.Impulse);
+				score.GetComponent<Scores>().AddScore(normalBrickScore);
+			}
+		}
+		//FIREBALLS
+		else if (ball == eBall.F_Right){
+			if (Collection.gameObject.name == "Brick") {
+				audio.Play();
+				Destroy(Collection.gameObject);
+				rigidbody.AddForce(leftImpulse_F, ForceMode.Impulse);
+				score.GetComponent<Scores>().AddScore(normalBrickScore);
+			}
 		}
 	}
 
