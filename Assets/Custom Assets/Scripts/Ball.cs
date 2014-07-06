@@ -37,9 +37,13 @@ public class Ball : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		z = Random.Range(-8.0f,8.0f);
-		leftImpulse_F = new Vector3(-2,0,z);
-		rightImpulse_F = new Vector3(2,0,z);
+
+		if (ball == eBall.F_Left || ball == eBall.F_Right) {
+			Destroy(gameObject, 5.0f);
+		}
+		//z = Random.Range(-5.0f,5.0f);
+		leftImpulse_F = new Vector3(-2,0,0);
+		rightImpulse_F = new Vector3(2,0,0);
 
 		currentDropDelay = initialDropDelay;
 		//dropBall(dropLocation);
@@ -76,7 +80,7 @@ public class Ball : MonoBehaviour {
 			}
 		}
 
-		if (ball == eBall.F_Left) {
+		/*if (ball == eBall.F_Left) {
 			if (rigidbody.transform.position.x > 11) {
 				Destroy(gameObject);
 			}
@@ -84,7 +88,7 @@ public class Ball : MonoBehaviour {
 			if(rigidbody.transform.position.x < -11) {
 				Destroy(gameObject);
 			}
-		}
+		}*/
 	}
 
 
@@ -143,7 +147,7 @@ public class Ball : MonoBehaviour {
 				otherScore.GetComponent<Scores>().AddScore(-1*points);
 				otherScore.GetComponent<Scores>().RemoveLife();
 				dropBall(dropLocation);
-			} else if (Collection.gameObject.name == "Orange_Goal") {
+			} else if (Collection.gameObject.name == "Orange_Goal" && ball != eBall.F_Left && ball != eBall.F_Right) {
 				int points = (int)(score.GetComponent<Scores>().getScore() * goalPointPercentage);
 				score.GetComponent<Scores>().AddScore(-1*points);
 				score.GetComponent<Scores>().RemoveLife();
@@ -154,18 +158,19 @@ public class Ball : MonoBehaviour {
 		else if (ball == eBall.F_Left){
 			if (Collection.gameObject.name == "Brick") {
 				audio.Play();
-				rigidbody.AddForce(rightImpulse_F*3, ForceMode.Impulse);
-				score.GetComponent<Scores>().AddScore(normalBrickScore);
 				Destroy(Collection.gameObject);
+				rigidbody.AddForce(rightImpulse_F, ForceMode.Impulse);
+				score.GetComponent<Scores>().AddScore(normalBrickScore);
+
 			}
 		}
 		//FIREBALLS
 		else if (ball == eBall.F_Right){
 			if (Collection.gameObject.name == "Brick") {
 				audio.Play();
-				rigidbody.AddForce(leftImpulse_F*3, ForceMode.Impulse);
-				score.GetComponent<Scores>().AddScore(normalBrickScore);
 				Destroy(Collection.gameObject);
+				rigidbody.AddForce(leftImpulse_F, ForceMode.Impulse);
+				score.GetComponent<Scores>().AddScore(normalBrickScore);
 			}
 		}
 	}
