@@ -14,6 +14,7 @@ public class Player : MonoBehaviour {
 	public float maxSize;
 	public float minSize;
 	public float friction;
+	public GameObject ball;
 	public ePlayer player;
 	
 

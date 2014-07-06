@@ -4,7 +4,9 @@ using System.Collections;
 public enum eBall
 {
 	Left,
-	Right
+	Right,
+	F_Left,
+	F_Right
 }
 
 public class Ball : MonoBehaviour {
@@ -23,13 +25,19 @@ public class Ball : MonoBehaviour {
 	
 	Vector3 leftImpulse = new Vector3(-2,0,0);
 	Vector3 rightImpulse = new Vector3(2,0,0);
+	Vector3 leftImpulse_F;
+	Vector3 rightImpulse_F;
 	int normalBrickScore = 1;
 	int goalBrickScore = 3;
+	int z;
 	float goalPointPercentage = 0.20f;
 
 
 	// Use this for initialization
 	void Start () {
+		z = Random.Range(-8,8);
+		leftImpulse_F = new Vector3(-2,0,z);
+		rightImpulse_F = new Vector3(2,0,z);
 		dropBall(dropLocation);
 	}
 	
@@ -51,6 +59,16 @@ public class Ball : MonoBehaviour {
 			}
 		} else if (rigidbody.velocity.magnitude > maxSpeed) {
 			rigidbody.AddForce(rigidbody.velocity * -1 * (1 - maxSpeed / rigidbody.velocity.magnitude), ForceMode.Impulse);
+		}
+
+		if (ball == eBall.F_Left) {
+			if (rigidbody.transform.position.x > 11 || rigidbody.transform.position.x < -25) {
+				Destroy(gameObject);
+			}
+		} else if (ball == eBall.F_Right) {
+			if(rigidbody.transform.position.x < -11 || rigidbody.transform.position.x > 25) {
+				Destroy(gameObject);
+			}
 		}
 	}
 
@@ -115,6 +133,24 @@ public class Ball : MonoBehaviour {
 				score.GetComponent<Scores>().AddScore(-1*points);
 				score.GetComponent<Scores>().RemoveLife();
 				dropBall(dropLocation);
+			}
+		} 
+		//FIREBALLS
+		else if (ball == eBall.F_Left){
+			if (Collection.gameObject.name == "Brick") {
+				audio.Play();
+				rigidbody.AddForce(rightImpulse_F*5, ForceMode.Impulse);
+				Destroy(Collection.gameObject);
+				score.GetComponent<Scores>().AddScore(normalBrickScore*2);
+			}
+		}
+		//FIREBALLS
+		else if (ball == eBall.F_Right){
+			if (Collection.gameObject.name == "Brick") {
+				audio.Play();
+				rigidbody.AddForce(leftImpulse_F*5, ForceMode.Impulse);
+				Destroy(Collection.gameObject);
+				score.GetComponent<Scores>().AddScore(normalBrickScore*2);
 			}
 		}
 	}
