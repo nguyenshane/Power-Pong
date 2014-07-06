@@ -512,7 +512,7 @@ GUIText:
   m_GameObject: {fileID: 127867122}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: 108
+  m_Text: 0
   m_Anchor: 0
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
@@ -7115,6 +7115,10 @@ Prefab:
     - target: {fileID: 11400000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
       propertyPath: nextLevel
       value: lEVEL2
+      objectReference: {fileID: 0}
+    - target: {fileID: 13200000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
+      propertyPath: m_Text
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d58b3d9b5ed04ea097ee507862a133c, type: 2}
