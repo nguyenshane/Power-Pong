@@ -147,13 +147,13 @@ MonoBehaviour:
   score: {fileID: 0}
   otherScore: {fileID: 0}
   paddle: {fileID: 0}
-  initialImpulse: {x: 12, y: 0, z: 4}
-  dropLocation: {x: 12, y: 80, z: 0}
-  dropSpeed: -16
-  height: 1.64999998
-  maxSpeed: 48
-  minSpeed: 12
-  initialDropDelay: 3
+  initialImpulse: {x: 40, y: 0, z: 1}
+  dropLocation: {x: 12, y: 160, z: 0}
+  dropSpeed: -24
+  height: 2.70000005
+  maxSpeed: 70
+  minSpeed: 20
+  initialDropDelay: 4
   ball: 1
 --- !u!135 &13500000
 SphereCollider:

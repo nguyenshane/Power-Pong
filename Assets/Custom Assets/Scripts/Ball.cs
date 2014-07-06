@@ -154,18 +154,18 @@ public class Ball : MonoBehaviour {
 		else if (ball == eBall.F_Left){
 			if (Collection.gameObject.name == "Brick") {
 				audio.Play();
-				rigidbody.AddForce(rightImpulse_F*5, ForceMode.Impulse);
+				rigidbody.AddForce(rightImpulse_F*3, ForceMode.Impulse);
+				score.GetComponent<Scores>().AddScore(normalBrickScore);
 				Destroy(Collection.gameObject);
-				score.GetComponent<Scores>().AddScore(normalBrickScore*2);
 			}
 		}
 		//FIREBALLS
 		else if (ball == eBall.F_Right){
 			if (Collection.gameObject.name == "Brick") {
 				audio.Play();
-				rigidbody.AddForce(leftImpulse_F*5, ForceMode.Impulse);
+				rigidbody.AddForce(leftImpulse_F*3, ForceMode.Impulse);
+				score.GetComponent<Scores>().AddScore(normalBrickScore);
 				Destroy(Collection.gameObject);
-				score.GetComponent<Scores>().AddScore(normalBrickScore*2);
 			}
 		}
 	}
