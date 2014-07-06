@@ -79,11 +79,11 @@ public class Ball : MonoBehaviour {
 		}
 
 		if (ball == eBall.F_Left) {
-			if (rigidbody.transform.position.x > 11 || rigidbody.transform.position.x < -25) {
+			if (rigidbody.transform.position.x > 11) {
 				Destroy(gameObject);
 			}
 		} else if (ball == eBall.F_Right) {
-			if(rigidbody.transform.position.x < -11 || rigidbody.transform.position.x > 25) {
+			if(rigidbody.transform.position.x < -11) {
 				Destroy(gameObject);
 			}
 		}
