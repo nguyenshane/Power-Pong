@@ -30,18 +30,16 @@ public class Ball : MonoBehaviour {
 	Vector3 rightImpulse_F;
 	int normalBrickScore = 1;
 	int goalBrickScore = 3;
-	int z;
+	float z;
 	float goalPointPercentage = 0.20f;
 	float currentDropDelay;
 
 
 	// Use this for initialization
 	void Start () {
-
-		z = Random.Range(-8,8);
+		z = Random.Range(-8.0f,8.0f);
 		leftImpulse_F = new Vector3(-2,0,z);
 		rightImpulse_F = new Vector3(2,0,z);
-		dropBall(dropLocation);
 
 		currentDropDelay = initialDropDelay;
 		//dropBall(dropLocation);
