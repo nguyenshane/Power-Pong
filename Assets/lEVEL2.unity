@@ -111,8 +111,13 @@ MonoBehaviour:
   maxSize: 16
   minSize: 4
   friction: .600000024
-  ball: {fileID: 100000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
+  ball1: {fileID: 1166789253}
+  ball2: {fileID: 1139879670}
   player: 1
+  AIEnabled: 0
+  reactionTime: .25
+  accuracy: .5
+  interceptRange: 15
 --- !u!23 &19701276
 Renderer:
   m_ObjectHideFlags: 0
@@ -12214,6 +12219,22 @@ Prefab:
       propertyPath: ball
       value: 
       objectReference: {fileID: 1139879670}
+    - target: {fileID: 11400000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
+      propertyPath: ball1
+      value: 
+      objectReference: {fileID: 1139879670}
+    - target: {fileID: 11400000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
+      propertyPath: ball2
+      value: 
+      objectReference: {fileID: 1166789253}
+    - target: {fileID: 11400000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
+      propertyPath: reactionTime
+      value: .25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
+      propertyPath: accuracy
+      value: .5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
   m_RootGameObject: {fileID: 1922749607}
@@ -12969,8 +12990,13 @@ MonoBehaviour:
   maxSize: 16
   minSize: 4
   friction: .600000024
-  ball: {fileID: 1139879670}
+  ball1: {fileID: 1139879670}
+  ball2: {fileID: 1166789253}
   player: 0
+  AIEnabled: 0
+  reactionTime: .25
+  accuracy: .5
+  interceptRange: 15
 --- !u!54 &1922749613
 Rigidbody:
   m_ObjectHideFlags: 0
