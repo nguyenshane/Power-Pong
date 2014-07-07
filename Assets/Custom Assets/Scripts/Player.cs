@@ -42,46 +42,52 @@ public class Player : MonoBehaviour {
 			if (reactionTimer <= 0f) {
 				reactionTimer = reactionTime;
 				
-				Vector3 b1pos = b1.transform.localPosition + new Vector3 (Random.Range (-accuracy / 2f, accuracy / 2f), 0, Random.Range (-accuracy / 2f, accuracy / 2f));
-				Vector3 b2pos = b2.transform.localPosition + new Vector3 (Random.Range (-accuracy / 2f, accuracy / 2f), 0, Random.Range (-accuracy / 2f, accuracy / 2f));
+				Vector3 b1pos = b1.transform.position + new Vector3 (Random.Range (-accuracy / 2f, accuracy / 2f), 0, Random.Range (-accuracy / 2f, accuracy / 2f));
+				Vector3 b2pos = b2.transform.position + new Vector3 (Random.Range (-accuracy / 2f, accuracy / 2f), 0, Random.Range (-accuracy / 2f, accuracy / 2f));
 				
 				Vector3 b1vel = b1.rigidbody.velocity + new Vector3 (Random.Range (-accuracy / 2f, accuracy / 2f), 0, Random.Range (-accuracy / 2f, accuracy / 2f));
 				Vector3 b2vel = b2.rigidbody.velocity + new Vector3 (Random.Range (-accuracy / 2f, accuracy / 2f), 0, Random.Range (-accuracy / 2f, accuracy / 2f));
-				
-				float b1time = (Mathf.Abs(b1pos.x - transform.position.x)) / Mathf.Abs(b1vel.x);
-				float b2time = (Mathf.Abs(b2pos.x - transform.position.x)) / Mathf.Abs(b1vel.x);
+
+				float z = transform.position.z;
+				float x = transform.position.x;
+
+				float b1time = (Mathf.Abs(b1pos.x - x)) / Mathf.Abs(b1vel.x);
+				float b2time = (Mathf.Abs(b2pos.x - x)) / Mathf.Abs(b2vel.x);
 				
 				float b1z = b1time * b1vel.z;
 				float b2z = b2time * b2vel.z;
+
 				
 				if (player == ePlayer.Left) {
-					if (b1vel.x >= 0f) {
-						if (b2vel.x >= 0f) {
+					z += transform.localScale.z / 2;
+
+					if (b1vel.x >= 0f || b1pos.x < x) {
+						if (b2vel.x >= 0f || b2pos.x < x) {
 							//Go back to center, both balls moving away
-							if (transform.position.z > centerDistance) inputSpeed = -1;
-							else if (transform.position.z < -centerDistance) inputSpeed = 1;
+							if (z > centerDistance) inputSpeed = -1;
+							else if (z < -centerDistance) inputSpeed = 1;
 							else inputSpeed = 0;
 						} else {
 							//Intercept ball 2, only ball 1 moving away
 							if (Mathf.Abs(b2z) > interceptRange) {
 								//Go back to center
-								if (transform.position.z > centerDistance) inputSpeed = -1;
-								else if (transform.position.z < -centerDistance) inputSpeed = 1;
+								if (z > centerDistance) inputSpeed = -1;
+								else if (z < -centerDistance) inputSpeed = 1;
 								else inputSpeed = 0;
 							} else {
-								if (b2z < transform.position.z) inputSpeed = -1;
+								if (b2z < z) inputSpeed = -1;
 								else inputSpeed = 1;
 							}
 						}
-					} else if (b2vel.x >= 0f) {
+					} else if (b2vel.x >= 0f || b2pos.x < x) {
 						//Intercept ball 1, only ball 2 moving away
 						if (Mathf.Abs(b1z) > interceptRange) {
 							//Go back to center
-							if (transform.position.z > centerDistance) inputSpeed = -1;
-							else if (transform.position.z < -centerDistance) inputSpeed = 1;
+							if (z > centerDistance) inputSpeed = -1;
+							else if (z < -centerDistance) inputSpeed = 1;
 							else inputSpeed = 0;
 						} else {
-							if (b1z < transform.position.z) inputSpeed = -1;
+							if (b1z < z) inputSpeed = -1;
 							else inputSpeed = 1;
 						}
 					} else {
@@ -92,15 +98,15 @@ public class Player : MonoBehaviour {
 								//Intercept ball 2
 								if (Mathf.Abs(b2z) > interceptRange) {
 									//Go back to center
-									if (transform.position.z > centerDistance) inputSpeed = -1;
-									else if (transform.position.z < -centerDistance) inputSpeed = 1;
+									if (z > centerDistance) inputSpeed = -1;
+									else if (z < -centerDistance) inputSpeed = 1;
 									else inputSpeed = 0;
 								} else {
-									if (b2z < transform.position.z) inputSpeed = -1;
+									if (b2z < z) inputSpeed = -1;
 									else inputSpeed = 1;
 								}
 							} else {
-								if (b1z < transform.position.z) inputSpeed = -1;
+								if (b1z < z) inputSpeed = -1;
 								else inputSpeed = 1;
 							}
 						} else {
@@ -109,47 +115,49 @@ public class Player : MonoBehaviour {
 								//Intercept ball 1
 								if (Mathf.Abs(b1z) > interceptRange) {
 									//Go back to center
-									if (transform.position.z > centerDistance) inputSpeed = -1;
-									else if (transform.position.z < -centerDistance) inputSpeed = 1;
+									if (z > centerDistance) inputSpeed = -1;
+									else if (z < -centerDistance) inputSpeed = 1;
 									else inputSpeed = 0;
 								} else {
-									if (b1z < transform.position.z) inputSpeed = -1;
+									if (b1z < z) inputSpeed = -1;
 									else inputSpeed = 1;
 								}
 							} else {
-								if (b2z < transform.position.z) inputSpeed = -1;
+								if (b2z < z) inputSpeed = -1;
 								else inputSpeed = 1;
 							}
 						}
 					}
 				} else if (player == ePlayer.Right) {
-					if (b1vel.x <= 0f) {
-						if (b2vel.x <= 0f) {
+					z -= transform.localScale.z / 2;
+
+					if (b1vel.x <= 0f || b1pos.x > x) {
+						if (b2vel.x <= 0f || b2pos.x < x) {
 							//Go back to center, both balls moving away
-							if (transform.position.z > centerDistance) inputSpeed = -1;
-							else if (transform.position.z < -centerDistance) inputSpeed = 1;
+							if (z > centerDistance) inputSpeed = -1;
+							else if (z < -centerDistance) inputSpeed = 1;
 							else inputSpeed = 0;
 						} else {
 							//Intercept ball 2, only ball 1 moving away
 							if (Mathf.Abs(b2z) > interceptRange) {
 								//Go back to center
-								if (transform.position.z > centerDistance) inputSpeed = -1;
-								else if (transform.position.z < -centerDistance) inputSpeed = 1;
+								if (z > centerDistance) inputSpeed = -1;
+								else if (z < -centerDistance) inputSpeed = 1;
 								else inputSpeed = 0;
 							} else {
-								if (b2z < transform.position.z) inputSpeed = -1;
+								if (b2z < z) inputSpeed = -1;
 								else inputSpeed = 1;
 							}
 						}
-					} else if (b2vel.x <= 0f) {
+					} else if (b2vel.x <= 0f || b2pos.x < x) {
 						//Intercept ball 1, only ball 2 moving away
 						if (Mathf.Abs(b1z) > interceptRange) {
 							//Go back to center
-							if (transform.position.z > centerDistance) inputSpeed = -1;
-							else if (transform.position.z < -centerDistance) inputSpeed = 1;
+							if (z > centerDistance) inputSpeed = -1;
+							else if (z < -centerDistance) inputSpeed = 1;
 							else inputSpeed = 0;
 						} else {
-							if (b1z < transform.position.z) inputSpeed = -1;
+							if (b1z < z) inputSpeed = -1;
 							else inputSpeed = 1;
 						}
 					} else {
@@ -160,15 +168,15 @@ public class Player : MonoBehaviour {
 								//Intercept ball 2
 								if (Mathf.Abs(b2z) > interceptRange) {
 									//Go back to center
-									if (transform.position.z > centerDistance) inputSpeed = -1;
-									else if (transform.position.z < -centerDistance) inputSpeed = 1;
+									if (z > centerDistance) inputSpeed = -1;
+									else if (z < -centerDistance) inputSpeed = 1;
 									else inputSpeed = 0;
 								} else {
-									if (b2z < transform.position.z) inputSpeed = -1;
+									if (b2z < z) inputSpeed = -1;
 									else inputSpeed = 1;
 								}
 							} else {
-								if (b1z < transform.position.z) inputSpeed = -1;
+								if (b1z < z) inputSpeed = -1;
 								else inputSpeed = 1;
 							}
 						} else {
@@ -177,15 +185,15 @@ public class Player : MonoBehaviour {
 								//Intercept ball 1
 								if (Mathf.Abs(b1z) > interceptRange) {
 									//Go back to center
-									if (transform.position.z > centerDistance) inputSpeed = -1;
-									else if (transform.position.z < -centerDistance) inputSpeed = 1;
+									if (z > centerDistance) inputSpeed = -1;
+									else if (z < -centerDistance) inputSpeed = 1;
 									else inputSpeed = 0;
 								} else {
-									if (b1z < transform.position.z) inputSpeed = -1;
+									if (b1z < z) inputSpeed = -1;
 									else inputSpeed = 1;
 								}
 							} else {
-								if (b2z < transform.position.z) inputSpeed = -1;
+								if (b2z < z) inputSpeed = -1;
 								else inputSpeed = 1;
 							}
 						}

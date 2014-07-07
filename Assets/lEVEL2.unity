@@ -115,8 +115,8 @@ MonoBehaviour:
   ball2: {fileID: 1139879670}
   player: 1
   AIEnabled: 0
-  reactionTime: .25
-  accuracy: .5
+  reactionTime: .200000003
+  accuracy: 0
   interceptRange: 15
 --- !u!23 &19701276
 Renderer:
@@ -12229,11 +12229,15 @@ Prefab:
       objectReference: {fileID: 1166789253}
     - target: {fileID: 11400000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
       propertyPath: reactionTime
-      value: .25
+      value: .200000003
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
       propertyPath: accuracy
-      value: .5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
+      propertyPath: AIEnabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
@@ -12994,8 +12998,8 @@ MonoBehaviour:
   ball2: {fileID: 1166789253}
   player: 0
   AIEnabled: 0
-  reactionTime: .25
-  accuracy: .5
+  reactionTime: .200000003
+  accuracy: 0
   interceptRange: 15
 --- !u!54 &1922749613
 Rigidbody:

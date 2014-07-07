@@ -678,8 +678,8 @@ MonoBehaviour:
   ball2: {fileID: 1139879670}
   player: 1
   AIEnabled: 0
-  reactionTime: .25
-  accuracy: .5
+  reactionTime: .200000003
+  accuracy: 0
   interceptRange: 15
 --- !u!23 &159175507
 Renderer:
@@ -1713,7 +1713,7 @@ MonoBehaviour:
   paddle: {fileID: 159175503}
   initialImpulse: {x: 12, y: 0, z: 4}
   dropLocation: {x: 12, y: 80, z: 0}
-  dropSpeed: -24
+  dropSpeed: -20
   height: 1.64999998
   maxSpeed: 48
   minSpeed: 12
@@ -2408,11 +2408,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e35e4cc190f70405ea45805564f1403b, type: 2}
       propertyPath: reactionTime
-      value: .25
+      value: .200000003
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e35e4cc190f70405ea45805564f1403b, type: 2}
       propertyPath: accuracy
-      value: .5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e35e4cc190f70405ea45805564f1403b, type: 2}
       propertyPath: ball1
@@ -2422,6 +2422,10 @@ Prefab:
       propertyPath: ball2
       value: 
       objectReference: {fileID: 1139879670}
+    - target: {fileID: 11400000, guid: e35e4cc190f70405ea45805564f1403b, type: 2}
+      propertyPath: AIEnabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e35e4cc190f70405ea45805564f1403b, type: 2}
   m_RootGameObject: {fileID: 159175503}
@@ -4799,6 +4803,10 @@ Prefab:
       propertyPath: paddle
       value: 
       objectReference: {fileID: 1922749607}
+    - target: {fileID: 11400000, guid: 32cbcef94fcf9ec4486fb74d491f06e2, type: 2}
+      propertyPath: dropSpeed
+      value: -20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 32cbcef94fcf9ec4486fb74d491f06e2, type: 2}
   m_RootGameObject: {fileID: 1139879670}
@@ -5816,7 +5824,7 @@ MonoBehaviour:
   paddle: {fileID: 1922749607}
   initialImpulse: {x: -12, y: 0, z: -4}
   dropLocation: {x: -12, y: 80, z: 0}
-  dropSpeed: -16
+  dropSpeed: -20
   height: 1.64999998
   maxSpeed: 48
   minSpeed: 12
@@ -8722,6 +8730,18 @@ Prefab:
       propertyPath: ball2
       value: 
       objectReference: {fileID: 338986503}
+    - target: {fileID: 11400000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
+      propertyPath: reactionTime
+      value: .200000003
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
+      propertyPath: AIEnabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
+      propertyPath: speed
+      value: 32
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b32f31523f18348b98fdfcbbf6ea6202, type: 2}
   m_RootGameObject: {fileID: 1922749607}
@@ -9326,7 +9346,7 @@ MonoBehaviour:
   ball2: {fileID: 338986503}
   player: 0
   AIEnabled: 0
-  reactionTime: 0
+  reactionTime: .200000003
   accuracy: 0
   interceptRange: 15
 --- !u!54 &1922749613
