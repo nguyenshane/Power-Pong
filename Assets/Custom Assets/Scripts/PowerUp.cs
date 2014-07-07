@@ -7,8 +7,8 @@ public class PowerUp : MonoBehaviour {
 	public Player target;
 	public Transform fireballG;
 	public Transform fireballO;
-	private float minSpeed = 12.0f;
-	private float accelSpeed = 10.0f;
+	private float minSpeed = 20.0f;
+	private float accelSpeed = 20.0f;
 
 	// Use this for initialization
 	void Start () {
@@ -26,10 +26,10 @@ public class PowerUp : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision Collection) {
-		if (Collection.gameObject.name == "Player Left"){
+		if (Collection.gameObject.name == "Player Left") {
 			switch (type) {
 			case 0:
-				Collection.gameObject.GetComponent<Player>().increaseSize(0.5f);
+				Collection.gameObject.GetComponent<Player>().increaseSize(0.25f);
 				break;
 				
 			case 1:
@@ -50,10 +50,10 @@ public class PowerUp : MonoBehaviour {
 			}
 			
 			Destroy(gameObject);
-		} if (Collection.gameObject.name == "Player Right"){
+		} if (Collection.gameObject.name == "Player Right") {
 			switch (type) {
 			case 0:
-				Collection.gameObject.GetComponent<Player>().increaseSize(0.5f);
+				Collection.gameObject.GetComponent<Player>().increaseSize(0.25f);
 				break;
 				
 			case 1:

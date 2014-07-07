@@ -6,8 +6,6 @@ public class Brick : MonoBehaviour {
 	private float gen;
 	private float gen2;
 
-	private float powerUpSpeed = 20f;
-
 	public Transform PowerUpPrefab;
 	public GameObject PowerupCtrl;
 
@@ -40,10 +38,6 @@ public class Brick : MonoBehaviour {
 				PowerUp newPowerUp = ((Transform)Instantiate(PowerUpPrefab, transform.position, Quaternion.identity)).gameObject.GetComponent<PowerUp>();
 				newPowerUp.type = Random.Range(0, 3);
 				newPowerUp.target = Collection.gameObject.GetComponent<Ball>().paddle.GetComponent<Player>();
-				Vector3 vel = newPowerUp.target.transform.position - transform.position;
-				vel.z += Random.Range(-2.0f, 2.0f);
-				vel = vel / vel.magnitude * powerUpSpeed;
-				newPowerUp.rigidbody.AddForce(vel, ForceMode.Impulse);
 			} 
 		}	
 	}
