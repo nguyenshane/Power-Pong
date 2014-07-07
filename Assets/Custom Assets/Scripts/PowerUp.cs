@@ -37,13 +37,15 @@ public class PowerUp : MonoBehaviour {
 				break;
 				
 			case 2:
-				Ball newFireball = ((Transform)Instantiate(fireballG, new Vector3(20,2,0), Quaternion.identity)).gameObject.GetComponent<Ball>();
+				Ball newFireball = ((Transform)Instantiate(fireballG, new Vector3(-20,2,0), Quaternion.identity)).gameObject.GetComponent<Ball>();
 				newFireball.paddle = Collection.gameObject;
+				newFireball.score = GameObject.Find("Score_G");
 				break;
 				
 			case 3:
-				Ball newFireball2 = ((Transform)Instantiate(fireballG, new Vector3(20,2,0), Quaternion.identity)).gameObject.GetComponent<Ball>();
+				Ball newFireball2 = ((Transform)Instantiate(fireballG, new Vector3(-20,2,0), Quaternion.identity)).gameObject.GetComponent<Ball>();
 				newFireball2.paddle = Collection.gameObject;
+				newFireball2.score = GameObject.Find("Score_G");
 				break;
 			}
 			
@@ -59,13 +61,15 @@ public class PowerUp : MonoBehaviour {
 				break;
 				
 			case 2:
-				Ball newFireball = ((Transform)Instantiate(fireballO, new Vector3(-20,2,0), Quaternion.identity)).gameObject.GetComponent<Ball>();
+				Ball newFireball = ((Transform)Instantiate(fireballO, new Vector3(20,2,0), Quaternion.identity)).gameObject.GetComponent<Ball>();
 				newFireball.paddle = Collection.gameObject;
+				newFireball.score = GameObject.Find("Score_O");
 				break;
 				
 			case 3:
-				Ball newFireball2 = ((Transform)Instantiate(fireballO, new Vector3(-20,2,0), Quaternion.identity)).gameObject.GetComponent<Ball>();
+				Ball newFireball2 = ((Transform)Instantiate(fireballO, new Vector3(20,2,0), Quaternion.identity)).gameObject.GetComponent<Ball>();
 				newFireball2.paddle = Collection.gameObject;
+				newFireball2.score = GameObject.Find("Score_O");
 				break;
 			}
 

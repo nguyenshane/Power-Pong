@@ -111,7 +111,7 @@ MonoBehaviour:
   maxSize: 16
   minSize: 4
   friction: .600000024
-  ball: {fileID: 100000, guid: 1e3ce4bb331f1ea438596c1a082a98d9, type: 2}
+  ball: {fileID: 338986503}
   player: 1
 --- !u!23 &19701276
 Renderer:
@@ -512,7 +512,7 @@ GUIText:
   m_GameObject: {fileID: 127867122}
   m_Enabled: 1
   serializedVersion: 3
-  m_Text: 0
+  m_Text: 9
   m_Anchor: 0
   m_Alignment: 1
   m_PixelOffset: {x: 0, y: 0}
@@ -3418,6 +3418,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e35e4cc190f70405ea45805564f1403b, type: 2}
+      propertyPath: ball
+      value: 
+      objectReference: {fileID: 338986503}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e35e4cc190f70405ea45805564f1403b, type: 2}
   m_RootGameObject: {fileID: 19701274}

@@ -36,43 +36,49 @@ public class Ball : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		leftImpulse_F = new Vector3(-24, 0, Random.Range (-3.0f, 3.0f));
+		rightImpulse_F = new Vector3(24, 0, Random.Range (-3.0f, 3.0f));
+
 		if (ball == eBall.F_Left || ball == eBall.F_Right) {
-			Destroy(gameObject, 5.0f);
+			Destroy(gameObject, 2.0f);
+			initialDropDelay = -2000;
+			if (ball == eBall.F_Right) rigidbody.AddForce(leftImpulse_F, ForceMode.Impulse);
+			else rigidbody.AddForce(rightImpulse_F, ForceMode.Impulse);
 		}
 
-		leftImpulse_F = new Vector3(-2, 0, Random.Range (-1.0f, 1.0f));
-    	rightImpulse_F = new Vector3(2, 0, Random.Range (-1.0f, 1.0f));
 
 		currentDropDelay = initialDropDelay;
 	}
 
 	// Update is called once per frame
 	void Update () {
-		if (currentDropDelay > 0) {
-			currentDropDelay -= Time.deltaTime;
-		} else if (currentDropDelay == -1000) {
-			dropBall (dropLocation);
-			currentDropDelay = -2000;
-		} else if (currentDropDelay != -2000) {
-			currentDropDelay = -1000;
-		}
+		if (ball != eBall.F_Left && ball != eBall.F_Right) {
+			if (currentDropDelay > 0) {
+				currentDropDelay -= Time.deltaTime;
+			} else if (currentDropDelay == -1000) {
+				dropBall (dropLocation);
+				currentDropDelay = -2000;
+			} else if (currentDropDelay != -2000) {
+				currentDropDelay = -1000;
+			}
 
-		if (currentDropDelay == -2000) {
-			if (rigidbody.position.y < height) {
-				rigidbody.MovePosition (new Vector3 (rigidbody.position.x, height, rigidbody.position.z));
-				rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
-				collider.isTrigger = false;
-				score.GetComponent<Scores> ().increaseMultiplier ();
-				rigidbody.AddForce (initialImpulse * score.GetComponent<Scores> ().getMultiplier (), ForceMode.Impulse);
-			} else if (rigidbody.position.y == height) {
-				if (rigidbody.velocity.magnitude < minSpeed) {
-					if (rigidbody.velocity.magnitude != 0) {
-						rigidbody.AddForce (rigidbody.velocity * (1 - minSpeed / rigidbody.velocity.magnitude), ForceMode.Impulse);
-					} else {
-						rigidbody.AddForce (initialImpulse, ForceMode.Impulse);
+			if (currentDropDelay == -2000) {
+				if (rigidbody.position.y < height) {
+					rigidbody.MovePosition (new Vector3 (rigidbody.position.x, height, rigidbody.position.z));
+					rigidbody.constraints = RigidbodyConstraints.FreezePositionY;
+					collider.isTrigger = false;
+					score.GetComponent<Scores> ().increaseMultiplier ();
+					rigidbody.AddForce (initialImpulse * score.GetComponent<Scores> ().getMultiplier (), ForceMode.Impulse);
+				} else if (rigidbody.position.y == height) {
+					if (rigidbody.velocity.magnitude < minSpeed) {
+						if (rigidbody.velocity.magnitude != 0) {
+							rigidbody.AddForce (rigidbody.velocity * (1 - minSpeed / rigidbody.velocity.magnitude), ForceMode.Impulse);
+						} else {
+							rigidbody.AddForce (initialImpulse, ForceMode.Impulse);
+						}
+					} else if (rigidbody.velocity.magnitude > maxSpeed) {
+						rigidbody.AddForce (rigidbody.velocity * -1 * (1 - maxSpeed / rigidbody.velocity.magnitude), ForceMode.Impulse);
 					}
-				} else if (rigidbody.velocity.magnitude > maxSpeed) {
-					rigidbody.AddForce (rigidbody.velocity * -1 * (1 - maxSpeed / rigidbody.velocity.magnitude), ForceMode.Impulse);
 				}
 			}
 		}
@@ -84,7 +90,6 @@ public class Ball : MonoBehaviour {
 			if(Collection.gameObject.name == "Brick") {
 				audio.Play();
 				Destroy(Collection.gameObject);
-				rigidbody.AddForce(leftImpulse, ForceMode.Impulse);
 				score.GetComponent<Scores>().AddScore(normalBrickScore);
 			} else if (Collection.gameObject.name == "Brick_O") {
 				Destroy(Collection.gameObject);
@@ -92,12 +97,20 @@ public class Ball : MonoBehaviour {
 			} else if (Collection.gameObject.name == "Brick_G") {
 				Destroy(Collection.gameObject);
 			} else if (Collection.gameObject.name == "Player Left") {
-				rigidbody.AddForce(rightImpulse, ForceMode.Impulse);
-				rigidbody.AddForce(new Vector3(0, 0, Collection.gameObject.GetComponent<Player>().friction * Collection.gameObject.GetComponent<Player>().inputSpeed * 
-				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
+				Player player = Collection.gameObject.GetComponent<Player>();
+				if (player.transform.localPosition.z + player.transform.localScale.z / 2 > transform.localPosition.z ||
+				    player.transform.localPosition.z - player.transform.localScale.z / 2 < transform.localPosition.z) {
+					rigidbody.AddForce(rightImpulse, ForceMode.Impulse);
+					rigidbody.AddForce(new Vector3(0, 0, Collection.gameObject.GetComponent<Player>().friction * (Mathf.Abs(transform.localPosition.z - player.transform.localPosition.z) / (player.transform.localScale.z / 2)) * Collection.gameObject.GetComponent<Player>().inputSpeed * 
+						                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
+				}
 			} else if (Collection.gameObject.name == "Player Right") {
-				rigidbody.AddForce(new Vector3(0, 0, Collection.gameObject.GetComponent<Player>().friction * Collection.gameObject.GetComponent<Player>().inputSpeed * 
-				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
+				Player player = Collection.gameObject.GetComponent<Player>();
+				if (player.transform.localPosition.z + player.transform.localScale.z / 2 > transform.localPosition.z ||
+				    player.transform.localPosition.z - player.transform.localScale.z / 2 < transform.localPosition.z) {
+					rigidbody.AddForce(new Vector3(0, 0, Collection.gameObject.GetComponent<Player>().friction * (Mathf.Abs(transform.localPosition.z - player.transform.localPosition.z) / (player.transform.localScale.z / 2)) * Collection.gameObject.GetComponent<Player>().inputSpeed * 
+					                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
+				}
 			} else if (Collection.gameObject.name == "Orange_Goal") {
 				int points = (int)(otherScore.GetComponent<Scores>().getScore () * goalPointPercentage);
 				score.GetComponent<Scores>().AddScore(points);
@@ -109,12 +122,13 @@ public class Ball : MonoBehaviour {
 				score.GetComponent<Scores>().AddScore(-1*points);
 				score.GetComponent<Scores>().RemoveLife();
 				dropBall(dropLocation);
+			} else if (Collection.gameObject.name == "Big Wall") {
+				rigidbody.AddForce(leftImpulse, ForceMode.Impulse);
 			}
 		} else if (ball == eBall.Right) {
 			if(Collection.gameObject.name == "Brick") {
 				audio.Play();
 				Destroy(Collection.gameObject);
-				rigidbody.AddForce(rightImpulse, ForceMode.Impulse);
 				score.GetComponent<Scores>().AddScore(normalBrickScore);
 			} else if (Collection.gameObject.name == "Brick_G") {
 				Destroy(Collection.gameObject);
@@ -122,12 +136,20 @@ public class Ball : MonoBehaviour {
 			} else if (Collection.gameObject.name == "Brick_O") {
 				Destroy(Collection.gameObject);
 			} else if (Collection.gameObject.name == "Player Right") {
-				rigidbody.AddForce(leftImpulse, ForceMode.Impulse);
-				rigidbody.AddForce(new Vector3(0, 0, Collection.gameObject.GetComponent<Player>().friction * Collection.gameObject.GetComponent<Player>().inputSpeed * 
-				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
+				Player player = Collection.gameObject.GetComponent<Player>();
+				if (player.transform.localPosition.z + player.transform.localScale.z / 2 > transform.localPosition.z ||
+				    player.transform.localPosition.z - player.transform.localScale.z / 2 < transform.localPosition.z) {
+					rigidbody.AddForce(leftImpulse, ForceMode.Impulse);
+					rigidbody.AddForce(new Vector3(0, 0, Collection.gameObject.GetComponent<Player>().friction * (Mathf.Abs(transform.localPosition.z - player.transform.localPosition.z) / (player.transform.localScale.z / 2)) * Collection.gameObject.GetComponent<Player>().inputSpeed * 
+					                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
+				}
 			} else if (Collection.gameObject.name == "Player Left") {
-				rigidbody.AddForce(new Vector3(0, 0, Collection.gameObject.GetComponent<Player>().friction * Collection.gameObject.GetComponent<Player>().inputSpeed * 
-				                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
+				Player player = Collection.gameObject.GetComponent<Player>();
+				if (player.transform.localPosition.z + player.transform.localScale.z / 2 > transform.localPosition.z ||
+				    player.transform.localPosition.z - player.transform.localScale.z / 2 < transform.localPosition.z) {
+					rigidbody.AddForce(new Vector3(0, 0, Collection.gameObject.GetComponent<Player>().friction * (Mathf.Abs(transform.localPosition.z - player.transform.localPosition.z) / (player.transform.localScale.z / 2)) * Collection.gameObject.GetComponent<Player>().inputSpeed * 
+					                               Collection.gameObject.GetComponent<Player>().speed), ForceMode.Impulse);
+				}
 			} else if (Collection.gameObject.name == "Green_Goal") {
 				int points = (int)(otherScore.GetComponent<Scores>().getScore() * goalPointPercentage);
 				score.GetComponent<Scores>().AddScore(points);
@@ -139,6 +161,8 @@ public class Ball : MonoBehaviour {
 				score.GetComponent<Scores>().AddScore(-1*points);
 				score.GetComponent<Scores>().RemoveLife();
 				dropBall(dropLocation);
+			} else if (Collection.gameObject.name == "Big Wall") {
+				rigidbody.AddForce(rightImpulse, ForceMode.Impulse);
 			}
 		} 
 		//FIREBALLS
